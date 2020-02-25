@@ -34,5 +34,5 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
   - ```python3 cv_kdmd_hyp_20d_cyd.py```
 - then collecting the result and draw the figure by
   - ```python3 print.py```
-  - the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
+- the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
 
