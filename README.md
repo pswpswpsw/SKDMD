@@ -1,11 +1,15 @@
 # SKDMD
 Sparsity-promoting Kernel Dynamic Mode Decomposition
 
-## Motivation and Goal
+## Motivations
 
-- neural network approach for finding Koopman operators can be suffered from bad training, time consuming, resulting from the non-convex optimization nature 
-- classical nonlinear Koopman analysis method (e.g., EDMD, KDMD) suffers from choosing an **accurate** and **informative** Koopman invariant subspace in Kernel DMD
-- we rethink modes selection in EDMD/KDMD as a *multi-task learning* problem
+- **Why throwing everything in a neural network?**
+  - neural network approach for finding Koopman operators suffered from bad minimizer, time consuming, resulting from the non-convex optimization nature 
+- **Why not using classical convex algorithm?**
+  - classical nonlinear Koopman analysis method (e.g., EDMD, KDMD) suffers from choosing an **accurate** and **informative** Koopman invariant subspace in Kernel DMD
+- **Not every nonlinear dynamical system requires a neural network to search for Koopman operator**
+  - we resolve the issue of classical traditional by rethinking modes selection in EDMD/KDMD as a *multi-task learning* problem
+  - demonstration on several strongly transient flows shows the effectiveness of the algorithm for providing an accurate reduced-order-model (ROM) 
 
 
 <img src="new_framework.png" alt="drawing" width="900"/>
