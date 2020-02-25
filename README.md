@@ -24,7 +24,7 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
 - pyDOE
 - mpi4py
 
-# 2D cylinder flow past cylinder
+# Example: 2D cylinder flow past cylinder
 
 - go to `EXAMPLE/cylinder_re100` folder
 
