@@ -39,6 +39,8 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
 - postprocessing the result of multi-task learning
   - ```python3 pps_cyd.py```
 
+- Note: that the data is top 20 POD coefficients with mean-subtracted.
+
 # Selection of hyperparameter
 
 - go to `EXAMPLE/cylinder_re100/hyp` 
