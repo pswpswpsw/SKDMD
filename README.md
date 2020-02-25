@@ -1,7 +1,8 @@
 # SKDMD
 Sparsity-promoting Kernel Dynamic Mode Decomposition
 
-![Drag Racing](framework.png =250x250)
+<img src="new_framework.png" alt="drawing" width="900"/>
+
 
 # Requirement
 - python3
