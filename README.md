@@ -48,6 +48,10 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [ht
   - classical nonlinear Koopman analysis method (e.g., EDMD, KDMD) suffers from having hundreds to thousands of **approximated Koopman triplets**. 
   - How to choose an **accurate** and **informative** Koopman invariant subspace in Extended/Kernel DMD?
 
+- **Traditional linear DMD performs poorly on transient flows**
+  - due to inherent linear nature, sparsity-promoting DMD (Jovanovic, et al., 2014) cannot provide accurate representation for Koopman mode decomposition in a transient regime. 
+  - due to lack of truncation on nonlinearly evolving modes, **spDMD can end up with spurious unstable Koopman modes for stable flows**.
+
 - **Not every nonlinear dynamical system requires a neural network to search for Koopman operator**
   - we resolve the issue of classical methods by rethinking modes selection in EDMD/KDMD as a *multi-task learning* problem
   - demonstration on several strongly transient flows shows the effectiveness of the algorithm for providing an accurate reduced-order-model (ROM) 
