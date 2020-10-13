@@ -25,7 +25,7 @@
 
 
 # SKDMD
-Sparsity-promoting Kernel Dynamic Mode Decomposition
+Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [https://arxiv.org/abs/2002.10637](https://arxiv.org/abs/2002.10637)
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
   - due to cubic complexity in the linear system step (although no one actually performs inverse exactly, but for forward computation it is inevitable)
   - we implement **random Fourier features** as a way to approximate kernel methods efficiently while enjoying the benefits of EDMD
 
-<img src="new_framework.png" alt="drawing" width="900"/>\
+<img src="new_framework.png" alt="drawing" width="900"/>
 
 ## Getting Started
 
