@@ -52,8 +52,8 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [ht
   - we resolve the issue of classical methods by rethinking modes selection in EDMD/KDMD as a *multi-task learning* problem
   - demonstration on several strongly transient flows shows the effectiveness of the algorithm for providing an accurate reduced-order-model (ROM) 
 
-- **KDMD can be expansive to computationally evaluate (online)/train (offline)**
-  - due to cubic complexity in the linear system step (although no one actually performs inverse exactly, but for forward computation it is inevitable)
+- **KDMD can be expensive to computationally evaluate (online)/train (offline)**
+  - due to **cubic complexity** in the linear system step (although no one actually performs inverse exactly, but for forward computation it is inevitable)
   - we implement **random Fourier features** as a way to approximate kernel methods efficiently while enjoying the benefits of EDMD
 
 <img src="new_framework.png" alt="drawing" width="900"/>
