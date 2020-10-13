@@ -117,7 +117,7 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [ht
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/pswpswpsw/SKDMD/issues) for a list of proposed features (and known issues).
 
 
 
