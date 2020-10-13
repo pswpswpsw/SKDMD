@@ -4,13 +4,18 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
 ## Motivations
 
 - **Why throwing everything in a neural network?**
-  - neural network approach for finding Koopman operators could suffer from bad minimizers, time consuming (requires an unknown number of GPU training hours), which are all resulted from the non-convex optimization nature 
+  - neural network approach for finding Koopman operators could suffer from bad minimizers, time consuming (requires a quite large number of GPU training hours), which are all resulted from the non-convex optimization nature 
+
 - **Why not using classical convex methods?**
   - classical nonlinear Koopman analysis method (e.g., EDMD, KDMD) suffers from having hundreds to thousands of **approximated Koopman triplets**. 
   - How to choose an **accurate** and **informative** Koopman invariant subspace in Extended/Kernel DMD?
+
 - **Not every nonlinear dynamical system requires a neural network to search for Koopman operator**
   - we resolve the issue of classical methods by rethinking modes selection in EDMD/KDMD as a *multi-task learning* problem
   - demonstration on several strongly transient flows shows the effectiveness of the algorithm for providing an accurate reduced-order-model (ROM) 
+
+- **KDMD can be expansive to computationally evaluate (online)/train (offline)**
+  - we implement random Fourier features as a way to approximate kernel methods efficiently while enjoying the benefits of EDMD.
 
 <img src="new_framework.png" alt="drawing" width="900"/>
 
@@ -24,7 +29,7 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
 - pyDOE
 - mpi4py
 
-# Example: 2D cylinder flow past cylinder
+# Example: KDMD on 2D cylinder flow past cylinder
 
 - go to `EXAMPLE/cylinder_re100` folder
 
@@ -50,3 +55,12 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition
   - ```python3 print.py```
 - the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
 
+
+# Example: scalable EDMD on 12d flexible joint system
+
+- go to `EXAMPLE/12d_flex_mani` folder
+
+- run the EDMD with random Fourier features
+  - ```python3 example_12d_flex_mani.py ```
+
+- following the similar tasks in first example. 
