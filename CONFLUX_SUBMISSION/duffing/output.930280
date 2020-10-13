@@ -1,0 +1,7 @@
+
+...KDMD....  sigma =  0.544  reduced_rank =  800
+current reduced rank =  800
+current condition number =  8.81E+13  for rank =  800
+single step linear Koopman residual error on training data =  1.5141713003148165e-07
+residuals of KDMD reconstruction =  5.364386231742414e-06
+Elapsed time: 4.733191657066345 mins 

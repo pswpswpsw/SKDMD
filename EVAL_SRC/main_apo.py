@@ -16,16 +16,16 @@ import sys
 import joblib
 
 sys.dont_write_bytecode = True
-sys.path.insert(0, '../../')
+sys.path.append('../../MODEL_SRC/')
 
 
 import numpy as np
-from SKDMD.MODEL_SRC.dmd import *
-from SKDMD.EVAL_SRC.lib.lib_model_interface import *
+from dmd import *
+from lib.lib_model_interface import *
 from scipy.linalg import lstsq
 from numpy.linalg import matrix_power
 from scipy.linalg import expm
-from SKDMD.MODEL_SRC.lib.lib_analytic_model import F_simple_2d_system, F_duffing_2d_system
+from lib_analytic_model import F_simple_2d_system, F_duffing_2d_system
 from scipy.integrate import ode
 from sklearn.linear_model import enet_path
 
@@ -106,6 +106,7 @@ class ClassApoEval(object):
         self.top_k_index_modes_select = None
         self.scaling_factor=scaling_factor
         self.truncation_threshold = truncation_threshold # 1e-2 for 2D fixed point case, 1e-3 for other cases
+        self.dt = self.model.dt
 
         if self.model_name[0] == 'd':
             self.type = 'd'
@@ -116,6 +117,34 @@ class ClassApoEval(object):
 
         self.save_dir = './' + case_name + '/' + model_name + '/'
         mkdir(self.save_dir)
+
+        # just for KoopmanLQR controller
+        self.selected_index = None
+        self.selected_koopman_modes = None
+
+    def compute_eigen(self, state, selected_modes_index=None):
+        ## warning: this is only reserved for LQR controller class
+        eigen_phi_state = self.model.computeEigenPhi(state, selected_modes_index)
+        return eigen_phi_state
+
+    def compute_eigen_grad_with_gxT(self, gxT, x, selected_modes_index=None):
+        return self.model.compute_eigen_grad_with_gxT(gxT, x, selected_modes_index)
+
+    def get_Lambda_matrix(self, selected_modes_index):
+        ## warning: this is only reserved for LQR controller class
+        Lambda = self.model.get_linearEvolvingEigen(selected_modes_index)
+        return Lambda
+
+    def get_reconstructed_state(self, phi, selected_modes_index, selected_modes):
+        ## warning: this is only reserved for LQR controller class
+        state = self.model.reconstructFromEigenPhi(phi, selected_modes_index, selected_modes)
+        return state
+
+    def get_reconstruction_transformation(self, selected_modes_index, selected_modes):
+        transformation_matrix = self.model.get_reconstruction_transformation(selected_modes_index, selected_modes)
+        return transformation_matrix
+
+
 
     def predict(self, tspan, ic, selected_modes_flag=False, selected_modes_index=None, selected_modes=None):
         """
@@ -152,8 +181,8 @@ class ClassApoEval(object):
             print('continuous model')
 
             def state_pred(index_time):
-                phi_state_at_t = np.matmul(eigen_phi_state, expm((tspan[index_time] - tspan[0]) * self.model.get_linearEvolvingEigen(selected_modes_index)))
-                return self.model.reconstructFromEigenPhi(phi_state_at_t, selected_modes_index, selected_modes)
+                phi_state_at_t = eigen_phi_state @ expm((tspan[index_time] - tspan[0]) * self.get_Lambda_matrix(selected_modes_index))
+                return self.get_reconstructed_state(phi_state_at_t, selected_modes_index, selected_modes)
 
             # parallel implementation
             print('num cpu = ', N_CPU)
@@ -165,9 +194,16 @@ class ClassApoEval(object):
 
             print('discrete model')
 
+            tmp_1 = self.get_Lambda_matrix(selected_modes_index)
+            tmp_1_d = np.diag(tmp_1)
+
             def state_pred(index_time):
-                phi_state_at_t = np.matmul(eigen_phi_state, matrix_power(self.model.get_linearEvolvingEigen(selected_modes_index), index_time))
-                return self.model.reconstructFromEigenPhi(phi_state_at_t, selected_modes_index, selected_modes)
+                # old version
+                # phi_state_at_t = np.matmul(eigen_phi_state, matrix_power(self.get_Lambda_matrix(selected_modes_index), index_time))
+                # new version
+                phi_state_at_t = eigen_phi_state @ np.diag(tmp_1_d**index_time)
+
+                return self.get_reconstructed_state(phi_state_at_t, selected_modes_index, selected_modes)
 
             # parallel implementation
             print('num cpu = ', N_CPU)
@@ -234,6 +270,7 @@ class ClassApoEval(object):
 
     def order_modes_with_accuracy_and_aposterior_eigentj(self, true_tsnap, true_tj, num_user_defined):
 
+        # print('266: ', datetime.now())
         true_eigenTj = self.model.computeEigenPhi(true_tj)
 
         ## 1. compute max normalized error
@@ -247,7 +284,7 @@ class ClassApoEval(object):
             def error_examiner_at_single_time(index_time):
                 delta_time = true_tsnap[index_time] - true_tsnap[0]
                 # linearly evolving eigenmodes into the future
-                eigenTj_at_t = np.matmul(true_eigenTj[0, :], expm(delta_time * self.model.get_linearEvolvingEigen()))
+                eigenTj_at_t = true_eigenTj[0, :] @ expm(delta_time * self.model.get_linearEvolvingEigen())
                 # save varphi error
                 eigenError_at_t = true_eigenTj[index_time, :] - eigenTj_at_t
                 # save varphi error / linear evolving
@@ -256,9 +293,19 @@ class ClassApoEval(object):
 
         elif self.type == 'd':
 
+            # diagonalize A matrix first
+            ev_A, et_A = np.linalg.eig(self.model.get_linearEvolvingEigen())
+            assert np.linalg.norm(np.linalg.pinv(et_A) @ np.diag(ev_A) @ et_A - self.model.get_linearEvolvingEigen()) < 1e-8
+
+            tmp_1 = true_eigenTj[0, :] @ np.linalg.pinv(et_A)
+
             def error_examiner_at_single_time(index_time):
                 # linearly evolving eigenmodes into the future
-                eigenTj_at_t = np.matmul(true_eigenTj[0, :], matrix_power(self.model.get_linearEvolvingEigen(), index_time))
+                # old version
+                # eigenTj_at_t = np.matmul(true_eigenTj[0, :], matrix_power(self.model.get_linearEvolvingEigen(), index_time))
+                # new version.. speed up a lot!!
+                eigenTj_at_t = tmp_1 @ np.diag(ev_A**index_time) @ et_A
+
                 # save varphi error
                 eigenError_at_t = true_eigenTj[index_time, :] - eigenTj_at_t
                 # save varphi error / linear evolving
@@ -268,8 +315,13 @@ class ClassApoEval(object):
         else:
             raise NotImplementedError()
 
+        # print('301: ', datetime.now())
+
         # parallel coimputing the normalized relative error
         r = joblib.Parallel(n_jobs=N_CPU)(joblib.delayed(error_examiner_at_single_time)(index_time) for index_time in range(true_tsnap.size))
+
+        # print('306: ', datetime.now())
+
 
         normalized_relative_error, aposteriori_eigen = zip(*r)
         normalized_relative_error = np.array(normalized_relative_error)
@@ -291,22 +343,38 @@ class ClassApoEval(object):
         selected_best_k_accurate_modes_index = small_to_large_error_eigen_index[:num_user_defined]
 
         ## 4. sweep for reconstruction and accuracy truncation
+        norm_true_tj = np.linalg.norm(true_tj)
+
         def reconstruct_top_selected_eigenmodes(i):
+
             # new: we use a posteriori eigen for reconstruct the modes
             top_i_selected_eigenTj = aposteriori_eigen[:, small_to_large_error_eigen_index[:i]]
             B = lstsq(top_i_selected_eigenTj, true_tj)[0]
-            error_reconstruct_state = np.matmul(top_i_selected_eigenTj, B) - true_tj
-            error_reconstruct_state = np.linalg.norm(error_reconstruct_state) / np.linalg.norm(true_tj)
+            error_reconstruct_state = top_i_selected_eigenTj @ B - true_tj
+            error_reconstruct_state = np.linalg.norm(error_reconstruct_state) / norm_true_tj
 
             return top_i_selected_eigenTj, error_reconstruct_state
 
-        r = joblib.Parallel(n_jobs=N_CPU)(joblib.delayed(reconstruct_top_selected_eigenmodes)(i) for i in range(1, normalized_relative_error.shape[1] + 1))
+        # print('357: ', datetime.now())
 
+        # set the maximal evaluation best features to be 500.. note that I can still consider features more than 500..but
+        # best ones are only 500... this is due to computational complexity issues....
+        max_num_feature_evaluate = min(500, normalized_relative_error.shape[1] + 1)
+
+        r = joblib.Parallel(n_jobs=N_CPU)(joblib.delayed(reconstruct_top_selected_eigenmodes)(i) for i in range(1, max_num_feature_evaluate))
         top_i_selected_eigenTj_list, error_reconstruct_state_list = zip(*r)
+
+
+        # print('361: ', datetime.now())
+
         selected_best_k_aposteriori_eigen = top_i_selected_eigenTj_list[:num_user_defined][-1]
 
         ## 5. compute kou's criterion (very fast)
-        small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou, _ = self.compute_kou_index(aposteriori_eigen, true_eigenTj)
+        # disable that kou criterion just for efficiency issues..
+        # small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou, _ = self.compute_kou_index(aposteriori_eigen, true_eigenTj)
+        small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou = [], []
+
+        # print('349: ', datetime.now())
 
         ## SAVE everything related to rec. vs acc. plot and kou's criterion
         np.savez(self.save_dir + 'ComputeSaveNormalizedEigenError_fig2.npz',
@@ -357,7 +425,7 @@ class ClassApoEval(object):
 
     def sweep_sparse_prediction_comparison(self, true_tsnap, true_trajectory):
 
-        # 1. read alpha_enet
+        # 1. read alpha_enet from `fig_data`
         fig_data = np.load(self.save_dir + 'MultiTaskElasticNet_result.npz')
         alphas_enet = fig_data['alphas_enet']
 
@@ -381,6 +449,60 @@ class ClassApoEval(object):
                                                                                         selected_index,
                                                                                         selected_koopman_modes,
                                                                                         alpha_dir_eval)
+    def load_best_index_data(self, best_index, save_dir):
+        ## Warning: this function is only reserved for Koopman LQR class
+
+        # 1. read alpha_enet from `fig_data`
+        fig_data = np.load(save_dir + 'MultiTaskElasticNet_result.npz')
+        alphas_enet = fig_data['alphas_enet']
+
+        # 2. read the selected modes from disk: the sweep folder
+        alpha = alphas_enet[best_index]
+        alpha_dir_eval = save_dir + 'sweep/sweep_alpha_' + str(alpha)
+        data = np.load(alpha_dir_eval + '/selected_index_and_koopman_modes.npz')
+        selected_index = data['selected_index']
+        selected_koopman_modes = data['selected_koopman_modes']
+
+        ## save them as public shared variables
+        self.selected_index = selected_index
+        self.selected_koopman_modes = selected_koopman_modes
+
+    def sparse_compute_eigen_at_best_index(self, state):
+        assert type(self.selected_index) != type(None)
+        assert type(self.selected_koopman_modes) != type(None)
+        # then make prediction, return it
+        eigen = self.compute_eigen(state, selected_modes_index=self.selected_index)
+        return eigen
+
+    def sparse_compute_actuator_aux_state_dependent_matrix_at_best_index(self, gxT, x):
+        assert type(self.selected_index) != type(None)
+        assert type(self.selected_koopman_modes) != type(None)
+        # then get the transformation matrix!
+        BuT = self.compute_eigen_grad_with_gxT(gxT, x, self.selected_index)
+        return BuT
+
+    def sparse_compute_Lambda_at_best_index(self):
+        assert type(self.selected_index) != type(None)
+        assert type(self.selected_koopman_modes) != type(None)
+        # then make prediction, return it
+        Lambda = self.get_Lambda_matrix(self.selected_index)
+        return Lambda
+
+    def sparse_compute_reconstruct_at_best_index(self, phi):
+        assert type(self.selected_index) != type(None)
+        assert type(self.selected_koopman_modes) != type(None)
+        # then make prediction, return it
+        state = self.get_reconstructed_state(phi, self.selected_index, self.selected_koopman_modes)
+        return state
+
+    def sparse_compute_transformation_matrix_at_best_index(self):
+        assert type(self.selected_index) != type(None)
+        assert type(self.selected_koopman_modes) != type(None)
+
+        # then get the transformation matrix!
+        transformation_matrix = self.get_reconstruction_transformation(self.selected_index, self.selected_koopman_modes)
+
+        return transformation_matrix
 
     def ComputeSaveNormalizedEigenError(self, true_tsnap, true_tj, true_eigenTj, relative_error=True, top_k_modes=10):
         """only called by EDMD/KDMD"""
@@ -399,7 +521,7 @@ class ClassApoEval(object):
             def error_examiner_at_single_time(index_time):
                 delta_time = true_tsnap[index_time] - true_tsnap[0]
                 # linearly evolving eigenmodes into the future
-                eigenTj_at_t = np.matmul(true_eigenTj[0, :], expm(delta_time * self.model.get_linearEvolvingEigen()))
+                eigenTj_at_t = true_eigenTj[0, :] @ expm(delta_time * self.model.get_linearEvolvingEigen())
                 # save varphi error
                 eigenError_at_t = true_eigenTj[index_time, :] - eigenTj_at_t
                 # save varphi error / linear evolving
@@ -410,6 +532,8 @@ class ClassApoEval(object):
                 return relative_error_at_t, eigenTj_at_t
 
         elif self.type == 'd':
+
+
 
             def error_examiner_at_single_time(index_time):
                 # linearly evolving eigenmodes into the future
@@ -579,8 +703,8 @@ class ClassApoEval(object):
             print("EDMD/KDMD dictionary features are normalized....")
             scaling_transform = np.diag(1. / np.abs(phi_tilde[0, :]))
             inverse_scaling = np.linalg.inv(scaling_transform)
-            assert np.linalg.norm(np.matmul(scaling_transform, inverse_scaling) - np.eye(scaling_transform.shape[0])) < 1e-6
-            phi_tilde_scaled = np.matmul(phi_tilde, scaling_transform)
+            assert np.linalg.norm(scaling_transform @ inverse_scaling - np.eye(scaling_transform.shape[0])) < 1e-6
+            phi_tilde_scaled = phi_tilde @ scaling_transform
             print('norm = ', np.linalg.norm(phi_tilde_scaled, axis=0))
             print(phi_tilde_scaled.shape)
             print(phi_tilde_scaled[0,:])
@@ -649,7 +773,7 @@ class ClassApoEval(object):
 
         # finally, compute the complex koopman modes on those kept eigenfunctions
         if self.normalize_phi_tilde:
-            phi_tilde_scaled = np.matmul(phi_tilde_scaled, inverse_scaling)
+            phi_tilde_scaled = phi_tilde_scaled @ inverse_scaling
 
         # save data for trade-off plot
         np.savez(self.save_dir + 'MultiTaskElasticNet_result.npz',
@@ -739,5 +863,9 @@ class ClassApoEval(object):
         return trajectory
 
     def save_trajectory(self, trajectory, filename):
-
         np.savez(self.save_dir + filename + '.npz', trj=trajectory)
+
+    def save_model(self):
+        # saving the a posteriori evaluation model
+        with open(self.save_dir + "/apoeval.model", "wb") as f:
+            pickle.dump(self, f, pickle.HIGHEST_PROTOCOL)

@@ -15,7 +15,7 @@ class ClassBaseDMD(object):
         :param model_path: path for the model
         """
         self.model_path = model_path
-        self.model = pickle.load(open(model_path, "rb"))
+        self.model = pickle.load(open(model_path, "rb"))  ## load the model, which is saved with `pickle`
         self.loadKoopman()
         self.normalize = self.model.FLAG['normalize']
         self.scaler = self.model.scaler
@@ -42,6 +42,13 @@ class ClassModelEDMD(ClassBaseDMD):
         # self.residual_matrix = self.model.residual_matrix
         self.Phi_X_i_sample = self.model.Phi_X_i_sample
         self.linearEvolvingEigen = np.diag(self.model.Koopman['eigenvalues'])
+
+        if self.model.type == 'd':
+            self.dt = self.model.dt
+        elif self.model.type == 'c':
+            self.dt = None
+        else:
+            raise NotImplementedError
 
     def get_KoopmanModes(self):
         return self.KoopmanModes
@@ -73,6 +80,9 @@ class ClassModelEDMD(ClassBaseDMD):
         else:
             input = x
         return self.model.gen_dict_feature(input)
+
+    def compute_eigen_grad_with_gxT(self, gxT, x, index_selected_modes=None):
+        return self.model.compute_deigphi_dt(x, gxT, index_selected_modes)
 
     def computeEigenPhi(self, x, index_selected_modes=None):
         return self.model.compute_eigfun(x, index_selected_modes)
@@ -113,6 +123,14 @@ class ClassModelEDMD(ClassBaseDMD):
 
         return np.real(result)
 
+    def get_reconstruction_transformation(self, index_selected_modes=None, kept_koopman_modes=None):
+        assert self.normalize == False
+        if type(index_selected_modes) == type(None):
+            koopman_modes = self.KoopmanModes
+        else:
+            koopman_modes = kept_koopman_modes
+        return koopman_modes
+
 
 class ClassModelKDMD(ClassBaseDMD):
     """
@@ -136,6 +154,13 @@ class ClassModelKDMD(ClassBaseDMD):
         self.KoopmanModes = self.model.Koopman['modes']
         # self.residual_matrix = self.model.residual_matrix
         self.linearEvolvingEigen = self.linearEvolving
+
+        if self.model.type == 'd':
+            self.dt = self.model.dt
+        elif self.model.type == 'c':
+            self.dt = None
+        else:
+            raise NotImplementedError
 
     def get_KoopmanModes(self):
         return self.KoopmanModes

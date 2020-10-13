@@ -8,6 +8,8 @@ sys.path.insert(0, '../../../')
 from scipy.spatial.distance import cdist
 from SKDMD.MODEL_SRC.dmd import DMD
 from decimal import Decimal
+import pickle
+from SKDMD.PREP_DATA_SRC.source_code.lib.utilities import timing
 
 sys.dont_write_bytecode = True
 
@@ -21,6 +23,11 @@ class KDMD(DMD):
         :return:
         """
         return np.power( (1 + x), self.power)
+
+    def save_model(self):
+        # save kdmd model
+        with open(self.model_dir + "/kdmd.model", "wb") as f:
+            pickle.dump(self, f, pickle.HIGHEST_PROTOCOL)
 
     def computeKernelArray(self, X, Y):
 
@@ -173,7 +180,6 @@ class KDMD(DMD):
         # misc
         self.numKoopmanModes = self.Koopman['Kmatrix'].shape[0]
 
-
     def compute_eigfun(self, X_input_matrix, index_modes_select=None):
         """compute Koopman eigenfunction for KDMD"""
 
@@ -194,5 +200,76 @@ class KDMD(DMD):
 
         return phi_eigen
 
+    def compute_deigphi_dt(self, x, xdot):
+        raise NotImplementedError("you should call it from ckdmd")
 
+    def compute_linear_loss_on_testing_data(self, x_test, x_dot_test):
+
+        # compute eigen: train and test
+        eig_phi_train = self.compute_eigfun(self.X)
+        eig_phi_test = self.compute_eigfun(x_test)
+
+        # compute sqrt(1/M sum phi_i^2 (x_k))
+        normal_factor_train = np.sqrt(np.mean(np.abs(eig_phi_train)**2, axis=0))
+        normal_factor_test = np.sqrt(np.mean(np.abs(eig_phi_test)**2, axis=0))
+
+        if self.type == 'c':
+            # compute deigen/dt: train and test
+            deig_dt_train = self.compute_deigphi_dt(self.X, self.Xdot)
+            deig_dt_test = self.compute_deigphi_dt(x_test, x_dot_test)
+        elif self.type == 'd':
+            # compute the discrete case: train and test
+            deig_dt_train = self.compute_eigfun(self.Xdot)
+            deig_dt_test = self.compute_eigfun(x_dot_test)
+        else:
+            raise NotImplementedError("you should call ckdmd or dkdmd!")
+
+        # compute linear dynamics loss (first half of it, and normalized)
+        res_train = deig_dt_train - np.matmul(eig_phi_train, np.diag(self.Koopman['eigenvalues']))
+        res_test = deig_dt_test - np.matmul(eig_phi_test, np.diag(self.Koopman['eigenvalues']))
+
+        # compute max error for all samples
+        res_train = np.abs(res_train)
+        res_test = np.abs(res_test)
+
+        # switch to median, makes more sense...for accounting the number of good functions...
+        max_res_train_each_eigen = np.mean(res_train, axis=0)
+        max_res_test_each_eigen = np.mean(res_test, axis=0)
+
+        # compute relative error
+        rel_res_train = max_res_train_each_eigen / normal_factor_train
+        rel_res_test  = max_res_test_each_eigen  / normal_factor_test
+
+        # compute the index of satified modes for both training and validation data
+        index_good_train = np.where(rel_res_train < self.criterion_threshold)[0]
+        index_good_test = np.where(rel_res_test < self.criterion_threshold)[0]
+
+        # compute the intersection between the two set of indexes
+        num_good_both = len(np.intersect1d(index_good_train, index_good_test))
+
+        # compute average error across all eigens
+        linear_error_train = np.mean(rel_res_train)
+        linear_error_test = np.mean(rel_res_test)
+
+        return linear_error_train, linear_error_test, num_good_both
+
+    @timing
+    def train_with_valid(self, X, Xdot, X_val, Xdot_val,criterion_threshold=0.05):
+
+        self.criterion_threshold = criterion_threshold
+        self.X = X
+        self.Xdot = Xdot
+        self.X_test = X_val
+        self.Xdot_test = Xdot_val
+
+        # prepare scaler
+        self.prepare_scaler(self.X)
+
+        # compute Koopman tuples
+        self.compute_Koopman_analysis()
+
+        # compute linear loss on training and testing data
+        linear_error_train, linear_error_test, num_good_both_train_valid = self.compute_linear_loss_on_testing_data(self.X_test, self.Xdot_test)
+
+        return linear_error_train, linear_error_test, num_good_both_train_valid
 

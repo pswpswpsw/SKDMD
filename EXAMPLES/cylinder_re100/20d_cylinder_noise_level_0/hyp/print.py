@@ -5,9 +5,9 @@
 
 import sys
 sys.dont_write_bytecode = True
-sys.path.insert(0, '../../../../../')
+sys.path.insert(0, '../../../../PPS_SRC')
 
-from SKDMD.PPS_SRC.aprior_plot import aprior_plot
+from aprior_plot import aprior_plot
 
 def main():
     ploter = aprior_plot('./hyp.csv')

@@ -1,0 +1,82 @@
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/utils/__init__.py:4: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Sequence
+/gpfs/gpfs0/software/rhel72/packages/python-anaconda3-2018/lib/python3.7/site-packages/sklearn/model_selection/_search.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  from collections import Mapping, namedtuple, defaultdict, Sequence
+../../../../MODEL_SRC/ClassDiscreteKDMD.py:98: RuntimeWarning: divide by zero encountered in true_divide
+  rel_res_test = max_res_test_each_eigen / normal_factor_test

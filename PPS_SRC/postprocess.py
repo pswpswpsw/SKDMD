@@ -14,7 +14,7 @@ from SKDMD.PREP_DATA_SRC.source_code.lib.utilities import mkdir
 from scipy.io import loadmat
 
 
-# plt.style.use('siads')
+plt.style.use('siads')
 
 plt.locator_params(axis='y', nbins=6)
 plt.locator_params(axis='x', nbins=10)
@@ -117,16 +117,27 @@ class ClassKoopmanPPS(object):
                         bbox_inches='tight')
             plt.close()
 
+        print('finished drawing E/KDMD prediction plot')
+
+        ## if comparison against spdmd is needed...
         if self.compare_against_spdmd:
 
             # load data from matlab solution of SPDMD
-            data_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/20_pred.mat')
-            # data_full_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_pred.mat')
-            data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred.mat')
 
-            dmd_pred = data_dmd['x_list'].T
+            # # cylinder case
+            # data_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/20_pred.mat')
+            # data_full_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_pred.mat')
+            # data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred.mat')
+
+            # # ship case
+            # data_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/20_pred.mat')
+            # data_full_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_pred.mat')
+            # data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred.mat') # cylinder re 70
+            data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred_ship.mat')  # ship airwake
+
+            # dmd_pred = data_dmd['x_list'].T
             # full_dmd_pred = data_full_dmd['x_list'].T
-            sp_dmd_pred   = data_spdmd['x_list_2'].T[:,:-1]
+            sp_dmd_pred   = np.real(data_spdmd['x_list_2'].T[:,:-1])
 
             # plot them others
             for i_comp in range(num_components):
@@ -134,9 +145,9 @@ class ClassKoopmanPPS(object):
                 plt.figure(figsize=(8,4))
                 plt.plot(true_tsnap[:-1], true_trajectory[:-1, i_comp], 'k-', label='true')
                 plt.plot(true_tsnap[:-1], pred_trajectory[:-1, i_comp], 'r--', label='spKDMD')
-                plt.plot(true_tsnap[1:], dmd_pred[1:, i_comp], 'c--', label='DMD r=20')
+                # plt.plot(true_tsnap[1:], dmd_pred[1:, i_comp], 'c--', label='DMD r=20')
                 # plt.plot(true_tsnap[:-1], full_dmd_pred[:-1, i_comp], 'g--', label='full DMD (r=200)')
-                plt.plot(true_tsnap[:-1], sp_dmd_pred[:, i_comp], 'b--', label='spDMD r=200')
+                plt.plot(true_tsnap[:], sp_dmd_pred[:, i_comp], 'b--', label='spDMD r=200')
 
                 plt.xlabel('time', fontsize=32)
                 plt.ylabel(r'$x_{' + str(i_comp + 1) + '}$', fontsize=32)
@@ -185,7 +196,7 @@ class ClassDictPPS(ClassKoopmanPPS):
     def pps_singular_value(self):
         raise NotImplementedError()
 
-    def pps_eigenmodes_eval(self):
+    def pps_eigenmodes_eval(self, y_scale_linear_error=None, y_scale_recon_error=None):
 
         ## LOAD ComputeSaveNormalizedEigenError: fig1
         fig1_data = np.load(self.eval_dir + '/ComputeSaveNormalizedEigenError_fig1.npz')
@@ -194,22 +205,24 @@ class ClassDictPPS(ClassKoopmanPPS):
         linearEvolvingEigen = fig1_data['le']
         relative_error = self.params['relative_error']
         ## draw ComputeSaveNormalizedEigenError: fig1
-        # plot normalized relative error for each eigenmodes
-        plt.figure(figsize=FIG_SIZE)
-        cmap = self.get_cmap(normalized_relative_error.shape[1])
-        for i in range(normalized_relative_error.shape[1]):
-            plt.plot(true_tsnap, normalized_relative_error[:, i], '-', c=cmap(i), label= str(i + 1) + 'th-eigenvalue: ' + "{0:.3f}".format(linearEvolvingEigen[i,i]))
-        plt.xlabel('time',fontsize = 32)
-        if relative_error:
-            plt.ylabel('normalized error',fontsize = 32)
-        else:
-            plt.ylabel('error',fontsize = 32)
-        plt.yscale('log')
-        lgd = plt.legend(bbox_to_anchor=(1, 0.5))
-        plt.savefig(self.pps_dir + '/normalized_relative_eigen_error.png',
-                    bbox_extra_artists=(lgd,),
-                    bbox_inches='tight')
-        plt.close()
+        # but if it is too much, just skip..
+        if normalized_relative_error.shape[1] <= 30:
+            # plot normalized relative error for each eigenmodes
+            plt.figure(figsize=FIG_SIZE)
+            cmap = self.get_cmap(normalized_relative_error.shape[1])
+            for i in range(normalized_relative_error.shape[1]):
+                plt.plot(true_tsnap, normalized_relative_error[:, i], '-', c=cmap(i), label= str(i + 1) + 'th-eigenvalue: ' + "{0:.3f}".format(linearEvolvingEigen[i,i]))
+            plt.xlabel('time',fontsize = 32)
+            if relative_error:
+                plt.ylabel('normalized error',fontsize = 32)
+            else:
+                plt.ylabel('error',fontsize = 32)
+            plt.yscale('log')
+            lgd = plt.legend(bbox_to_anchor=(1, 0.5))
+            plt.savefig(self.pps_dir + '/normalized_relative_eigen_error.png',
+                        bbox_extra_artists=(lgd,),
+                        bbox_inches='tight')
+            plt.close()
 
         ## LOAD ComputeSaveNormalizedEigenError: fig2
         fig2_data = np.load(self.eval_dir + '/ComputeSaveNormalizedEigenError_fig2.npz')
@@ -239,7 +252,7 @@ class ClassDictPPS(ClassKoopmanPPS):
         else:
             ax1.set_ylabel('max error', color='b',fontsize = 32)
         # plot error from reconstruction state from eigenfunction values
-        ax2.plot(range(1, normalized_relative_error.shape[1] + 1),
+        ax2.plot(np.arange(1,len(error_reconstruct_state_list)+1),
                  error_reconstruct_state_list,'r-o',
                  label='reconstruction normalized error')
         if relative_error:
@@ -254,6 +267,11 @@ class ClassDictPPS(ClassKoopmanPPS):
         ax1.yaxis.set_major_locator(yticks)
         ax2.yaxis.set_major_locator(yticks)
 
+        if type(y_scale_linear_error)!=type(None):
+            # set up range
+            ax1.set_ylim(y_scale_linear_error)
+            ax2.set_ylim(y_scale_recon_error)
+
         # ax2.legend(bbox_to_anchor=(1, 0.5))
         plt.savefig(self.pps_dir + '/reConstr_decay_normalized_relative_eigen_error.png',
                     bbox_inches='tight')
@@ -266,36 +284,40 @@ class ClassDictPPS(ClassKoopmanPPS):
         self.top_k_modes_list = top_k_modes_list
 
         # print out kou's result
-        print('as a comparison: index chosen by Kou criterion: ')
-        print(small_to_large_error_eigen_index_kou + 1)
-        print('corresponding abs sum:')
-        print(abs_sum_kou)
+        if type(small_to_large_error_eigen_index_kou) != type(None):
+            print('as a comparison: index chosen by Kou criterion: ')
+            print(small_to_large_error_eigen_index_kou + 1)
+            print('corresponding abs sum:')
+            print(abs_sum_kou)
 
         self.index_selected_in_full = self.small_to_large_error_eigen_index[:self.top_k_modes_list[-1] + 1]
         # self.index_selected_in_full = self.small_to_large_error_eigen_index
 
         ## draw ComputeSaveNormalizedEigenError: fig3
-        # fig. 3: plot normalized relative error for top K smallest error eigenmodes
-        plt.figure(figsize=FIG_SIZE)
-        cmap = self.get_cmap(len(top_k_modes_list))
-        for i in top_k_modes_list:
-            i_s = small_to_large_error_eigen_index[i]
-            plt.plot(true_tsnap, normalized_relative_error[:, i_s], '-', c=cmap(i),
-                     label= str(i_s + 1) + 'th-eigenvalue: ' + "{0:.3f}".format(linearEvolvingEigen[i_s,i_s]))
-            # print eigenvectors
-            # print 'no.  eigen vectors ', i_s+1
-            # print self.model.KoopmanEigenV[:, i_s]
-        plt.xlabel('time',fontsize = 32)
-        if relative_error:
-            plt.ylabel('normalized error',fontsize = 32)
-        else:
-            plt.ylabel('error',fontsize = 32)
-        plt.yscale('log')
-        lgd = plt.legend(bbox_to_anchor=(1, 0.5))
-        plt.savefig(self.pps_dir +  '/top_' + str(len(top_k_modes_list)) + '_normalized_relative_eigen_error.png',
-                    bbox_extra_artists=(lgd,),
-                    bbox_inches='tight')
-        plt.close()
+
+        # if the number is larger than 20, not plotting it
+        if len(top_k_modes_list) <= 20:
+            # fig. 3: plot normalized relative error for top K smallest error eigenmodes
+            plt.figure(figsize=FIG_SIZE)
+            cmap = self.get_cmap(len(top_k_modes_list))
+            for i in top_k_modes_list:
+                i_s = small_to_large_error_eigen_index[i]
+                plt.plot(true_tsnap, normalized_relative_error[:, i_s], '-', c=cmap(i),
+                         label= str(i_s + 1) + 'th-eigenvalue: ' + "{0:.3f}".format(linearEvolvingEigen[i_s,i_s]))
+                # print eigenvectors
+                # print 'no.  eigen vectors ', i_s+1
+                # print self.model.KoopmanEigenV[:, i_s]
+            plt.xlabel('time',fontsize = 32)
+            if relative_error:
+                plt.ylabel('normalized error',fontsize = 32)
+            else:
+                plt.ylabel('error',fontsize = 32)
+            plt.yscale('log')
+            lgd = plt.legend(bbox_to_anchor=(1, 0.5))
+            plt.savefig(self.pps_dir +  '/top_' + str(len(top_k_modes_list)) + '_normalized_relative_eigen_error.png',
+                        bbox_extra_artists=(lgd,),
+                        bbox_inches='tight')
+            plt.close()
 
         # load MTENET
         fig4_data = np.load(self.eval_dir + '/MultiTaskElasticNet_result.npz')
@@ -317,8 +339,11 @@ class ClassDictPPS(ClassKoopmanPPS):
             cmap = self.get_cmap(len(top_k_modes_list))
             for i in top_k_modes_list:
                 i_s = small_to_large_error_eigen_index[i]
+                # as suggested by reviewer, not using the No..
+                # plt.plot(alphas_enet_log_negative, abs(coefs_enet[i_component,i,:]), '-*', c=cmap(i),
+                #          label = 'No. ' + str(i + 1) + ', index = ' + str(i_s+1))
                 plt.plot(alphas_enet_log_negative, abs(coefs_enet[i_component,i,:]), '-*', c=cmap(i),
-                         label = 'No. ' + str(i + 1) + ', index = ' + str(i_s+1))
+                         label = 'index = ' + str(i_s+1))
             max_val = np.max(abs(coefs_enet[i_component, :, -1]))
             min_val = np.min(abs(coefs_enet[i_component, :, -1]))
 
@@ -387,6 +412,7 @@ class ClassDictPPS(ClassKoopmanPPS):
                                     zoomed_X_Y_max=None,
                                     mag_contrib_all_kmd=None,
                                     case_specific_frequency_dict={'draw_st':False}):
+
         ## read eigenvalues from model
         ev = self.model.Koopman['eigenvalues']
 
@@ -404,9 +430,10 @@ class ClassDictPPS(ClassKoopmanPPS):
         # draw the one selected
         plt.scatter(D_real[index_selected_array], D_imag[index_selected_array], c='r', label='selected')
 
-        # draw circle
-        theta = np.linspace(0, 2*np.pi ,200)
-        plt.plot(np.cos(theta), np.sin(theta), 'k-',alpha=0.2)
+        if self.type == 'd':
+            # draw circle only for discrete model
+            theta = np.linspace(0, 2*np.pi ,200)
+            plt.plot(np.cos(theta), np.sin(theta), 'k-',alpha=0.2)
 
         plt.xlabel(r'Real($\lambda$)',fontsize = 32)
         plt.ylabel(r'Imag($\lambda$)',fontsize = 32)
@@ -493,13 +520,14 @@ class ClassDictPPS(ClassKoopmanPPS):
             plt.scatter(D_real[index_selected_array], D_imag[index_selected_array], s=150, marker='o',c='r', label='spKDMD',edgecolors='k')
 
             # load data from matlab solution of SPDMD
-            data_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/20_pred.mat')
+            # data_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/20_pred.mat')
             # data_full_dmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_pred.mat')
-            data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred.mat')
+            # data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred.mat') # cylinder re 70
+            data_spdmd = loadmat('/home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/spdmd/200_sp_pred_ship.mat')  # ship airwake
 
             # normal DMD
-            D_DMD_real = np.real(np.exp(data_dmd['Edmd']*self.dt))
-            D_DMD_imag = np.imag(np.exp(data_dmd['Edmd']*self.dt))
+            # D_DMD_real = np.real(np.exp(data_dmd['Edmd']*self.dt))
+            # D_DMD_imag = np.imag(np.exp(data_dmd['Edmd']*self.dt))
 
             # draw full DMD
             # D_full_DMD_real = np.real(np.exp(data_full_dmd['Edmd']*self.dt))
@@ -512,9 +540,10 @@ class ClassDictPPS(ClassKoopmanPPS):
             D_sp_DMD_imag = np.imag(np.exp(data_spdmd['Edmd_select']*self.dt))
 
 
-            plt.scatter(D_DMD_real, D_DMD_imag, s=80, marker='d', c='yellow', label='DMD r=20',edgecolors='k')
+            # plt.scatter(D_DMD_real, D_DMD_imag, s=80, marker='d', c='yellow', label='DMD r=20',edgecolors='k')
             # plt.scatter(D_full_DMD_real, D_full_DMD_imag, s=60,marker='s', c='lime', label='full DMD (r=200)',edgecolors='k')
-            plt.scatter(D_sp_DMD_real, D_sp_DMD_imag, s=50,marker='^',c='b', label='spDMD r=200',edgecolors='k')
+
+            plt.scatter(D_sp_DMD_real, D_sp_DMD_imag, s=50, marker='^', c='b', label='spDMD r=200', edgecolors='k')
 
             # draw circle
             theta = np.linspace(0, 2 * np.pi, 200)
@@ -563,12 +592,12 @@ class ClassDictPPS(ClassKoopmanPPS):
                                 plt.plot(length_array * np.cos(theta_line), length_array * np.sin(theta_line), 'k-')
                                 plt.text(1.005 * length_array[-1] * np.cos(theta_line), 1.005 * length_array[-1] * np.sin(theta_line), s,
                                          rotation=theta_line / np.pi * 180 * 0.3)
+                    if case_specific_frequency_dict['characteristic_st_list'] != None:
+                        for st_char_color_pair in case_specific_frequency_dict['characteristic_st_list']:
+                            st_char = st_char_color_pair[0]
 
-                    for st_char_color_pair in case_specific_frequency_dict['characteristic_st_list']:
-                        st_char = st_char_color_pair[0]
-
-                        theta_st = st_char / St_sample * 2 * np.pi
-                        plt.plot(length_array * np.cos(theta_st), length_array * np.sin(theta_st), st_char_color_pair[1])
+                            theta_st = st_char / St_sample * 2 * np.pi
+                            plt.plot(length_array * np.cos(theta_st), length_array * np.sin(theta_st), st_char_color_pair[1])
 
 
                 plt.xlim(zoomed_X_Y_max[0])
@@ -652,6 +681,12 @@ class ClassDictPPS(ClassKoopmanPPS):
 
 class ClassEDMDPPS(ClassDictPPS):
 
+    def __init__(self, pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot=True):
+        super(ClassEDMDPPS, self).__init__(pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot)
+        model_path = model_dir + '/edmd.model'
+        self.model = pickle.load(open(model_path, "rb"))
+        self.type = self.model.type
+
     def pps_singular_value(self):
 
         # load full singular value data
@@ -669,12 +704,6 @@ class ClassEDMDPPS(ClassDictPPS):
         lgd = plt.legend(bbox_to_anchor=(1, 0.5))
         plt.savefig(self.pps_dir + '/sv_full_phi_x.png', bbox_inches='tight', bbox_extra_artists=(lgd,))
         plt.close()
-
-    def __init__(self, pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot=True):
-        super(ClassEDMDPPS, self).__init__(pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot)
-        model_path = model_dir + '/edmd.model'
-        self.model = pickle.load(open(model_path, "rb"))
-        self.type = self.model.type
 
     def pps_2d_simple_lusch_effect_svd_on_phi(self):
 
@@ -709,7 +738,7 @@ class ClassEDMDPPS(ClassDictPPS):
 
 class ClassKDMDPPS(ClassDictPPS):
 
-    def __init__(self, pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot=True,compare_against_spdmd=False):
+    def __init__(self, pps_dir, eval_dir, model_dir, params,draw_eigen_function_plot=True, compare_against_spdmd=False):
         super(ClassKDMDPPS, self).__init__(pps_dir, eval_dir, model_dir, params, draw_eigen_function_plot, compare_against_spdmd)
         model_path = model_dir + '/kdmd.model'
         self.model = pickle.load(open(model_path, "rb"))

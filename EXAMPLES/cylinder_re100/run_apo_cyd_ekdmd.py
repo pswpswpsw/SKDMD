@@ -1,10 +1,11 @@
 import numpy as np
 import sys
 sys.dont_write_bytecode = True
-sys.path.insert(0, '../../..')
+sys.path.append('../../EVAL_SRC')
 
-from SKDMD.EVAL_SRC.main_apo import ClassModelKDMD
-from SKDMD.EVAL_SRC.main_apo import ClassApoEval
+from main_apo import ClassModelKDMD
+from main_apo import ClassApoEval
+
 
 # Options
 
@@ -76,10 +77,10 @@ if __name__ == '__main__':
     type = 'KDMD'
     normalize_phi_tilde = True
     scale_list = [3] # [0.84]
-    rank_list = [150] # [400]
+    rank_list = [180] # [400]
     model_list = ['d-kdmd-s' + str(scale) + '-r' + str(rank) for scale in scale_list for rank in rank_list]
 
-    max_iter = 1e5
+    max_iter = 1e2
     num_cut_of_plt = 60
     alpha_range = np.logspace(-16, -2, 50)
     main(case, noise_level, model_list, num_cut_of_plt, normalize_phi_tilde, max_iter=max_iter, alpha_range=alpha_range)

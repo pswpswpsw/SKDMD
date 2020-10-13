@@ -22,9 +22,14 @@ class DMD(object):
 
         # EDMD attributes
 
+        self.dict                = config.get('dict', None)
         self.power      		 = config.get('power', None) # also can be used by KDMD
-        self.dict       		 = config.get('dict', None)
         self.hermite_order       = config.get('hermite_order', None)
+
+        ## EDMD-RFF attributes
+
+        self.rff_number_features = config.get('n_rff_features', None)
+        self.rff_sigma_gaussian  = config.get('rff_gaussian_sigma', None)
 
         # misc attributes
 
@@ -48,6 +53,7 @@ class DMD(object):
         self.model_dir = None
 
         self.scaler = StandardScaler()
+        self.dt = None
 
     def prepare_scaler(self, X):
         self.scaler.fit(X)

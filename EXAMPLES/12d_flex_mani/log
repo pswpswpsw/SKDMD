@@ -1,0 +1,440 @@
+/usr/bin/python3.6 /home/shaowu/Documents/2016_PHD/PROJECTS/2019_aerospace/DEVELOPING/SKDMD/EXAMPLES/12d_flex_mani/run_apo_flex_mani_ekdmd.py
+=========================
+
+current model =  d-edmd-rff-490-gaussian_sigma-110-rank-490
+
+../../../SKDMD/EVAL_SRC/main_apo.py:211: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  B = np.linalg.lstsq(true_eigenTj, true_tj)[0]
+EDMD/KDMD dictionary features are normalized....
+norm =  [ 22.39580276   9.01519311   9.01519311   6.84239416   6.84239416
+   6.97044161   6.97044161  85.02170614  85.02170614   2.90402507
+   2.90402507  21.2920803   21.2920803   13.41893061  13.41893061
+  17.79111048  17.79111048   5.29822124   5.29822124  20.5176008
+  20.5176008    7.34366022   7.34366022 209.45940625 209.45940625
+   6.79845158   6.79845158   2.21032601   2.21032601  13.99149286
+  13.99149286  20.42780089  20.42780089   6.57740599   6.57740599
+   8.90575976   8.90575976  11.38668958  11.38668958  34.5769966
+  34.5769966   34.30823559  34.30823559  17.95293534  17.95293534
+   7.24804598   7.24804598  34.07925766  34.07925766  11.10386132
+  11.10386132   7.6858742    7.6858742    7.94382531   7.94382531
+   9.09249634   9.09249634  16.40626314  16.40626314  11.70515835]
+(501, 60)
+[-1.        +0.j         -0.97216456+0.23429911j -0.97216456-0.23429911j
+  0.85117102-0.52488846j  0.85117102+0.52488846j  0.91195842-0.41028265j
+  0.91195842+0.41028265j -0.33578138-0.94193995j -0.33578138+0.94193995j
+  0.37688062+0.92626184j  0.37688062-0.92626184j  0.94537572-0.32598273j
+  0.94537572+0.32598273j -0.92334666+0.38396738j -0.92334666-0.38396738j
+ -0.38836613-0.92150515j -0.38836613+0.92150515j -0.94390461-0.33021824j
+ -0.94390461+0.33021824j -0.23509873+0.9719715j  -0.23509873-0.9719715j
+  0.07801837+0.99695192j  0.07801837-0.99695192j  0.9201708 -0.39151717j
+  0.9201708 +0.39151717j -0.08792601-0.99612701j -0.08792601+0.99612701j
+  0.96289706-0.26986895j  0.96289706+0.26986895j -0.66462427-0.74717774j
+ -0.66462427+0.74717774j -0.0304304 -0.99953689j -0.0304304 +0.99953689j
+ -0.82805352+0.56064906j -0.82805352-0.56064906j -0.80886328+0.58799676j
+ -0.80886328-0.58799676j  0.75160891-0.65960901j  0.75160891+0.65960901j
+ -0.77225371-0.63531425j -0.77225371+0.63531425j  0.4331109 +0.90134064j
+  0.4331109 -0.90134064j  0.41873569-0.90810815j  0.41873569+0.90810815j
+  0.45722339-0.88935188j  0.45722339+0.88935188j -0.90370193+0.42816215j
+ -0.90370193-0.42816215j -0.8865289 -0.46267323j -0.8865289 +0.46267323j
+ -0.26346917-0.96466782j -0.26346917+0.96466782j  0.56728744-0.82351986j
+  0.56728744+0.82351986j -0.17883642+0.98387882j -0.17883642-0.98387882j
+ -0.71549795-0.69861483j -0.71549795+0.69861483j  0.47378549-0.88064029j]
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 4.333298420533538e-06, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.2458301892329473, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 46.57513879542239, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 10834.0706016716, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 32318.843852869828, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 42815.14094432181, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 47809.53839551452, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 50431.62087676621, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 51941.388508235505, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 52878.31722313139, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 53488.932590890756, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 53914.390396082585, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54222.54888704924, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54453.02233566275, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54630.05701467931, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54769.10365592885, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54880.36498214161, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 54970.79370234702, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55045.26222776059, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55107.26933991778, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55159.38713400057, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55203.544169874265, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55241.20834227788, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55273.525538528476, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55301.375204964475, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55325.50903147565, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55346.411104428764, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55364.54109709827, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55380.33584209077, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55393.403290513605, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55404.74761481944, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55417.06418799523, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55420.891864193654, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55415.47288011017, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55402.91630794683, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55415.731731238244, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55406.37280000799, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 55758.129078819446, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56428.82866088468, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56661.83451895574, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56823.931728559495, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56875.52880546544, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56907.25188086427, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56922.438614437066, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/coordinate_descent.py:462: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 56928.91487070779, tolerance: 3.8103108465246835e-06
+  coef_, l1_reg, l2_reg, X, y, max_iter, tol, rng, random)
+../../../SKDMD/EVAL_SRC/main_apo.py:633: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  coef_enet_comp_reduced_i_alpha = np.linalg.lstsq(phi_tilde_scaled_reduced, X)[0]
+evaluation module... start alpha sweeping...
+current alpha =  0.1  index =  0
+current alpha =  0.04941713361323838  index =  1
+current alpha =  0.024420530945486546  index =  2
+current alpha =  0.012067926406393313  index =  3
+current alpha =  0.005963623316594636  index =  4
+current alpha =  0.0029470517025518097  index =  5
+current alpha =  0.0014563484775012444  index =  6
+current alpha =  0.0007196856730011528  index =  7
+current alpha =  0.00035564803062231357  index =  8
+current alpha =  0.00017575106248547966  index =  9
+current alpha =  8.68511373751352e-05  index =  10
+current alpha =  4.291934260128778e-05  index =  11
+current alpha =  2.1209508879201926e-05  index =  12
+current alpha =  1.0481131341546875e-05  index =  13
+current alpha =  5.179474679231223e-06  index =  14
+current alpha =  2.5595479226995334e-06  index =  15
+current alpha =  1.2648552168552959e-06  index =  16
+current alpha =  6.250551925273976e-07  index =  17
+current alpha =  3.0888435964774847e-07  index =  18
+current alpha =  1.5264179671752365e-07  index =  19
+current alpha =  7.543120063354607e-08  index =  20
+current alpha =  3.7275937203149377e-08  index =  21
+current alpha =  1.8420699693267162e-08  index =  22
+current alpha =  9.102981779915227e-09  index =  23
+current alpha =  4.498432668969453e-09  index =  24
+current alpha =  2.222996482526191e-09  index =  25
+current alpha =  1.0985411419875617e-09  index =  26
+current alpha =  5.428675439323859e-10  index =  27
+current alpha =  2.6826957952797273e-10  index =  28
+current alpha =  1.3257113655901109e-10  index =  29
+current alpha =  6.551285568595496e-11  index =  30
+current alpha =  3.237457542817653e-11  index =  31
+current alpha =  1.5998587196060573e-11  index =  32
+current alpha =  7.906043210907701e-12  index =  33
+current alpha =  3.906939937054621e-12  index =  34
+current alpha =  1.9306977288832456e-12  index =  35
+current alpha =  9.540954763499963e-13  index =  36
+current alpha =  4.714866363457389e-13  index =  37
+current alpha =  2.329951810515372e-13  index =  38
+current alpha =  1.1513953993264482e-13  index =  39
+current alpha =  5.689866029018304e-14  index =  40
+current alpha =  2.8117686979742365e-14  index =  41
+current alpha =  1.389495494373136e-14  index =  42
+current alpha =  6.866488450042998e-15  index =  43
+current alpha =  3.39322177189533e-15  index =  44
+current alpha =  1.67683293681101e-15  index =  45
+current alpha =  8.286427728546859e-16  index =  46
+current alpha =  4.094915062380419e-16  index =  47
+current alpha =  2.0235896477251555e-16  index =  48
+current alpha =  1e-16  index =  49
+=================================================
+now sweep alpha =  0.1  index =  0
+number of final selected modes 48
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.04941713361323838  index =  1
+number of final selected modes 55
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.024420530945486546  index =  2
+number of final selected modes 58
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.012067926406393313  index =  3
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.005963623316594636  index =  4
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.0029470517025518097  index =  5
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.0014563484775012444  index =  6
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.0007196856730011528  index =  7
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.00035564803062231357  index =  8
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  0.00017575106248547966  index =  9
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  8.68511373751352e-05  index =  10
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  4.291934260128778e-05  index =  11
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.1209508879201926e-05  index =  12
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.0481131341546875e-05  index =  13
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  5.179474679231223e-06  index =  14
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.5595479226995334e-06  index =  15
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.2648552168552959e-06  index =  16
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  6.250551925273976e-07  index =  17
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  3.0888435964774847e-07  index =  18
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.5264179671752365e-07  index =  19
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  7.543120063354607e-08  index =  20
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  3.7275937203149377e-08  index =  21
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.8420699693267162e-08  index =  22
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  9.102981779915227e-09  index =  23
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  4.498432668969453e-09  index =  24
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.222996482526191e-09  index =  25
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.0985411419875617e-09  index =  26
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  5.428675439323859e-10  index =  27
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.6826957952797273e-10  index =  28
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.3257113655901109e-10  index =  29
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  6.551285568595496e-11  index =  30
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  3.237457542817653e-11  index =  31
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.5998587196060573e-11  index =  32
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  7.906043210907701e-12  index =  33
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  3.906939937054621e-12  index =  34
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.9306977288832456e-12  index =  35
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  9.540954763499963e-13  index =  36
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  4.714866363457389e-13  index =  37
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.329951810515372e-13  index =  38
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.1513953993264482e-13  index =  39
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  5.689866029018304e-14  index =  40
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.8117686979742365e-14  index =  41
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.389495494373136e-14  index =  42
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  6.866488450042998e-15  index =  43
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  3.39322177189533e-15  index =  44
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1.67683293681101e-15  index =  45
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  8.286427728546859e-16  index =  46
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  4.094915062380419e-16  index =  47
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  2.0235896477251555e-16  index =  48
+number of final selected modes 60
+discrete model
+num cpu =  4
+=================================================
+now sweep alpha =  1e-16  index =  49
+number of final selected modes 60
+discrete model
+num cpu =  4
+
+Process finished with exit code 0
+
+

@@ -1,0 +1,2 @@
+rm error*
+rm output* 

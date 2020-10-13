@@ -1,0 +1,13 @@
+=========================
+
+current model =  c-kdmd-s0.544-r800
+
+features are normalized
+alpha that minimize reconstruction error =  1e-16
+top k modes index =  [787 788 753 754 773 772 718 717 789 701 702 757 758 749 750 682 681 674
+ 673 704 705 737 738 764 765 693 694 711 710 751 752 660 661 769 768 733
+ 734 715 716 790 791 670 669 747 748 603 602 590 591]
+num =  49
+continuous model
+num cpu =  40
+MSE error list using SELECTED features after SVD:   [0.00015644654886259212, 2.3388566273776358e-05]

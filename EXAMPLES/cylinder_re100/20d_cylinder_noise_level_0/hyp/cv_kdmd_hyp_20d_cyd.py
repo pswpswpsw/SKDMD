@@ -2,16 +2,12 @@ import numpy as np
 import gc
 import sys
 sys.dont_write_bytecode = True
-sys.path.insert(0, '../../../../../')
-
-
+sys.path.insert(0, '../../../../MODEL_SRC')
 
 from mpi4py import MPI
 import pandas as pd
 from sklearn.model_selection import KFold
-from SKDMD.MODEL_SRC.dkdmd import DKDMD
-
-criterion_threshold=0.05
+from dkdmd import DKDMD
 
 def main(case, noise_level, rank_list):
 
@@ -28,7 +24,7 @@ def main(case, noise_level, rank_list):
     # prepare arg list
     if rank == 0:
 
-        sigma_list = np.logspace(0, 5, 30)
+        sigma_list = np.logspace(0, 1, 30)
 
         # prepare mpi job distribution
         mpi_job_total_list = []
@@ -100,8 +96,9 @@ def main(case, noise_level, rank_list):
             # default threshold is 5%, as normalized max error.
             err_tr, err_te, num = kdmdLearner.train_with_valid(X=X_train, Xdot=Xnext_train,
                                                                           X_val=X_test,
-                                                                          Xdot_val=Xnext_test,
-                                                               criterion_threshold=criterion_threshold)
+                                                                          Xdot_val=Xnext_test)
+
+            criterion_threshold = kdmdLearner.criterion_threshold
 
             err_te_list.append(err_te)
             err_tr_list.append(err_tr)
@@ -121,7 +118,7 @@ def main(case, noise_level, rank_list):
         print('for sigma = ', sigma, ' rank = ', kdmd_rank)
         print('average train max-normalized error = ', ave_err_tr)
         print('average test max-normalized error = ', ave_err_te)
-        print('average num good below 5% eigfunction = ', ave_num_tr)
+        print('average num good below ' + str(criterion_threshold*100) + '% eigfunction = ', ave_num_tr)
         # print('average num good below 5% eigfunction test = ', ave_num_te)
         print('================================================')
 
@@ -161,7 +158,7 @@ if __name__ == '__main__':
     case = '20d_cylinder'
     noise_level = 0
 
-    rank_list = [120,140,160,180,200]  # upbound is 160
+    rank_list = np.arange(40, 150, 10)  # upbound is 160
 
     main(case,noise_level, rank_list)
 

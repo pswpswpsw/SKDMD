@@ -5,8 +5,8 @@ sys.dont_write_bytecode = True
 import numpy as np
 
 from SKDMD.MODEL_SRC.ClassGenerateDataFromPhysics import ClassGenerateXXDotFromPhysics
-from SKDMD.MODEL_SRC.lib.lib_analytic_model import F_simple_2d_system
-from SKDMD.MODEL_SRC.lib.lib_analytic_model import F_duffing_2d_system
+from lib_analytic_model import F_simple_2d_system
+from lib_analytic_model import F_duffing_2d_system
 
 
 def main(case):

@@ -1,0 +1,5573 @@
+
+...KDMD....  sigma =  0.8142857142857143  reduced_rank =  400
+
+
+...KDMD....  sigma =  0.4714285714285714  reduced_rank =  400
+
+
+...KDMD....  sigma =  0.5693877551020408  reduced_rank =  800
+
+
+...KDMD....  sigma =  0.6918367346938775  reduced_rank =  600
+
+
+...KDMD....  sigma =  1.0346938775510204  reduced_rank =  600
+
+
+...KDMD....  sigma =  1.2061224489795919  reduced_rank =  600
+
+
+...KDMD....  sigma =  1.2551020408163265  reduced_rank =  800
+
+
+...KDMD....  sigma =  1.3285714285714285  reduced_rank =  400
+
+
+...KDMD....  sigma =  1.3775510204081634  reduced_rank =  600
+
+
+...KDMD....  sigma =  0.6428571428571428  reduced_rank =  400
+
+
+...KDMD....  sigma =  1.083673469387755  reduced_rank =  800
+
+
+...KDMD....  sigma =  1.157142857142857  reduced_rank =  400
+
+
+...KDMD....  sigma =  0.34897959183673466  reduced_rank =  600
+
+
+...KDMD....  sigma =  0.5204081632653061  reduced_rank =  600
+
+
+...KDMD....  sigma =  0.9857142857142858  reduced_rank =  400
+
+
+...KDMD....  sigma =  0.3  reduced_rank =  400
+
+
+...KDMD....  sigma =  0.3979591836734694  reduced_rank =  800
+
+
+...KDMD....  sigma =  0.7408163265306122  reduced_rank =  800
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+CV:  1
+
+
+...KDMD....  sigma =  0.9122448979591837  reduced_rank =  800
+
+CV:  1
+
+
+...KDMD....  sigma =  0.8632653061224489  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  2.52E+13  for rank =  400
+current reduced rank =  400
+current condition number =  1.16E+06  for rank =  400
+current reduced rank =  400
+current condition number =  -2.26E+16  for rank =  400
+current reduced rank =  400
+current condition number =  5.63E+09  for rank =  400
+current reduced rank =  400
+current condition number =  6.59E+02  for rank =  400
+current reduced rank =  600
+current condition number =  1.69E+10  for rank =  600
+current reduced rank =  600
+current condition number =  1.60E+15  for rank =  600
+current reduced rank =  600
+current condition number =  2.36E+05  for rank =  600
+updated condition number =  1.92E+14  for rank =  324
+current reduced rank =  800
+current condition number =  4.99E+08  for rank =  800
+current reduced rank =  800
+current condition number =  7.87E+14  for rank =  800
+updated condition number =  1.94E+14  for rank =  558
+current reduced rank =  400
+current condition number =  -2.42E+16  for rank =  400
+updated condition number =  1.91E+14  for rank =  261
+updated condition number =  1.81E+14  for rank =  759
+current reduced rank =  800
+current condition number =  -1.78E+16  for rank =  800
+Elapsed time: 4.648048834005992 mins 
+
+CV:  2
+
+Elapsed time: 4.664265938599905 mins 
+
+CV:  2
+
+Elapsed time: 4.691781679789226 mins 
+
+CV:  2
+
+Elapsed time: 4.717506575584411 mins 
+
+CV:  2
+
+updated condition number =  1.80E+14  for rank =  501
+Elapsed time: 5.231788158416748 mins 
+
+CV:  2
+
+Elapsed time: 5.2444813052813215 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  6.00E+09  for rank =  400
+current reduced rank =  400
+current condition number =  6.38E+02  for rank =  400
+current reduced rank =  400
+current condition number =  2.59E+13  for rank =  400
+current reduced rank =  400
+current condition number =  1.16E+06  for rank =  400
+current reduced rank =  600
+current condition number =  -2.00E+16  for rank =  600
+Elapsed time: 5.879067699114482 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.50E+16  for rank =  600
+Elapsed time: 6.288528633117676 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.27E+16  for rank =  600
+current reduced rank =  600
+current condition number =  1.68E+10  for rank =  600
+Elapsed time: 6.52004965543747 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  2.38E+05  for rank =  600
+current reduced rank =  400
+current condition number =  -2.54E+16  for rank =  400
+updated condition number =  1.98E+14  for rank =  246
+current reduced rank =  600
+current condition number =  -2.64E+16  for rank =  600
+updated condition number =  1.83E+14  for rank =  217
+updated condition number =  1.50E+14  for rank =  305
+updated condition number =  1.80E+14  for rank =  397
+updated condition number =  1.66E+14  for rank =  205
+current reduced rank =  600
+current condition number =  1.62E+15  for rank =  600
+current reduced rank =  800
+current condition number =  5.23E+08  for rank =  800
+current reduced rank =  400
+current condition number =  -6.11E+15  for rank =  400
+Elapsed time: 7.560647443930308 mins 
+
+CV:  2
+
+updated condition number =  1.74E+14  for rank =  324
+updated condition number =  1.97E+14  for rank =  558
+Elapsed time: 8.183849839369456 mins 
+
+CV:  2
+
+Elapsed time: 8.272372515996297 mins 
+
+CV:  2
+
+Elapsed time: 3.8283939202626547 mins 
+
+CV:  3
+
+Elapsed time: 3.8536339958508807 mins 
+
+CV:  3
+
+Elapsed time: 3.895488369464874 mins 
+
+CV:  3
+
+Elapsed time: 3.930737284819285 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  7.78E+14  for rank =  800
+current reduced rank =  800
+current condition number =  -2.00E+16  for rank =  800
+current reduced rank =  400
+current condition number =  6.53E+02  for rank =  400
+current reduced rank =  400
+current condition number =  5.78E+09  for rank =  400
+current reduced rank =  400
+current condition number =  2.51E+13  for rank =  400
+current reduced rank =  400
+current condition number =  1.16E+06  for rank =  400
+Elapsed time: 4.432083372275034 mins 
+
+CV:  3
+
+Elapsed time: 4.542396199703217 mins 
+
+CV:  3
+
+updated condition number =  1.99E+14  for rank =  368
+Elapsed time: 10.304098947842915 mins 
+
+CV:  2
+
+Elapsed time: 10.491337045033772 mins 
+
+CV:  2
+
+Elapsed time: 10.519093755880991 mins 
+
+CV:  2
+
+Elapsed time: 10.657392970720927 mins 
+
+CV:  2
+
+updated condition number =  1.70E+14  for rank =  759
+current reduced rank =  400
+current condition number =  -2.32E+16  for rank =  400
+current reduced rank =  600
+current condition number =  2.40E+05  for rank =  600
+Elapsed time: 5.128250300884247 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  1.69E+10  for rank =  600
+updated condition number =  1.97E+14  for rank =  261
+Elapsed time: 4.875435197353363 mins 
+
+CV:  3
+
+Elapsed time: 5.451798268159231 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.26E+16  for rank =  400
+current reduced rank =  800
+current condition number =  -2.51E+16  for rank =  800
+Elapsed time: 4.024109717210134 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  5.09E+08  for rank =  800
+current reduced rank =  800
+current condition number =  -1.83E+16  for rank =  800
+Elapsed time: 4.046980098883311 mins 
+
+CV:  4
+
+Elapsed time: 4.10899205605189 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  1.60E+15  for rank =  600
+Elapsed time: 4.135077464580536 mins 
+
+CV:  4
+
+updated condition number =  1.95E+14  for rank =  232
+updated condition number =  1.80E+14  for rank =  324
+current reduced rank =  400
+current condition number =  6.55E+02  for rank =  400
+current reduced rank =  400
+current condition number =  5.75E+09  for rank =  400
+updated condition number =  1.98E+14  for rank =  501
+current reduced rank =  400
+current condition number =  2.57E+13  for rank =  400
+current reduced rank =  400
+current condition number =  1.12E+06  for rank =  400
+updated condition number =  1.92E+14  for rank =  558
+Elapsed time: 13.880149745941162 mins 
+
+CV:  2
+
+Elapsed time: 4.632468541463216 mins 
+
+CV:  4
+
+Elapsed time: 6.745626699924469 mins 
+
+CV:  3
+
+Elapsed time: 4.6999007105827335 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.20E+16  for rank =  800
+Elapsed time: 7.062332169214884 mins 
+
+CV:  3
+
+updated condition number =  1.95E+14  for rank =  285
+current reduced rank =  600
+current condition number =  2.31E+05  for rank =  600
+current reduced rank =  600
+current condition number =  1.73E+10  for rank =  600
+current reduced rank =  400
+current condition number =  -2.42E+16  for rank =  400
+current reduced rank =  800
+current condition number =  8.11E+14  for rank =  800
+current reduced rank =  600
+current condition number =  -2.51E+16  for rank =  600
+Elapsed time: 4.963260761896769 mins 
+
+CV:  4
+
+updated condition number =  1.86E+14  for rank =  217
+updated condition number =  1.99E+14  for rank =  246
+Elapsed time: 3.788956073919932 mins 
+
+================================================
+for sigma =  0.3  rank =  400
+average train error =  24.02876987334307
+average test error =  26.115885358688146
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.3  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -1.93E+16  for rank =  600
+Elapsed time: 3.8098839282989503 mins 
+
+================================================
+for sigma =  0.6428571428571428  rank =  400
+average train error =  1.9141840140121071
+average test error =  2.9740404948574657
+average num good eigfunction train =  1.5
+average num good eigfunction test =  1.25
+================================================
+
+...KDMD....  sigma =  0.6428571428571428  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 8.259081474939983 mins 
+
+CV:  3
+
+Elapsed time: 3.8371429562568666 mins 
+
+================================================
+for sigma =  0.8142857142857143  rank =  400
+average train error =  0.6931481187582751
+average test error =  1.1792205803243572
+average num good eigfunction train =  61.75
+average num good eigfunction test =  40.75
+================================================
+
+...KDMD....  sigma =  0.8142857142857143  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 3.83353883822759 mins 
+
+================================================
+for sigma =  0.4714285714285714  rank =  400
+average train error =  7.132366216718398
+average test error =  9.05405714726126
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.4714285714285714  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 16.62755139271418 mins 
+
+CV:  2
+
+Elapsed time: 5.352426926294963 mins 
+
+CV:  4
+
+updated condition number =  1.54E+14  for rank =  305
+Elapsed time: 5.203604650497437 mins 
+
+CV:  4
+
+updated condition number =  1.84E+14  for rank =  759
+current reduced rank =  600
+current condition number =  -2.68E+16  for rank =  600
+current reduced rank =  600
+current condition number =  1.38E+04  for rank =  600
+current reduced rank =  600
+current condition number =  6.21E+13  for rank =  600
+current reduced rank =  800
+current condition number =  5.05E+08  for rank =  800
+current reduced rank =  400
+current condition number =  -2.27E+16  for rank =  400
+updated condition number =  1.78E+14  for rank =  205
+current reduced rank =  600
+current condition number =  6.15E+08  for rank =  600
+current reduced rank =  400
+current condition number =  -2.22E+16  for rank =  400
+updated condition number =  1.84E+14  for rank =  324
+current reduced rank =  600
+current condition number =  1.57E+15  for rank =  600
+current reduced rank =  600
+current condition number =  -1.99E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  261
+Elapsed time: 18.95891889333725 mins 
+
+CV:  2
+
+Elapsed time: 4.713712457815806 mins 
+
+================================================
+for sigma =  0.34897959183673466  rank =  600
+average train error =  8.940474279662759
+average test error =  12.964279434467814
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.34897959183673466  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 4.830164301395416 mins 
+
+================================================
+for sigma =  0.5204081632653061  rank =  600
+average train error =  1.2424252499880812
+average test error =  2.6265387439884966
+average num good eigfunction train =  24.5
+average num good eigfunction test =  3.25
+================================================
+
+...KDMD....  sigma =  0.5204081632653061  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 8.904165923595428 mins 
+
+CV:  3
+
+updated condition number =  1.95E+14  for rank =  558
+updated condition number =  1.93E+14  for rank =  432
+Elapsed time: 9.32845592101415 mins 
+
+CV:  3
+
+Elapsed time: 19.61775779724121 mins 
+
+CV:  2
+
+Elapsed time: 9.625696802139283 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  1.10E+07  for rank =  800
+current reduced rank =  800
+current condition number =  -1.85E+16  for rank =  800
+current reduced rank =  800
+current condition number =  1.32E+13  for rank =  800
+Elapsed time: 6.732940502961477 mins 
+
+CV:  4
+
+Elapsed time: 4.862746075789134 mins 
+
+CV:  2
+
+Elapsed time: 4.872857240835826 mins 
+
+CV:  2
+
+updated condition number =  1.86E+14  for rank =  501
+Elapsed time: 5.395482039451599 mins 
+
+================================================
+for sigma =  0.3979591836734694  rank =  800
+average train error =  1.7991480324130396
+average test error =  4.672381888067617
+average num good eigfunction train =  4.25
+average num good eigfunction test =  0.5
+================================================
+
+...KDMD....  sigma =  0.4224489795918367  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 10.751524945100149 mins 
+
+CV:  3
+
+Elapsed time: 4.992552669843038 mins 
+
+CV:  2
+
+Elapsed time: 5.039696582158407 mins 
+
+================================================
+for sigma =  0.9857142857142858  rank =  400
+average train error =  0.8703660705388708
+average test error =  1.841479841431661
+average num good eigfunction train =  48.5
+average num good eigfunction test =  26.0
+================================================
+
+...KDMD....  sigma =  0.9857142857142858  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  1.16E+05  for rank =  400
+Elapsed time: 7.100394427776337 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  1.38E+04  for rank =  600
+current reduced rank =  600
+current condition number =  6.22E+13  for rank =  600
+Elapsed time: 6.217954699198405 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  8.13E+14  for rank =  800
+current reduced rank =  600
+current condition number =  6.05E+08  for rank =  600
+Elapsed time: 5.906783632437388 mins 
+
+================================================
+for sigma =  0.6918367346938775  rank =  600
+average train error =  0.3424258783274511
+average test error =  1.303212620032253
+average num good eigfunction train =  178.75
+average num good eigfunction test =  85.5
+================================================
+
+...KDMD....  sigma =  0.6918367346938775  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -1.99E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.60E+16  for rank =  400
+Elapsed time: 5.180636048316956 mins 
+
+CV:  2
+
+updated condition number =  1.75E+14  for rank =  759
+current reduced rank =  600
+current condition number =  -1.94E+16  for rank =  600
+Elapsed time: 5.170785335699717 mins 
+
+CV:  2
+
+updated condition number =  1.80E+14  for rank =  217
+Elapsed time: 8.166514817873637 mins 
+
+CV:  4
+
+updated condition number =  1.85E+14  for rank =  367
+updated condition number =  1.99E+14  for rank =  431
+Elapsed time: 3.9558210889498393 mins 
+
+CV:  2
+
+Elapsed time: 4.5416873852411905 mins 
+
+CV:  3
+
+Elapsed time: 4.610500311851501 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.37E+16  for rank =  400
+current reduced rank =  800
+current condition number =  1.08E+07  for rank =  800
+current reduced rank =  400
+current condition number =  1.21E+05  for rank =  400
+current reduced rank =  800
+current condition number =  1.36E+13  for rank =  800
+Elapsed time: 4.786587357521057 mins 
+
+CV:  3
+
+updated condition number =  1.96E+14  for rank =  261
+current reduced rank =  600
+current condition number =  -2.28E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -2.02E+16  for rank =  600
+current reduced rank =  600
+current condition number =  1.35E+04  for rank =  600
+current reduced rank =  600
+current condition number =  -2.19E+16  for rank =  600
+current reduced rank =  600
+current condition number =  6.40E+13  for rank =  600
+current reduced rank =  800
+current condition number =  -1.68E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  324
+current reduced rank =  600
+current condition number =  6.17E+08  for rank =  600
+updated condition number =  1.48E+14  for rank =  305
+Elapsed time: 7.085110811392466 mins 
+
+================================================
+for sigma =  0.5693877551020408  rank =  800
+average train error =  0.227601970621431
+average test error =  0.9368532700936697
+average num good eigfunction train =  329.25
+average num good eigfunction test =  127.5
+================================================
+
+...KDMD....  sigma =  0.5938775510204082  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -1.87E+16  for rank =  800
+updated condition number =  1.92E+14  for rank =  558
+updated condition number =  1.72E+14  for rank =  397
+Elapsed time: 5.765467091401418 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  5.02E+08  for rank =  400
+Elapsed time: 9.50608915090561 mins 
+
+CV:  4
+
+updated condition number =  1.91E+14  for rank =  501
+Elapsed time: 15.23830978870392 mins 
+
+CV:  3
+
+Elapsed time: 4.090391786893209 mins 
+
+CV:  3
+
+Elapsed time: 5.4412612040837605 mins 
+
+CV:  3
+
+Elapsed time: 5.514750472704569 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.21E+05  for rank =  400
+Elapsed time: 7.883161834875742 mins 
+
+================================================
+for sigma =  1.157142857142857  rank =  400
+average train error =  1.2988841567320941
+average test error =  1.9736204654316527
+average num good eigfunction train =  29.0
+average num good eigfunction test =  16.5
+================================================
+
+...KDMD....  sigma =  1.157142857142857  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 4.595362766583761 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -1.97E+16  for rank =  600
+Elapsed time: 4.562903209527334 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.22E+16  for rank =  800
+Elapsed time: 4.593759254614512 mins 
+
+CV:  4
+
+updated condition number =  1.88E+14  for rank =  284
+Elapsed time: 9.25747545560201 mins 
+
+CV:  2
+
+updated condition number =  1.96E+14  for rank =  432
+current reduced rank =  800
+current condition number =  -2.58E+16  for rank =  800
+current reduced rank =  800
+current condition number =  1.08E+07  for rank =  800
+Elapsed time: 11.469806742668151 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  1.38E+04  for rank =  600
+Elapsed time: 8.794834665457408 mins 
+
+CV:  2
+
+updated condition number =  1.90E+14  for rank =  232
+current reduced rank =  600
+current condition number =  6.48E+13  for rank =  600
+current reduced rank =  800
+current condition number =  1.41E+13  for rank =  800
+Elapsed time: 3.8978573362032574 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  6.32E+08  for rank =  600
+Elapsed time: 7.629816369215647 mins 
+
+================================================
+for sigma =  0.7408163265306122  rank =  800
+average train error =  0.41814607885224375
+average test error =  1.0810582051044082
+average num good eigfunction train =  129.25
+average num good eigfunction test =  80.0
+================================================
+
+...KDMD....  sigma =  0.7653061224489796  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.66E+16  for rank =  600
+current reduced rank =  400
+current condition number =  4.98E+08  for rank =  400
+current reduced rank =  400
+current condition number =  2.79E+12  for rank =  400
+updated condition number =  1.71E+14  for rank =  205
+Elapsed time: 3.949430541197459 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  1.19E+05  for rank =  400
+current reduced rank =  800
+current condition number =  -1.74E+16  for rank =  800
+Elapsed time: 5.856508406003316 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.49E+16  for rank =  400
+Elapsed time: 4.481623220443725 mins 
+
+================================================
+for sigma =  0.3  rank =  600
+average train error =  15.8628876034151
+average test error =  22.303969301494504
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.3  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 5.173819096883138 mins 
+
+CV:  4
+
+updated condition number =  1.93E+14  for rank =  558
+Elapsed time: 4.470767164230347 mins 
+
+================================================
+for sigma =  0.6428571428571428  rank =  600
+average train error =  0.3466431947595034
+average test error =  1.0044831726043817
+average num good eigfunction train =  195.5
+average num good eigfunction test =  84.0
+================================================
+
+...KDMD....  sigma =  0.6428571428571428  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.83E+14  for rank =  217
+Elapsed time: 5.155462384223938 mins 
+
+CV:  4
+
+Elapsed time: 16.20613118012746 mins 
+
+CV:  3
+
+Elapsed time: 4.4628514091173805 mins 
+
+================================================
+for sigma =  0.4714285714285714  rank =  600
+average train error =  2.0530058729920055
+average test error =  3.8298850583924304
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.4714285714285714  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 19.03458890517553 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -1.94E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -2.45E+16  for rank =  600
+Elapsed time: 3.8170373320579527 mins 
+
+CV:  3
+
+Elapsed time: 3.7753857533137003 mins 
+
+CV:  2
+
+updated condition number =  1.93E+14  for rank =  245
+current reduced rank =  600
+current condition number =  -2.18E+16  for rank =  600
+updated condition number =  1.94E+14  for rank =  432
+current reduced rank =  400
+current condition number =  5.12E+08  for rank =  400
+current reduced rank =  800
+current condition number =  1.07E+07  for rank =  800
+current reduced rank =  800
+current condition number =  2.84E+05  for rank =  800
+current reduced rank =  400
+current condition number =  2.76E+12  for rank =  400
+current reduced rank =  800
+current condition number =  -1.09E+16  for rank =  800
+Elapsed time: 15.649472649892171 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  1.37E+13  for rank =  800
+updated condition number =  1.77E+14  for rank =  324
+current reduced rank =  600
+current condition number =  -2.54E+16  for rank =  600
+Elapsed time: 4.010117622216542 mins 
+
+================================================
+for sigma =  0.4224489795918367  rank =  400
+average train error =  10.365810904895621
+average test error =  12.41578747221826
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.4224489795918367  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  2.21E+11  for rank =  800
+updated condition number =  1.94E+14  for rank =  261
+updated condition number =  1.90E+14  for rank =  626
+current reduced rank =  600
+current condition number =  2.52E+07  for rank =  600
+Elapsed time: 7.082878192265828 mins 
+
+CV:  3
+
+Elapsed time: 9.971017630894979 mins 
+
+================================================
+for sigma =  1.3285714285714285  rank =  400
+average train error =  1.7335133822948998
+average test error =  1.9223384202782205
+average num good eigfunction train =  10.5
+average num good eigfunction test =  9.75
+================================================
+
+...KDMD....  sigma =  1.3285714285714285  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.22E+16  for rank =  600
+Elapsed time: 5.5245167970657345 mins 
+
+================================================
+for sigma =  0.8142857142857143  rank =  600
+average train error =  0.4888253152001772
+average test error =  1.1385338909395697
+average num good eigfunction train =  96.0
+average num good eigfunction test =  60.5
+================================================
+
+...KDMD....  sigma =  0.8142857142857143  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 4.140014088153839 mins 
+
+CV:  4
+
+Elapsed time: 20.441171967983244 mins 
+
+CV:  4
+
+Elapsed time: 3.968804041544596 mins 
+
+CV:  3
+
+updated condition number =  1.60E+14  for rank =  305
+Elapsed time: 5.45914747317632 mins 
+
+CV:  2
+
+Elapsed time: 5.448246284325918 mins 
+
+================================================
+for sigma =  0.34897959183673466  rank =  800
+average train error =  3.8282678325445088
+average test error =  8.17311961021469
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.373469387755102  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 5.461488270759583 mins 
+
+================================================
+for sigma =  0.5204081632653061  rank =  800
+average train error =  0.296332687790404
+average test error =  1.59053039713524
+average num good eigfunction train =  282.0
+average num good eigfunction test =  84.5
+================================================
+
+...KDMD....  sigma =  0.5448979591836735  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  5.02E+08  for rank =  400
+current reduced rank =  400
+current condition number =  2.68E+12  for rank =  400
+Elapsed time: 5.413212490081787 mins 
+
+CV:  2
+
+Elapsed time: 9.846863647301992 mins 
+
+CV:  3
+
+Elapsed time: 21.3005569934845 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.36E+04  for rank =  400
+Elapsed time: 6.446528728802999 mins 
+
+CV:  2
+
+Elapsed time: 11.261500136057537 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  4.27E+07  for rank =  400
+Elapsed time: 4.224547441800436 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.06E+16  for rank =  800
+current reduced rank =  800
+current condition number =  2.78E+05  for rank =  800
+current reduced rank =  600
+current condition number =  -2.69E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -1.78E+16  for rank =  800
+updated condition number =  1.63E+14  for rank =  205
+current reduced rank =  800
+current condition number =  2.25E+11  for rank =  800
+current reduced rank =  600
+current condition number =  2.46E+07  for rank =  600
+updated condition number =  1.87E+14  for rank =  367
+current reduced rank =  800
+current condition number =  -1.82E+15  for rank =  800
+updated condition number =  1.97E+14  for rank =  558
+Elapsed time: 12.910024031003315 mins 
+
+================================================
+for sigma =  1.0346938775510204  rank =  600
+average train error =  0.8768381403937769
+average test error =  1.5228782656150865
+average num good eigfunction train =  46.5
+average num good eigfunction test =  25.25
+================================================
+
+...KDMD....  sigma =  1.0346938775510204  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 4.519851585229238 mins 
+
+================================================
+for sigma =  0.5938775510204082  rank =  400
+average train error =  2.785050633873924
+average test error =  4.803461382782176
+average num good eigfunction train =  0.75
+average num good eigfunction test =  0.5
+================================================
+
+...KDMD....  sigma =  0.5938775510204082  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 4.469033726056417 mins 
+
+CV:  4
+
+updated condition number =  1.96E+14  for rank =  626
+current reduced rank =  600
+current condition number =  -2.69E+16  for rank =  600
+Elapsed time: 4.438720826307932 mins 
+
+CV:  2
+
+Elapsed time: 4.475180160999298 mins 
+
+CV:  2
+
+updated condition number =  1.81E+14  for rank =  217
+current reduced rank =  400
+current condition number =  2.72E+12  for rank =  400
+current reduced rank =  400
+current condition number =  1.36E+04  for rank =  400
+current reduced rank =  600
+current condition number =  2.30E+12  for rank =  600
+current reduced rank =  400
+current condition number =  4.41E+07  for rank =  400
+current reduced rank =  800
+current condition number =  -2.40E+16  for rank =  800
+Elapsed time: 5.776950430870056 mins 
+
+CV:  3
+
+Elapsed time: 4.773518566290537 mins 
+
+CV:  3
+
+updated condition number =  1.87E+14  for rank =  284
+current reduced rank =  800
+current condition number =  -1.85E+16  for rank =  800
+Elapsed time: 5.777022302150726 mins 
+
+CV:  3
+
+Elapsed time: 10.014610282580058 mins 
+
+================================================
+for sigma =  1.3775510204081634  rank =  600
+average train error =  1.8779634788377457
+average test error =  2.5441201336203774
+average num good eigfunction train =  7.25
+average num good eigfunction test =  7.0
+================================================
+
+...KDMD....  sigma =  1.3775510204081634  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.56E+16  for rank =  800
+Elapsed time: 8.4877299507459 mins 
+
+CV:  4
+
+updated condition number =  1.99E+14  for rank =  432
+Elapsed time: 18.343051520983376 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  2.46E+07  for rank =  600
+updated condition number =  1.86E+14  for rank =  232
+current reduced rank =  800
+current condition number =  2.68E+05  for rank =  800
+Elapsed time: 6.547879497210185 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.16E+16  for rank =  600
+current reduced rank =  800
+current condition number =  2.20E+11  for rank =  800
+Elapsed time: 3.8802637139956158 mins 
+
+================================================
+for sigma =  0.7653061224489796  rank =  400
+average train error =  0.8364990237459224
+average test error =  1.5870883707806847
+average num good eigfunction train =  46.25
+average num good eigfunction test =  21.0
+================================================
+
+...KDMD....  sigma =  0.7653061224489796  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.32E+16  for rank =  600
+Elapsed time: 3.840823737780253 mins 
+
+CV:  3
+
+updated condition number =  1.81E+14  for rank =  324
+current reduced rank =  600
+current condition number =  -2.03E+16  for rank =  600
+updated condition number =  1.98E+14  for rank =  261
+Elapsed time: 3.916950996716817 mins 
+
+CV:  3
+
+Elapsed time: 4.553910287221273 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.46E+16  for rank =  600
+Elapsed time: 10.301386451721191 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  1.34E+04  for rank =  400
+updated condition number =  1.61E+14  for rank =  244
+current reduced rank =  400
+current condition number =  4.32E+07  for rank =  400
+current reduced rank =  800
+current condition number =  -1.64E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -1.77E+16  for rank =  800
+current reduced rank =  600
+current condition number =  2.35E+12  for rank =  600
+current reduced rank =  600
+current condition number =  -1.84E+16  for rank =  600
+Elapsed time: 15.269871179262797 mins 
+
+CV:  4
+
+updated condition number =  1.78E+14  for rank =  397
+Elapsed time: 10.860147885481517 mins 
+
+CV:  2
+
+Elapsed time: 4.582417507966359 mins 
+
+CV:  4
+
+updated condition number =  1.97E+14  for rank =  559
+updated condition number =  1.96E+14  for rank =  626
+updated condition number =  2.00E+14  for rank =  479
+Elapsed time: 5.257969478766124 mins 
+
+CV:  4
+
+Elapsed time: 15.711024610201518 mins 
+
+CV:  4
+
+Elapsed time: 5.401973716417948 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  2.46E+07  for rank =  600
+Elapsed time: 11.427069175243378 mins 
+
+CV:  4
+
+Elapsed time: 11.056336744626362 mins 
+
+CV:  3
+
+Elapsed time: 4.08764941294988 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  2.77E+05  for rank =  800
+Elapsed time: 4.1251458088556925 mins 
+
+CV:  4
+
+Elapsed time: 13.287997941176096 mins 
+
+================================================
+for sigma =  1.2061224489795919  rank =  600
+average train error =  1.1847401167983818
+average test error =  2.0542727293532463
+average num good eigfunction train =  27.0
+average num good eigfunction test =  17.75
+================================================
+
+...KDMD....  sigma =  1.2061224489795919  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  1.36E+04  for rank =  400
+current reduced rank =  800
+current condition number =  2.21E+11  for rank =  800
+Elapsed time: 4.723005525271097 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  4.52E+07  for rank =  400
+Elapsed time: 6.43341672817866 mins 
+
+CV:  4
+
+Elapsed time: 7.1211233854293825 mins 
+
+================================================
+for sigma =  0.6918367346938775  rank =  800
+average train error =  0.3425555044142247
+average test error =  1.13903069772227
+average num good eigfunction train =  166.5
+average num good eigfunction test =  85.0
+================================================
+
+...KDMD....  sigma =  0.7163265306122448  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 5.953923900922139 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.76E+16  for rank =  800
+current reduced rank =  600
+current condition number =  2.50E+12  for rank =  600
+current reduced rank =  800
+current condition number =  -2.26E+16  for rank =  800
+current reduced rank =  400
+current condition number =  2.41E+11  for rank =  400
+updated condition number =  1.75E+14  for rank =  205
+Elapsed time: 4.502885810534159 mins 
+
+================================================
+for sigma =  0.4224489795918367  rank =  600
+average train error =  3.7222887811192287
+average test error =  6.291709635802831
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.4224489795918367  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.50E+14  for rank =  305
+current reduced rank =  600
+current condition number =  -1.86E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -1.64E+16  for rank =  800
+Elapsed time: 5.2462912678718565 mins 
+
+================================================
+for sigma =  0.3  rank =  800
+average train error =  8.694729171536276
+average test error =  15.502703210728102
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.32448979591836735  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 3.9603928128878274 mins 
+
+================================================
+for sigma =  0.373469387755102  rank =  400
+average train error =  15.022161683076119
+average test error =  17.546116078082893
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.373469387755102  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.93E+14  for rank =  479
+current reduced rank =  800
+current condition number =  -2.10E+16  for rank =  800
+Elapsed time: 4.0358672340710955 mins 
+
+================================================
+for sigma =  0.5448979591836735  rank =  400
+average train error =  4.140440680717933
+average test error =  5.190161173855316
+average num good eigfunction train =  0.75
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.5448979591836735  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  3.62E+09  for rank =  800
+current reduced rank =  600
+current condition number =  -2.51E+16  for rank =  600
+current reduced rank =  400
+current condition number =  1.71E+03  for rank =  400
+Elapsed time: 5.358418981234233 mins 
+
+================================================
+for sigma =  0.4714285714285714  rank =  800
+average train error =  0.569323552090089
+average test error =  2.686868952464831
+average num good eigfunction train =  148.0
+average num good eigfunction test =  28.75
+================================================
+
+...KDMD....  sigma =  0.4959183673469387  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.98E+14  for rank =  627
+updated condition number =  1.83E+14  for rank =  217
+current reduced rank =  800
+current condition number =  -2.56E+16  for rank =  800
+updated condition number =  1.97E+14  for rank =  368
+current reduced rank =  600
+current condition number =  1.06E+06  for rank =  600
+updated condition number =  1.81E+14  for rank =  232
+current reduced rank =  400
+current condition number =  3.72E+06  for rank =  400
+current reduced rank =  600
+current condition number =  8.98E+10  for rank =  600
+current reduced rank =  800
+current condition number =  -1.90E+16  for rank =  800
+Elapsed time: 4.8537612954775495 mins 
+
+CV:  4
+
+Elapsed time: 4.307376968860626 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.10E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  432
+updated condition number =  1.96E+14  for rank =  325
+Elapsed time: 12.236573632558187 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  2.51E+11  for rank =  400
+Elapsed time: 15.163363699118296 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.38E+16  for rank =  600
+current reduced rank =  600
+current condition number =  2.35E+12  for rank =  600
+updated condition number =  1.91E+14  for rank =  261
+Elapsed time: 5.805095462004344 mins 
+
+CV:  3
+
+Elapsed time: 3.95164840221405 mins 
+
+CV:  2
+
+Elapsed time: 5.232162710030874 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.41E+16  for rank =  800
+Elapsed time: 6.454285840193431 mins 
+
+================================================
+for sigma =  0.6428571428571428  rank =  800
+average train error =  0.2977312273027036
+average test error =  1.0804232359471353
+average num good eigfunction train =  219.0
+average num good eigfunction test =  96.5
+================================================
+
+...KDMD....  sigma =  0.6673469387755102  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 4.449712975819906 mins 
+
+CV:  2
+
+Elapsed time: 11.850982121626537 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.71E+03  for rank =  400
+updated condition number =  1.95E+14  for rank =  284
+Elapsed time: 3.77406001885732 mins 
+
+CV:  2
+
+Elapsed time: 13.708089017868042 mins 
+
+================================================
+for sigma =  0.9122448979591837  rank =  800
+average train error =  0.6525339174805123
+average test error =  1.3344975831549604
+average num good eigfunction train =  66.25
+average num good eigfunction test =  42.0
+================================================
+
+...KDMD....  sigma =  0.9367346938775509  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -1.88E+16  for rank =  600
+Elapsed time: 9.991248877843221 mins 
+
+================================================
+for sigma =  1.2551020408163265  rank =  800
+average train error =  1.4571752698871598
+average test error =  2.0923731193872706
+average num good eigfunction train =  14.25
+average num good eigfunction test =  11.25
+================================================
+
+...KDMD....  sigma =  1.279591836734694  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  2.01E+10  for rank =  400
+Elapsed time: 4.358615497748057 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  3.78E+06  for rank =  400
+current reduced rank =  400
+current condition number =  7.29E+15  for rank =  400
+Elapsed time: 11.362527743975322 mins 
+
+CV:  3
+
+updated condition number =  1.94E+14  for rank =  479
+current reduced rank =  600
+current condition number =  1.06E+06  for rank =  600
+Elapsed time: 3.742013661066691 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  3.67E+09  for rank =  800
+current reduced rank =  800
+current condition number =  -2.37E+16  for rank =  800
+Elapsed time: 10.235997088750203 mins 
+
+================================================
+for sigma =  0.9857142857142858  rank =  600
+average train error =  0.8655771375635675
+average test error =  1.496343524047769
+average num good eigfunction train =  45.25
+average num good eigfunction test =  31.75
+================================================
+
+...KDMD....  sigma =  0.9857142857142858  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.94E+14  for rank =  351
+current reduced rank =  600
+current condition number =  8.70E+10  for rank =  600
+Elapsed time: 21.97462071577708 mins 
+
+CV:  4
+
+updated condition number =  1.95E+14  for rank =  245
+Elapsed time: 4.411216910680135 mins 
+
+================================================
+for sigma =  0.5938775510204082  rank =  600
+average train error =  0.5263793741480596
+average test error =  1.3475176748547837
+average num good eigfunction train =  125.25
+average num good eigfunction test =  50.25
+================================================
+
+...KDMD....  sigma =  0.5938775510204082  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  2.43E+11  for rank =  400
+Elapsed time: 11.11108615398407 mins 
+
+CV:  4
+
+Elapsed time: 3.962357294559479 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  6.12E+15  for rank =  800
+Elapsed time: 4.048189934094747 mins 
+
+CV:  2
+
+Elapsed time: 14.609208591779073 mins 
+
+================================================
+for sigma =  1.083673469387755  rank =  800
+average train error =  0.9719251545921719
+average test error =  1.5709216554388579
+average num good eigfunction train =  40.25
+average num good eigfunction test =  33.25
+================================================
+
+...KDMD....  sigma =  1.1081632653061224  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  1.74E+03  for rank =  400
+Elapsed time: 4.092101514339447 mins 
+
+CV:  3
+
+Elapsed time: 5.282206881046295 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  2.05E+10  for rank =  400
+Elapsed time: 4.535574738184611 mins 
+
+CV:  3
+
+updated condition number =  1.97E+14  for rank =  711
+Elapsed time: 5.109673217932383 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.45E+16  for rank =  400
+current reduced rank =  400
+current condition number =  3.75E+06  for rank =  400
+Elapsed time: 4.620352391401926 mins 
+
+CV:  3
+
+Elapsed time: 3.924465835094452 mins 
+
+CV:  4
+
+updated condition number =  1.84E+14  for rank =  227
+Elapsed time: 5.777615654468536 mins 
+
+CV:  2
+
+Elapsed time: 13.655686390399932 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  1.06E+06  for rank =  600
+current reduced rank =  800
+current condition number =  -1.97E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.25E+16  for rank =  800
+current reduced rank =  400
+current condition number =  2.46E+11  for rank =  400
+current reduced rank =  600
+current condition number =  8.67E+10  for rank =  600
+current reduced rank =  600
+current condition number =  -1.86E+16  for rank =  600
+current reduced rank =  800
+current condition number =  3.72E+09  for rank =  800
+updated condition number =  1.51E+14  for rank =  305
+current reduced rank =  400
+current condition number =  -2.38E+16  for rank =  400
+updated condition number =  1.90E+14  for rank =  432
+current reduced rank =  400
+current condition number =  5.09E+15  for rank =  400
+updated condition number =  1.91E+14  for rank =  479
+updated condition number =  1.98E+14  for rank =  279
+Elapsed time: 4.123884618282318 mins 
+
+CV:  4
+
+updated condition number =  1.90E+14  for rank =  351
+Elapsed time: 4.132610968748728 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.72E+03  for rank =  400
+current reduced rank =  600
+current condition number =  -2.65E+16  for rank =  600
+Elapsed time: 4.22037345568339 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  2.13E+10  for rank =  400
+Elapsed time: 6.514010854562124 mins 
+
+CV:  2
+
+updated condition number =  1.83E+14  for rank =  217
+current reduced rank =  400
+current condition number =  3.73E+06  for rank =  400
+Elapsed time: 4.659739625453949 mins 
+
+CV:  4
+
+Elapsed time: 3.9452508131663007 mins 
+
+================================================
+for sigma =  0.7163265306122448  rank =  400
+average train error =  1.267899961407887
+average test error =  2.024166524579779
+average num good eigfunction train =  21.5
+average num good eigfunction test =  9.75
+================================================
+
+...KDMD....  sigma =  0.7163265306122448  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.16E+16  for rank =  800
+Elapsed time: 9.260212099552154 mins 
+
+CV:  2
+
+Elapsed time: 4.564587883154551 mins 
+
+CV:  4
+
+Elapsed time: 8.700127955277761 mins 
+
+CV:  4
+
+Elapsed time: 5.160832524299622 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -3.49E+15  for rank =  800
+updated condition number =  1.80E+14  for rank =  324
+Elapsed time: 5.846026976903279 mins 
+
+================================================
+for sigma =  0.7653061224489796  rank =  600
+average train error =  0.4443436384601815
+average test error =  1.1143336642637043
+average num good eigfunction train =  124.25
+average num good eigfunction test =  76.25
+================================================
+
+...KDMD....  sigma =  0.7653061224489796  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  1.06E+06  for rank =  600
+current reduced rank =  600
+current condition number =  7.36E+15  for rank =  600
+current reduced rank =  600
+current condition number =  -2.05E+16  for rank =  600
+Elapsed time: 12.092938562234243 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  8.72E+10  for rank =  600
+Elapsed time: 3.5948922594388324 mins 
+
+================================================
+for sigma =  0.32448979591836735  rank =  400
+average train error =  20.961539308917892
+average test error =  22.444544194053325
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.32448979591836735  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 7.158953261375427 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.33E+16  for rank =  600
+updated condition number =  1.92E+14  for rank =  530
+Elapsed time: 5.684103719393412 mins 
+
+CV:  3
+
+updated condition number =  1.94E+14  for rank =  711
+Elapsed time: 3.8339948058128357 mins 
+
+CV:  4
+
+updated condition number =  1.99E+14  for rank =  261
+current reduced rank =  800
+current condition number =  3.95E+09  for rank =  800
+updated condition number =  1.73E+14  for rank =  397
+current reduced rank =  800
+current condition number =  -2.60E+16  for rank =  800
+Elapsed time: 12.493479816118876 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  7.11E+15  for rank =  400
+current reduced rank =  600
+current condition number =  5.46E+04  for rank =  600
+current reduced rank =  400
+current condition number =  2.01E+10  for rank =  400
+updated condition number =  1.73E+14  for rank =  205
+Elapsed time: 4.3007831335067745 mins 
+
+================================================
+for sigma =  0.4959183673469387  rank =  400
+average train error =  5.850706176853457
+average test error =  7.451140615599824
+average num good eigfunction train =  0.25
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.4959183673469387  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.52E+16  for rank =  400
+updated condition number =  1.88E+14  for rank =  227
+updated condition number =  1.95E+14  for rank =  351
+current reduced rank =  400
+current condition number =  -2.41E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  279
+Elapsed time: 12.387368965148926 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  3.25E+09  for rank =  600
+Elapsed time: 4.930240293343862 mins 
+
+================================================
+for sigma =  0.373469387755102  rank =  600
+average train error =  6.70644632573711
+average test error =  10.488009846966547
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.373469387755102  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 5.074476345380147 mins 
+
+================================================
+for sigma =  0.5448979591836735  rank =  600
+average train error =  0.9262549173156658
+average test error =  2.057960379109619
+average num good eigfunction train =  63.0
+average num good eigfunction test =  14.5
+================================================
+
+...KDMD....  sigma =  0.5448979591836735  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 5.8409907420476275 mins 
+
+CV:  2
+
+Elapsed time: 6.773446559906006 mins 
+
+CV:  3
+
+Elapsed time: 5.5844224770863855 mins 
+
+================================================
+for sigma =  0.4224489795918367  rank =  800
+average train error =  1.1425980953751693
+average test error =  3.192899915202166
+average num good eigfunction train =  41.25
+average num good eigfunction test =  7.5
+================================================
+
+...KDMD....  sigma =  0.44693877551020406  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -1.92E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.37E+16  for rank =  800
+Elapsed time: 13.000779088338216 mins 
+
+================================================
+for sigma =  1.157142857142857  rank =  600
+average train error =  1.2780968905090966
+average test error =  2.122156437967266
+average num good eigfunction train =  23.75
+average num good eigfunction test =  16.0
+================================================
+
+...KDMD....  sigma =  1.157142857142857  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 3.9669610420862833 mins 
+
+================================================
+for sigma =  0.6673469387755102  rank =  400
+average train error =  1.7613994259966084
+average test error =  2.9462112451492124
+average num good eigfunction train =  4.25
+average num good eigfunction test =  1.75
+================================================
+
+...KDMD....  sigma =  0.6673469387755102  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  7.41E+07  for rank =  800
+Elapsed time: 4.685148231188456 mins 
+
+CV:  2
+
+updated condition number =  1.93E+14  for rank =  245
+Elapsed time: 17.847860769430795 mins 
+
+CV:  3
+
+updated condition number =  2.00E+14  for rank =  432
+current reduced rank =  400
+current condition number =  3.57E+05  for rank =  400
+Elapsed time: 6.96002649863561 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  7.70E+15  for rank =  600
+Elapsed time: 5.12310270468394 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  1.02E+14  for rank =  800
+Elapsed time: 5.993265155951182 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  3.10E+14  for rank =  600
+current reduced rank =  600
+current condition number =  5.69E+04  for rank =  600
+current reduced rank =  800
+current condition number =  5.61E+15  for rank =  800
+updated condition number =  1.88E+14  for rank =  530
+current reduced rank =  400
+current condition number =  7.43E+15  for rank =  400
+Elapsed time: 5.1393630345662435 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -1.80E+16  for rank =  800
+updated condition number =  2.00E+14  for rank =  591
+updated condition number =  1.54E+14  for rank =  350
+updated condition number =  1.99E+14  for rank =  479
+updated condition number =  1.84E+14  for rank =  711
+current reduced rank =  600
+current condition number =  3.27E+09  for rank =  600
+current reduced rank =  800
+current condition number =  -2.24E+16  for rank =  800
+Elapsed time: 5.678607662518819 mins 
+
+CV:  2
+
+Elapsed time: 4.357668594519297 mins 
+
+CV:  2
+
+Elapsed time: 10.190227977434795 mins 
+
+================================================
+for sigma =  0.8142857142857143  rank =  800
+average train error =  0.5120096225854771
+average test error =  1.1146190313103603
+average num good eigfunction train =  96.75
+average num good eigfunction test =  57.0
+================================================
+
+...KDMD....  sigma =  0.8387755102040817  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.38E+16  for rank =  400
+Elapsed time: 14.050594425201416 mins 
+
+CV:  3
+
+updated condition number =  1.89E+14  for rank =  324
+Elapsed time: 5.695882602532705 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  3.84E+05  for rank =  400
+current reduced rank =  400
+current condition number =  8.03E+13  for rank =  400
+updated condition number =  1.96E+14  for rank =  279
+Elapsed time: 4.800947570800782 mins 
+
+CV:  3
+
+Elapsed time: 5.818080373605093 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.64E+16  for rank =  600
+updated condition number =  1.84E+14  for rank =  217
+current reduced rank =  800
+current condition number =  7.37E+07  for rank =  800
+Elapsed time: 5.783895321687063 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.32E+16  for rank =  400
+current reduced rank =  600
+current condition number =  5.63E+04  for rank =  600
+Elapsed time: 11.632033018271128 mins 
+
+CV:  2
+
+updated condition number =  1.88E+14  for rank =  227
+current reduced rank =  800
+current condition number =  1.03E+14  for rank =  800
+current reduced rank =  600
+current condition number =  -6.29E+15  for rank =  600
+current reduced rank =  800
+current condition number =  -2.31E+16  for rank =  800
+Elapsed time: 6.996658937136332 mins 
+
+CV:  4
+
+Elapsed time: 4.394539022445679 mins 
+
+CV:  3
+
+updated condition number =  1.50E+14  for rank =  305
+Elapsed time: 5.9318480610847475 mins 
+
+================================================
+for sigma =  0.9367346938775509  rank =  400
+average train error =  0.717633070340297
+average test error =  1.4325723055189576
+average num good eigfunction train =  52.75
+average num good eigfunction test =  34.25
+================================================
+
+...KDMD....  sigma =  0.9367346938775509  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  3.20E+14  for rank =  600
+updated condition number =  1.93E+14  for rank =  530
+current reduced rank =  600
+current condition number =  3.16E+09  for rank =  600
+Elapsed time: 9.71718757947286 mins 
+
+CV:  3
+
+Elapsed time: 3.9254952629407245 mins 
+
+CV:  3
+
+updated condition number =  1.97E+14  for rank =  590
+Elapsed time: 6.879590237140656 mins 
+
+CV:  4
+
+Elapsed time: 4.073016206423442 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  5.88E+15  for rank =  800
+current reduced rank =  400
+current condition number =  3.62E+05  for rank =  400
+Elapsed time: 12.18744897445043 mins 
+
+================================================
+for sigma =  1.3285714285714285  rank =  600
+average train error =  1.7509743738241859
+average test error =  2.390503336495036
+average num good eigfunction train =  10.0
+average num good eigfunction test =  10.25
+================================================
+
+...KDMD....  sigma =  1.3285714285714285  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 22.830730617046356 mins 
+
+================================================
+for sigma =  0.8632653061224489  rank =  600
+average train error =  0.5934222763657696
+average test error =  1.1352919332699845
+average num good eigfunction train =  75.25
+average num good eigfunction test =  46.0
+================================================
+
+...KDMD....  sigma =  0.8632653061224489  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  7.80E+13  for rank =  400
+Elapsed time: 5.167612059911092 mins 
+
+CV:  3
+
+Elapsed time: 4.651125673453013 mins 
+
+CV:  4
+
+Elapsed time: 8.795274209976196 mins 
+
+CV:  4
+
+updated condition number =  1.93E+14  for rank =  712
+current reduced rank =  800
+current condition number =  -2.76E+16  for rank =  800
+Elapsed time: 5.382297809918722 mins 
+
+CV:  3
+
+updated condition number =  1.65E+14  for rank =  205
+Elapsed time: 15.53102034330368 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  5.55E+04  for rank =  600
+Elapsed time: 5.6634209473927815 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  7.20E+07  for rank =  800
+Elapsed time: 4.803966859976451 mins 
+
+CV:  4
+
+Elapsed time: 5.690303202470144 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.15E+16  for rank =  600
+current reduced rank =  800
+current condition number =  1.04E+14  for rank =  800
+Elapsed time: 3.87619465192159 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  600
+current condition number =  7.03E+15  for rank =  600
+Elapsed time: 4.03987854719162 mins 
+
+CV:  3
+
+updated condition number =  1.98E+14  for rank =  351
+current reduced rank =  400
+current condition number =  -2.57E+16  for rank =  400
+updated condition number =  1.98E+14  for rank =  279
+current reduced rank =  600
+current condition number =  3.15E+09  for rank =  600
+current reduced rank =  600
+current condition number =  3.17E+14  for rank =  600
+current reduced rank =  400
+current condition number =  3.68E+05  for rank =  400
+current reduced rank =  800
+current condition number =  -1.88E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  227
+updated condition number =  1.93E+14  for rank =  530
+current reduced rank =  400
+current condition number =  7.92E+13  for rank =  400
+current reduced rank =  800
+current condition number =  -2.42E+16  for rank =  800
+Elapsed time: 6.9854819496472675 mins 
+
+================================================
+for sigma =  0.5938775510204082  rank =  800
+average train error =  0.24743925341830508
+average test error =  0.9435017058805355
+average num good eigfunction train =  289.0
+average num good eigfunction test =  134.0
+================================================
+
+...KDMD....  sigma =  0.6183673469387755  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.92E+14  for rank =  479
+updated condition number =  1.96E+14  for rank =  590
+updated condition number =  2.00E+14  for rank =  262
+Elapsed time: 4.68121212720871 mins 
+
+================================================
+for sigma =  0.32448979591836735  rank =  600
+average train error =  12.24511755969996
+average test error =  16.138659722381846
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.32448979591836735  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  1.66E+09  for rank =  400
+Elapsed time: 5.349552257855733 mins 
+
+CV:  4
+
+Elapsed time: 14.353698496023814 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.48E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.08E+16  for rank =  800
+updated condition number =  1.92E+14  for rank =  245
+Elapsed time: 5.340521721045176 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  1.65E+06  for rank =  800
+Elapsed time: 3.8203720927238463 mins 
+
+================================================
+for sigma =  0.44693877551020406  rank =  400
+average train error =  8.571852116171334
+average test error =  11.840343133621582
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.44693877551020406  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.76E+14  for rank =  324
+current reduced rank =  800
+current condition number =  7.33E+07  for rank =  800
+Elapsed time: 4.650429991881053 mins 
+
+================================================
+for sigma =  0.4959183673469387  rank =  600
+average train error =  1.5594326915729648
+average test error =  2.937056641078004
+average num good eigfunction train =  7.0
+average num good eigfunction test =  0.25
+================================================
+
+...KDMD....  sigma =  0.4959183673469387  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 3.783559016386668 mins 
+
+CV:  4
+
+Elapsed time: 9.210136127471923 mins 
+
+CV:  2
+
+Elapsed time: 7.901880458990733 mins 
+
+================================================
+for sigma =  1.1081632653061224  rank =  400
+average train error =  1.0706622133975443
+average test error =  1.542618809099464
+average num good eigfunction train =  29.75
+average num good eigfunction test =  21.0
+================================================
+
+...KDMD....  sigma =  1.1081632653061224  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 5.431725998719533 mins 
+
+================================================
+for sigma =  0.7163265306122448  rank =  600
+average train error =  0.37960662719422983
+average test error =  1.8171363390885147
+average num good eigfunction train =  157.75
+average num good eigfunction test =  75.5
+================================================
+
+...KDMD....  sigma =  0.7163265306122448  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 6.805904865264893 mins 
+
+================================================
+for sigma =  1.279591836734694  rank =  400
+average train error =  1.5972830673573624
+average test error =  2.236018265165961
+average num good eigfunction train =  14.5
+average num good eigfunction test =  10.0
+================================================
+
+...KDMD....  sigma =  1.279591836734694  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 10.55768652757009 mins 
+
+CV:  3
+
+Elapsed time: 5.4233089248339335 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  1.24E+08  for rank =  600
+current reduced rank =  400
+current condition number =  8.01E+13  for rank =  400
+current reduced rank =  800
+current condition number =  1.04E+14  for rank =  800
+Elapsed time: 3.735577952861786 mins 
+
+CV:  2
+
+Elapsed time: 17.63828453620275 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  1.72E+12  for rank =  800
+current reduced rank =  400
+current condition number =  1.67E+09  for rank =  400
+current reduced rank =  600
+current condition number =  3.14E+14  for rank =  600
+current reduced rank =  800
+current condition number =  -2.56E+16  for rank =  800
+Elapsed time: 14.915990444024404 mins 
+
+CV:  4
+
+Elapsed time: 5.143326858679454 mins 
+
+CV:  2
+
+updated condition number =  1.97E+14  for rank =  589
+updated condition number =  1.81E+14  for rank =  217
+current reduced rank =  600
+current condition number =  -2.11E+16  for rank =  600
+Elapsed time: 5.135241957505544 mins 
+
+================================================
+for sigma =  0.373469387755102  rank =  800
+average train error =  2.6347436860227313
+average test error =  6.4970399092650215
+average num good eigfunction train =  0.75
+average num good eigfunction test =  0.25
+================================================
+
+...KDMD....  sigma =  0.3979591836734694  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 11.84450559616089 mins 
+
+CV:  4
+
+Elapsed time: 4.582983148097992 mins 
+
+CV:  2
+
+Elapsed time: 4.204148677984874 mins 
+
+================================================
+for sigma =  0.8387755102040817  rank =  400
+average train error =  0.5737767212346563
+average test error =  1.0244815240936556
+average num good eigfunction train =  82.75
+average num good eigfunction test =  56.5
+================================================
+
+...KDMD....  sigma =  0.8387755102040817  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  2.00E+14  for rank =  351
+current reduced rank =  400
+current condition number =  4.02E+04  for rank =  400
+current reduced rank =  800
+current condition number =  -2.28E+16  for rank =  800
+Elapsed time: 5.2593860308329266 mins 
+
+================================================
+for sigma =  0.5448979591836735  rank =  800
+average train error =  0.22341359459515517
+average test error =  0.7948273159392215
+average num good eigfunction train =  373.75
+average num good eigfunction test =  164.75
+================================================
+
+...KDMD....  sigma =  0.5693877551020408  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -1.72E+16  for rank =  800
+current reduced rank =  800
+current condition number =  1.65E+06  for rank =  800
+updated condition number =  1.52E+14  for rank =  305
+Elapsed time: 4.1858972072601315 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.49E+08  for rank =  400
+Elapsed time: 5.6766673684120175 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  1.23E+08  for rank =  600
+updated condition number =  1.95E+14  for rank =  530
+current reduced rank =  800
+current condition number =  -1.82E+16  for rank =  800
+current reduced rank =  400
+current condition number =  1.69E+09  for rank =  400
+Elapsed time: 6.038701983292897 mins 
+
+================================================
+for sigma =  0.6673469387755102  rank =  600
+average train error =  0.327357913615414
+average test error =  0.9032638503569539
+average num good eigfunction train =  182.75
+average num good eigfunction test =  106.5
+================================================
+
+...KDMD....  sigma =  0.6673469387755102  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.95E+14  for rank =  478
+current reduced rank =  800
+current condition number =  1.67E+12  for rank =  800
+current reduced rank =  600
+current condition number =  -1.96E+16  for rank =  600
+Elapsed time: 4.279183316230774 mins 
+
+CV:  2
+
+Elapsed time: 15.058554895718892 mins 
+
+CV:  2
+
+updated condition number =  1.94E+14  for rank =  415
+current reduced rank =  400
+current condition number =  4.04E+04  for rank =  400
+Elapsed time: 5.408423336346944 mins 
+
+CV:  3
+
+Elapsed time: 8.617305032412212 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -1.69E+16  for rank =  800
+Elapsed time: 4.192316277821859 mins 
+
+CV:  2
+
+Elapsed time: 4.697447224458059 mins 
+
+CV:  3
+
+Elapsed time: 9.059546093146006 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.31E+16  for rank =  600
+Elapsed time: 14.920733753840128 mins 
+
+================================================
+for sigma =  1.0346938775510204  rank =  800
+average train error =  0.9353346199286156
+average test error =  1.6290698678428597
+average num good eigfunction train =  43.75
+average num good eigfunction test =  25.75
+================================================
+
+...KDMD....  sigma =  1.0591836734693878  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 4.035803087552389 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  1.46E+08  for rank =  400
+updated condition number =  1.96E+14  for rank =  590
+updated condition number =  1.95E+14  for rank =  278
+Elapsed time: 9.36496208111445 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  1.73E+09  for rank =  400
+current reduced rank =  600
+current condition number =  1.21E+08  for rank =  600
+current reduced rank =  800
+current condition number =  1.68E+06  for rank =  800
+current reduced rank =  800
+current condition number =  -2.04E+16  for rank =  800
+Elapsed time: 5.440735232830048 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.30E+16  for rank =  600
+updated condition number =  1.85E+14  for rank =  227
+Elapsed time: 7.408190977573395 mins 
+
+CV:  2
+
+Elapsed time: 3.892508049805959 mins 
+
+CV:  3
+
+updated condition number =  1.74E+14  for rank =  397
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  400
+current condition number =  3.95E+04  for rank =  400
+current reduced rank =  800
+current condition number =  1.79E+12  for rank =  800
+Elapsed time: 4.166182823975881 mins 
+
+CV:  3
+
+updated condition number =  1.62E+14  for rank =  293
+Elapsed time: 6.409801808993022 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -1.87E+16  for rank =  800
+Elapsed time: 4.157735168933868 mins 
+
+================================================
+for sigma =  0.6183673469387755  rank =  400
+average train error =  2.3649594423681544
+average test error =  3.511274918910716
+average num good eigfunction train =  1.75
+average num good eigfunction test =  1.0
+================================================
+
+...KDMD....  sigma =  0.6183673469387755  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 4.633908081054687 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  1.52E+08  for rank =  400
+current reduced rank =  800
+current condition number =  -1.76E+16  for rank =  800
+Elapsed time: 5.29704924027125 mins 
+
+CV:  4
+
+Elapsed time: 14.182546575864157 mins 
+
+CV:  2
+
+updated condition number =  1.96E+14  for rank =  479
+current reduced rank =  800
+current condition number =  -2.21E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.00E+16  for rank =  600
+updated condition number =  1.88E+14  for rank =  530
+current reduced rank =  600
+current condition number =  1.24E+13  for rank =  600
+current reduced rank =  600
+current condition number =  1.26E+08  for rank =  600
+updated condition number =  1.80E+14  for rank =  324
+current reduced rank =  800
+current condition number =  -2.66E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.13E+16  for rank =  600
+updated condition number =  1.66E+14  for rank =  205
+Elapsed time: 15.315892064571381 mins 
+
+CV:  2
+
+updated condition number =  1.95E+14  for rank =  416
+current reduced rank =  800
+current condition number =  1.62E+06  for rank =  800
+Elapsed time: 4.4623844186464945 mins 
+
+CV:  4
+
+updated condition number =  1.97E+14  for rank =  351
+current reduced rank =  800
+current condition number =  -1.69E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.38E+16  for rank =  800
+Elapsed time: 5.82109850247701 mins 
+
+CV:  4
+
+updated condition number =  1.97E+14  for rank =  245
+current reduced rank =  400
+current condition number =  3.97E+04  for rank =  400
+Elapsed time: 7.605123845736186 mins 
+
+CV:  2
+
+updated condition number =  1.99E+14  for rank =  590
+Elapsed time: 4.316634488105774 mins 
+
+CV:  4
+
+Elapsed time: 7.6944076458613075 mins 
+
+================================================
+for sigma =  0.7653061224489796  rank =  800
+average train error =  0.4315465200057261
+average test error =  1.1575234529361247
+average num good eigfunction train =  120.5
+average num good eigfunction test =  62.0
+================================================
+
+...KDMD....  sigma =  0.7897959183673469  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  1.50E+08  for rank =  400
+current reduced rank =  800
+current condition number =  1.78E+12  for rank =  800
+Elapsed time: 9.01461995045344 mins 
+Elapsed time: 4.644744416077931 mins 
+
+CV:  3
+
+
+================================================
+for sigma =  0.44693877551020406  rank =  600
+average train error =  2.7592173468261443
+average test error =  5.273028317394717
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.44693877551020406  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  8.56E+12  for rank =  400
+Elapsed time: 4.788614881038666 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.30E+16  for rank =  400
+Elapsed time: 6.97296185096105 mins 
+
+CV:  3
+
+Elapsed time: 15.21907244126002 mins 
+
+================================================
+for sigma =  0.9857142857142858  rank =  800
+average train error =  0.8530952302013266
+average test error =  1.4386363706068401
+average num good eigfunction train =  46.0
+average num good eigfunction test =  30.5
+================================================
+
+...KDMD....  sigma =  1.010204081632653  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.53E+14  for rank =  293
+Elapsed time: 5.223133714993795 mins 
+
+================================================
+for sigma =  0.32448979591836735  rank =  800
+average train error =  5.828061826446228
+average test error =  10.169158778734923
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.34897959183673466  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 20.55132614374161 mins 
+
+================================================
+for sigma =  1.3775510204081634  rank =  800
+average train error =  1.884981942236583
+average test error =  2.0889964370402514
+average num good eigfunction train =  6.25
+average num good eigfunction test =  7.0
+================================================
+
+...KDMD....  sigma =  1.4020408163265305  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.34E+16  for rank =  800
+current reduced rank =  600
+current condition number =  1.30E+13  for rank =  600
+current reduced rank =  400
+current condition number =  -2.20E+16  for rank =  400
+current reduced rank =  800
+current condition number =  2.86E+10  for rank =  800
+current reduced rank =  400
+current condition number =  4.90E+03  for rank =  400
+Elapsed time: 11.310577281316121 mins 
+
+CV:  4
+
+Elapsed time: 3.743242633342743 mins 
+
+================================================
+for sigma =  0.3979591836734694  rank =  400
+average train error =  12.199498125575357
+average test error =  15.428835521526143
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+
+...KDMD....  sigma =  0.3979591836734694  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.89E+14  for rank =  261
+updated condition number =  2.00E+14  for rank =  316
+Elapsed time: 17.316189046700796 mins 
+
+================================================
+for sigma =  1.2061224489795919  rank =  800
+average train error =  1.1990514249770408
+average test error =  1.7825623804260804
+average num good eigfunction train =  27.75
+average num good eigfunction test =  16.75
+================================================
+
+...KDMD....  sigma =  1.230612244897959  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 7.262743552525838 mins 
+
+CV:  3
+
+Elapsed time: 3.945718701680501 mins 
+
+================================================
+for sigma =  0.5693877551020408  rank =  400
+average train error =  3.335246970805578
+average test error =  4.817796210953016
+average num good eigfunction train =  1.0
+average num good eigfunction test =  0.75
+================================================
+
+...KDMD....  sigma =  0.5693877551020408  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  5.02E+06  for rank =  600
+current reduced rank =  600
+current condition number =  -1.95E+16  for rank =  600
+current reduced rank =  400
+current condition number =  -2.76E+16  for rank =  400
+Elapsed time: 3.9246025323867797 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -1.80E+16  for rank =  800
+updated condition number =  1.83E+14  for rank =  203
+Elapsed time: 5.078658477465312 mins 
+
+================================================
+for sigma =  0.4959183673469387  rank =  800
+average train error =  0.4079246506251165
+average test error =  1.5690274894698408
+average num good eigfunction train =  206.5
+average num good eigfunction test =  55.25
+================================================
+
+...KDMD....  sigma =  0.5204081632653061  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.96E+14  for rank =  416
+current reduced rank =  800
+current condition number =  -2.65E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  217
+current reduced rank =  400
+current condition number =  8.50E+12  for rank =  400
+current reduced rank =  600
+current condition number =  4.57E+11  for rank =  600
+updated condition number =  1.97E+14  for rank =  530
+current reduced rank =  600
+current condition number =  -2.33E+16  for rank =  600
+Elapsed time: 5.790988397598267 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.27E+07  for rank =  400
+current reduced rank =  800
+current condition number =  -1.69E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.50E+16  for rank =  400
+updated condition number =  1.88E+14  for rank =  278
+current reduced rank =  600
+current condition number =  -2.29E+16  for rank =  600
+Elapsed time: 4.910505215326945 mins 
+
+CV:  3
+
+Elapsed time: 4.0956006169319155 mins 
+
+CV:  2
+
+updated condition number =  1.92E+14  for rank =  240
+updated condition number =  1.89E+14  for rank =  227
+Elapsed time: 5.368608129024506 mins 
+
+CV:  2
+
+Elapsed time: 22.302813808123272 mins 
+
+CV:  3
+
+updated condition number =  1.94E+14  for rank =  589
+Elapsed time: 5.003538064161936 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  4.65E+03  for rank =  400
+current reduced rank =  600
+current condition number =  1.19E+13  for rank =  600
+current reduced rank =  600
+current condition number =  -2.09E+16  for rank =  600
+Elapsed time: 31.594157008330026 mins 
+
+CV:  2
+
+Elapsed time: 4.602304681142171 mins 
+
+CV:  2
+
+Elapsed time: 5.7847801129023235 mins 
+
+CV:  2
+
+updated condition number =  1.89E+14  for rank =  351
+current reduced rank =  800
+current condition number =  2.87E+10  for rank =  800
+Elapsed time: 6.585948181152344 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.26E+16  for rank =  400
+Elapsed time: 3.8596081455548603 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.21E+16  for rank =  400
+current reduced rank =  600
+current condition number =  4.95E+06  for rank =  600
+Elapsed time: 4.491375430425008 mins 
+
+CV:  2
+
+Elapsed time: 17.82441969712575 mins 
+
+CV:  3
+
+Elapsed time: 3.821619705359141 mins 
+
+CV:  2
+
+Elapsed time: 7.550705067316691 mins 
+
+CV:  4
+
+updated condition number =  1.72E+14  for rank =  314
+updated condition number =  1.66E+14  for rank =  293
+current reduced rank =  400
+current condition number =  8.31E+12  for rank =  400
+Elapsed time: 12.186553068955739 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  1.25E+07  for rank =  400
+Elapsed time: 6.218985108534495 mins 
+
+CV:  2
+
+Elapsed time: 11.169834240277607 mins 
+
+CV:  3
+
+Elapsed time: 6.428832284609476 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  4.39E+11  for rank =  600
+Elapsed time: 3.740948967138926 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -1.99E+16  for rank =  600
+Elapsed time: 4.499023707707723 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.70E+16  for rank =  400
+current reduced rank =  400
+current condition number =  4.62E+03  for rank =  400
+updated condition number =  2.00E+14  for rank =  416
+updated condition number =  1.83E+14  for rank =  203
+Elapsed time: 4.923968505859375 mins 
+
+CV:  3
+
+Elapsed time: 8.906233052412668 mins 
+
+================================================
+for sigma =  0.9367346938775509  rank =  600
+average train error =  0.6861488264565158
+average test error =  1.4450281554203985
+average num good eigfunction train =  64.5
+average num good eigfunction test =  37.5
+================================================
+
+...KDMD....  sigma =  0.9367346938775509  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 4.344486912091573 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  1.25E+13  for rank =  600
+current reduced rank =  800
+current condition number =  -1.68E+16  for rank =  800
+Elapsed time: 5.587896545728047 mins 
+
+CV:  3
+
+Elapsed time: 4.020010634263357 mins 
+
+CV:  4
+
+Elapsed time: 7.010738877455394 mins 
+
+CV:  4
+
+Elapsed time: 4.213838613033294 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.51E+16  for rank =  400
+current reduced rank =  600
+current condition number =  5.13E+06  for rank =  600
+current reduced rank =  400
+current condition number =  8.36E+12  for rank =  400
+current reduced rank =  800
+current condition number =  2.87E+10  for rank =  800
+updated condition number =  1.98E+14  for rank =  590
+Elapsed time: 4.7723884383837385 mins 
+
+CV:  3
+
+updated condition number =  1.90E+14  for rank =  240
+current reduced rank =  400
+current condition number =  1.33E+07  for rank =  400
+current reduced rank =  800
+current condition number =  -1.73E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.22E+16  for rank =  400
+Elapsed time: 4.0593250075976055 mins 
+
+CV:  4
+
+Elapsed time: 6.184871641794841 mins 
+
+================================================
+for sigma =  0.8387755102040817  rank =  600
+average train error =  0.5688613867467298
+average test error =  0.9881779301207052
+average num good eigfunction train =  97.0
+average num good eigfunction test =  57.5
+================================================
+
+...KDMD....  sigma =  0.8387755102040817  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.97E+14  for rank =  316
+current reduced rank =  600
+current condition number =  4.52E+11  for rank =  600
+updated condition number =  1.91E+14  for rank =  530
+current reduced rank =  400
+current condition number =  4.69E+03  for rank =  400
+Elapsed time: 7.437156303723653 mins 
+
+CV:  3
+
+Elapsed time: 4.837146162986755 mins 
+
+================================================
+for sigma =  0.6183673469387755  rank =  600
+average train error =  0.41023650221078406
+average test error =  1.2338800126042042
+average num good eigfunction train =  162.5
+average num good eigfunction test =  76.25
+================================================
+
+...KDMD....  sigma =  0.6183673469387755  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.23E+16  for rank =  600
+updated condition number =  1.58E+14  for rank =  293
+updated condition number =  1.93E+14  for rank =  279
+Elapsed time: 3.933097306887309 mins 
+
+================================================
+for sigma =  0.7897959183673469  rank =  400
+average train error =  0.7763751677904396
+average test error =  1.5659161617002004
+average num good eigfunction train =  56.75
+average num good eigfunction test =  34.25
+================================================
+
+...KDMD....  sigma =  0.7897959183673469  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 4.54383309284846 mins 
+
+CV:  4
+
+Elapsed time: 6.679549586772919 mins 
+
+================================================
+for sigma =  0.6673469387755102  rank =  800
+average train error =  0.32386475227532135
+average test error =  1.032998913976614
+average num good eigfunction train =  183.5
+average num good eigfunction test =  84.75
+================================================
+
+...KDMD....  sigma =  0.6918367346938775  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.45E+16  for rank =  800
+Elapsed time: 5.179550675551097 mins 
+
+CV:  4
+
+Elapsed time: 3.889982004960378 mins 
+
+CV:  4
+
+updated condition number =  1.88E+14  for rank =  260
+current reduced rank =  800
+current condition number =  -1.62E+16  for rank =  800
+current reduced rank =  400
+current condition number =  7.36E+10  for rank =  400
+current reduced rank =  400
+current condition number =  1.26E+07  for rank =  400
+current reduced rank =  600
+current condition number =  4.91E+06  for rank =  600
+Elapsed time: 3.8175957560539246 mins 
+
+================================================
+for sigma =  0.34897959183673466  rank =  400
+average train error =  17.98521430743085
+average test error =  20.598623942230372
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+Elapsed time: 8.337774443626405 mins 
+
+CV:  3
+
+Elapsed time: 4.553922808170318 mins 
+
+CV:  4
+
+Elapsed time: 9.364210983117422 mins 
+
+================================================
+for sigma =  0.7163265306122448  rank =  800
+average train error =  0.391572402971771
+average test error =  2.139342664909529
+average num good eigfunction train =  156.25
+average num good eigfunction test =  71.25
+================================================
+
+...KDMD....  sigma =  0.7408163265306122  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 6.237692761421203 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  2.84E+10  for rank =  800
+updated condition number =  1.89E+14  for rank =  666
+current reduced rank =  600
+current condition number =  -2.59E+16  for rank =  600
+current reduced rank =  400
+current condition number =  7.90E+11  for rank =  400
+current reduced rank =  800
+current condition number =  -2.12E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -1.92E+16  for rank =  600
+updated condition number =  1.81E+14  for rank =  227
+current reduced rank =  400
+current condition number =  -2.52E+16  for rank =  400
+current reduced rank =  600
+current condition number =  4.59E+11  for rank =  600
+updated condition number =  1.79E+14  for rank =  203
+updated condition number =  1.55E+14  for rank =  350
+Elapsed time: 7.24133646885554 mins 
+
+================================================
+for sigma =  1.0591836734693878  rank =  400
+average train error =  1.0535266859192782
+average test error =  1.5120775569702851
+average num good eigfunction train =  31.0
+average num good eigfunction test =  18.25
+================================================
+
+...KDMD....  sigma =  1.0591836734693878  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 10.513152356942495 mins 
+
+CV:  4
+
+updated condition number =  1.99E+14  for rank =  455
+current reduced rank =  400
+current condition number =  -2.21E+16  for rank =  400
+current reduced rank =  400
+current condition number =  -2.47E+16  for rank =  400
+Elapsed time: 14.042035698890686 mins 
+
+CV:  4
+
+Elapsed time: 4.176349826653799 mins 
+
+CV:  2
+
+updated condition number =  1.94E+14  for rank =  315
+updated condition number =  1.92E+14  for rank =  240
+Elapsed time: 4.190007932980856 mins 
+
+================================================
+for sigma =  0.5204081632653061  rank =  400
+average train error =  4.850570506844638
+average test error =  6.012774499267225
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.25
+================================================
+current reduced rank =  800
+current condition number =  -1.97E+16  for rank =  800
+Elapsed time: 4.7051935712496435 mins 
+
+================================================
+for sigma =  0.3979591836734694  rank =  600
+average train error =  5.0238460101398115
+average test error =  8.561839129094222
+average num good eigfunction train =  0.0
+average num good eigfunction test =  0.0
+================================================
+current reduced rank =  400
+current condition number =  7.27E+10  for rank =  400
+updated condition number =  1.98E+14  for rank =  416
+Elapsed time: 3.7412447214126585 mins 
+
+CV:  2
+
+Elapsed time: 6.314478417237599 mins 
+
+CV:  2
+
+Elapsed time: 5.229373514652252 mins 
+
+================================================
+for sigma =  0.44693877551020406  rank =  800
+average train error =  0.8062926263382606
+average test error =  2.5960502843870854
+average num good eigfunction train =  96.75
+average num good eigfunction test =  14.25
+================================================
+Elapsed time: 4.255353577931722 mins 
+
+================================================
+for sigma =  0.5693877551020408  rank =  600
+average train error =  0.6833638086943431
+average test error =  1.9049050262075344
+average num good eigfunction train =  90.0
+average num good eigfunction test =  36.5
+================================================
+current reduced rank =  400
+current condition number =  8.23E+11  for rank =  400
+Elapsed time: 6.167101565996806 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.47E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -4.69E+15  for rank =  800
+Elapsed time: 13.252678592999777 mins 
+
+CV:  4
+
+updated condition number =  1.88E+14  for rank =  217
+Elapsed time: 7.874147133032481 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.01E+16  for rank =  800
+Elapsed time: 11.748760994275411 mins 
+
+CV:  2
+
+updated condition number =  1.91E+14  for rank =  666
+Elapsed time: 2.901048545042674 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -1.95E+16  for rank =  600
+Elapsed time: 9.620854143301646 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  7.16E+10  for rank =  400
+Elapsed time: 5.518660831451416 mins 
+
+================================================
+for sigma =  1.010204081632653  rank =  400
+average train error =  0.8646607908939425
+average test error =  1.4404284913856964
+average num good eigfunction train =  45.75
+average num good eigfunction test =  29.0
+================================================
+
+...KDMD....  sigma =  1.010204081632653  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.97E+14  for rank =  454
+Elapsed time: 6.4738348881403605 mins 
+
+CV:  4
+
+Elapsed time: 2.883850546677907 mins 
+
+CV:  3
+
+updated condition number =  1.74E+14  for rank =  397
+current reduced rank =  400
+current condition number =  8.14E+11  for rank =  400
+Elapsed time: 4.402271036307017 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.58E+16  for rank =  400
+Elapsed time: 2.857073450088501 mins 
+
+CV:  4
+
+Elapsed time: 4.119959378242493 mins 
+
+CV:  3
+
+updated condition number =  1.80E+14  for rank =  203
+current reduced rank =  400
+current condition number =  7.20E+10  for rank =  400
+current reduced rank =  600
+current condition number =  -2.40E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -1.37E+16  for rank =  800
+Elapsed time: 18.761514377593993 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.43E+16  for rank =  400
+Elapsed time: 2.93748056491216 mins 
+
+CV:  4
+
+updated condition number =  1.97E+14  for rank =  279
+updated condition number =  1.92E+14  for rank =  240
+current reduced rank =  400
+current condition number =  8.13E+11  for rank =  400
+current reduced rank =  800
+current condition number =  -2.02E+16  for rank =  800
+updated condition number =  1.91E+14  for rank =  666
+current reduced rank =  600
+current condition number =  -1.93E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -2.24E+16  for rank =  600
+updated condition number =  1.94E+14  for rank =  415
+updated condition number =  1.93E+14  for rank =  453
+updated condition number =  1.56E+14  for rank =  293
+Elapsed time: 2.9988505562146504 mins 
+
+================================================
+for sigma =  0.6918367346938775  rank =  400
+average train error =  1.4919778685296712
+average test error =  2.4990485790414283
+average num good eigfunction train =  9.75
+average num good eigfunction test =  3.5
+================================================
+current reduced rank =  800
+current condition number =  -2.48E+16  for rank =  800
+updated condition number =  1.98E+14  for rank =  262
+Elapsed time: 2.9500968058904014 mins 
+
+================================================
+for sigma =  0.7408163265306122  rank =  400
+average train error =  1.0449243706526485
+average test error =  1.783463862126912
+average num good eigfunction train =  35.5
+average num good eigfunction test =  20.25
+================================================
+
+...KDMD....  sigma =  0.7408163265306122  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 7.480891394615173 mins 
+
+================================================
+for sigma =  1.4020408163265305  rank =  400
+average train error =  1.9444118459603248
+average test error =  3.366275034955791
+average num good eigfunction train =  6.5
+average num good eigfunction test =  3.75
+================================================
+
+...KDMD....  sigma =  1.4020408163265305  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.20E+16  for rank =  600
+Elapsed time: 4.605244127909343 mins 
+
+CV:  4
+
+Elapsed time: 7.048418486118317 mins 
+
+CV:  3
+
+Elapsed time: 4.5213795820871985 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -1.83E+16  for rank =  600
+updated condition number =  1.95E+14  for rank =  315
+Elapsed time: 11.497320071856182 mins 
+
+================================================
+for sigma =  1.1081632653061224  rank =  600
+average train error =  1.060033676519763
+average test error =  1.5293449883992487
+average num good eigfunction train =  27.75
+average num good eigfunction test =  23.5
+================================================
+
+...KDMD....  sigma =  1.1081632653061224  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 7.263343572616577 mins 
+
+================================================
+for sigma =  1.230612244897959  rank =  400
+average train error =  1.3394966161773572
+average test error =  1.9503717057163164
+average num good eigfunction train =  13.5
+average num good eigfunction test =  7.75
+================================================
+
+...KDMD....  sigma =  1.230612244897959  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.93E+14  for rank =  501
+current reduced rank =  800
+current condition number =  -1.62E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -1.92E+16  for rank =  600
+Elapsed time: 12.706659380594889 mins 
+
+CV:  2
+
+updated condition number =  1.92E+14  for rank =  666
+updated condition number =  1.96E+14  for rank =  454
+current reduced rank =  600
+current condition number =  -2.51E+16  for rank =  600
+updated condition number =  1.83E+14  for rank =  227
+current reduced rank =  800
+current condition number =  -1.96E+16  for rank =  800
+updated condition number =  1.97E+14  for rank =  415
+Elapsed time: 13.467646634578704 mins 
+
+================================================
+for sigma =  1.157142857142857  rank =  800
+average train error =  1.2856893649515382
+average test error =  1.8636300531286496
+average num good eigfunction train =  22.75
+average num good eigfunction test =  16.5
+================================================
+
+...KDMD....  sigma =  1.1816326530612244  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 3.6931992053985594 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.09E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -1.73E+16  for rank =  600
+Elapsed time: 10.91008769273758 mins 
+
+CV:  2
+
+Elapsed time: 4.0088391423225405 mins 
+
+================================================
+for sigma =  0.7897959183673469  rank =  600
+average train error =  0.458353738417037
+average test error =  1.099303682745249
+average num good eigfunction train =  112.0
+average num good eigfunction test =  63.25
+================================================
+
+...KDMD....  sigma =  0.7897959183673469  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 4.427393651008606 mins 
+
+================================================
+for sigma =  0.6183673469387755  rank =  800
+average train error =  0.26822689817180384
+average test error =  0.8809784718316416
+average num good eigfunction train =  257.0
+average num good eigfunction test =  121.0
+================================================
+updated condition number =  1.79E+14  for rank =  501
+updated condition number =  1.90E+14  for rank =  351
+current reduced rank =  400
+current condition number =  -2.32E+16  for rank =  400
+Elapsed time: 5.329755783081055 mins 
+
+CV:  4
+
+updated condition number =  1.70E+14  for rank =  254
+Elapsed time: 14.273268489042918 mins 
+
+================================================
+for sigma =  1.279591836734694  rank =  600
+average train error =  1.5406612775029054
+average test error =  2.0391750635270975
+average num good eigfunction train =  15.5
+average num good eigfunction test =  15.0
+================================================
+
+...KDMD....  sigma =  1.279591836734694  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -1.93E+16  for rank =  800
+Elapsed time: 30.226386960347494 mins 
+
+CV:  3
+
+Elapsed time: 3.475769297281901 mins 
+
+CV:  3
+
+updated condition number =  1.98E+14  for rank =  454
+current reduced rank =  600
+current condition number =  -2.32E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -2.67E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -5.67E+15  for rank =  600
+current reduced rank =  800
+current condition number =  -2.35E+16  for rank =  800
+updated condition number =  1.86E+14  for rank =  203
+updated condition number =  1.59E+14  for rank =  293
+current reduced rank =  600
+current condition number =  -2.45E+16  for rank =  600
+updated condition number =  1.93E+14  for rank =  501
+updated condition number =  1.91E+14  for rank =  278
+updated condition number =  1.90E+14  for rank =  240
+Elapsed time: 16.228991667429607 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.04E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.23E+16  for rank =  600
+Elapsed time: 4.973070092995962 mins 
+
+CV:  2
+
+updated condition number =  1.96E+14  for rank =  416
+Elapsed time: 6.2036472916603085 mins 
+
+CV:  2
+
+updated condition number =  1.98E+14  for rank =  315
+current reduced rank =  800
+current condition number =  -2.47E+16  for rank =  800
+Elapsed time: 3.437600255012512 mins 
+
+CV:  4
+
+updated condition number =  1.82E+14  for rank =  217
+current reduced rank =  600
+current condition number =  -1.85E+16  for rank =  600
+Elapsed time: 11.39882606267929 mins 
+
+CV:  2
+
+Elapsed time: 9.57764211098353 mins 
+
+CV:  3
+
+updated condition number =  1.80E+14  for rank =  501
+Elapsed time: 11.158008952935537 mins 
+
+CV:  2
+
+Elapsed time: 10.946900395552317 mins 
+
+CV:  2
+
+Elapsed time: 6.2979476372400915 mins 
+
+================================================
+for sigma =  0.8387755102040817  rank =  800
+average train error =  0.5612256209385598
+average test error =  1.2029118596711947
+average num good eigfunction train =  91.5
+average num good eigfunction test =  61.0
+================================================
+
+...KDMD....  sigma =  0.8632653061224489  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  2.56E+14  for rank =  400
+current reduced rank =  800
+current condition number =  -1.83E+16  for rank =  800
+updated condition number =  1.76E+14  for rank =  397
+updated condition number =  1.91E+14  for rank =  454
+current reduced rank =  400
+current condition number =  -2.32E+16  for rank =  400
+updated condition number =  1.66E+14  for rank =  254
+Elapsed time: 9.156795326868693 mins 
+
+CV:  3
+
+Elapsed time: 3.5546258727709454 mins 
+
+================================================
+for sigma =  0.7408163265306122  rank =  600
+average train error =  0.4173431711817527
+average test error =  1.0871577348988943
+average num good eigfunction train =  137.0
+average num good eigfunction test =  65.0
+================================================
+Elapsed time: 17.85673063993454 mins 
+
+================================================
+for sigma =  1.3285714285714285  rank =  800
+average train error =  1.7133316668337992
+average test error =  2.351800281000428
+average num good eigfunction train =  11.0
+average num good eigfunction test =  10.5
+================================================
+
+...KDMD....  sigma =  1.353061224489796  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 3.013544507821401 mins 
+
+CV:  2
+
+Elapsed time: 5.742957862218221 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  2.67E+14  for rank =  400
+updated condition number =  1.77E+14  for rank =  397
+current reduced rank =  800
+current condition number =  -2.11E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.49E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.64E+16  for rank =  400
+updated condition number =  1.90E+14  for rank =  227
+updated condition number =  1.99E+14  for rank =  351
+Elapsed time: 2.9203568577766417 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -1.91E+16  for rank =  800
+Elapsed time: 8.27985339164734 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.17E+16  for rank =  600
+updated condition number =  1.89E+14  for rank =  208
+updated condition number =  1.98E+14  for rank =  454
+current reduced rank =  400
+current condition number =  2.49E+14  for rank =  400
+updated condition number =  1.75E+14  for rank =  397
+updated condition number =  1.59E+14  for rank =  293
+current reduced rank =  600
+current condition number =  -2.60E+16  for rank =  600
+Elapsed time: 5.27247439622879 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.47E+16  for rank =  400
+updated condition number =  1.82E+14  for rank =  203
+Elapsed time: 2.8954219579696656 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.26E+16  for rank =  600
+updated condition number =  1.65E+14  for rank =  254
+current reduced rank =  400
+current condition number =  2.52E+14  for rank =  400
+updated condition number =  1.99E+14  for rank =  315
+updated condition number =  1.78E+14  for rank =  397
+Elapsed time: 14.923718428611755 mins 
+
+CV:  2
+
+Elapsed time: 12.651263956228892 mins 
+
+CV:  4
+
+Elapsed time: 7.239439678192139 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.47E+16  for rank =  600
+Elapsed time: 10.724660098552704 mins 
+
+CV:  4
+
+updated condition number =  1.91E+14  for rank =  240
+current reduced rank =  800
+current condition number =  -1.91E+16  for rank =  800
+Elapsed time: 2.9030452171961465 mins 
+
+================================================
+for sigma =  0.8632653061224489  rank =  400
+average train error =  0.6187561186997798
+average test error =  2.15672474307036
+average num good eigfunction train =  74.25
+average num good eigfunction test =  33.25
+================================================
+updated condition number =  1.99E+14  for rank =  454
+Elapsed time: 12.63477218945821 mins 
+
+CV:  3
+
+Elapsed time: 6.502101759115855 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -1.98E+16  for rank =  800
+Elapsed time: 11.336817491054536 mins 
+
+CV:  4
+
+Elapsed time: 5.42285430431366 mins 
+
+================================================
+for sigma =  0.7897959183673469  rank =  800
+average train error =  0.4620072108844425
+average test error =  1.279567144347411
+average num good eigfunction train =  109.75
+average num good eigfunction test =  65.25
+================================================
+updated condition number =  1.82E+14  for rank =  397
+current reduced rank =  800
+current condition number =  -2.43E+16  for rank =  800
+Elapsed time: 14.374839735031127 mins 
+
+CV:  3
+
+updated condition number =  1.96E+14  for rank =  278
+current reduced rank =  600
+current condition number =  -2.33E+16  for rank =  600
+current reduced rank =  400
+current condition number =  -2.59E+16  for rank =  400
+updated condition number =  1.88E+14  for rank =  208
+updated condition number =  1.62E+14  for rank =  293
+current reduced rank =  400
+current condition number =  -2.49E+16  for rank =  400
+updated condition number =  1.63E+14  for rank =  254
+Elapsed time: 18.829338534673056 mins 
+
+CV:  3
+
+Elapsed time: 9.478186778227489 mins 
+
+CV:  3
+
+Elapsed time: 9.1146821975708 mins 
+
+================================================
+for sigma =  1.0591836734693878  rank =  600
+average train error =  1.017761197323711
+average test error =  1.7519726063389607
+average num good eigfunction train =  34.75
+average num good eigfunction test =  20.25
+================================================
+
+...KDMD....  sigma =  1.0591836734693878  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.23E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  316
+Elapsed time: 8.071574465433757 mins 
+
+================================================
+for sigma =  1.1816326530612244  rank =  400
+average train error =  1.1944353350935468
+average test error =  1.689941377969527
+average num good eigfunction train =  21.75
+average num good eigfunction test =  15.25
+================================================
+
+...KDMD....  sigma =  1.1816326530612244  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.62E+16  for rank =  800
+updated condition number =  1.84E+14  for rank =  227
+current reduced rank =  600
+current condition number =  -2.61E+16  for rank =  600
+updated condition number =  1.83E+14  for rank =  203
+current reduced rank =  800
+current condition number =  -2.14E+16  for rank =  800
+updated condition number =  1.95E+14  for rank =  351
+current reduced rank =  400
+current condition number =  -2.65E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  209
+Elapsed time: 11.07969574133555 mins 
+
+================================================
+for sigma =  1.010204081632653  rank =  600
+average train error =  0.824581513508202
+average test error =  1.3721200050505464
+average num good eigfunction train =  48.25
+average num good eigfunction test =  27.25
+================================================
+
+...KDMD....  sigma =  1.010204081632653  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.57E+16  for rank =  600
+updated condition number =  1.96E+14  for rank =  240
+Elapsed time: 15.33390171925227 mins 
+
+CV:  3
+
+Elapsed time: 13.124520488580067 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.38E+16  for rank =  600
+Elapsed time: 16.256819486618042 mins 
+
+================================================
+for sigma =  0.9367346938775509  rank =  800
+average train error =  0.7020433323738244
+average test error =  1.3846064678194563
+average num good eigfunction train =  59.25
+average num good eigfunction test =  32.75
+================================================
+
+...KDMD....  sigma =  0.9612244897959183  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.68E+14  for rank =  254
+Elapsed time: 31.722507520516714 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.29E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -8.28E+15  for rank =  400
+Elapsed time: 7.644460527102153 mins 
+
+CV:  4
+
+updated condition number =  1.90E+14  for rank =  279
+current reduced rank =  800
+current condition number =  -2.31E+16  for rank =  800
+updated condition number =  1.99E+14  for rank =  340
+Elapsed time: 13.677287121613821 mins 
+
+CV:  4
+
+updated condition number =  1.58E+14  for rank =  293
+Elapsed time: 9.698930374781291 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.44E+16  for rank =  400
+Elapsed time: 12.464586965243022 mins 
+
+CV:  4
+
+updated condition number =  1.96E+14  for rank =  208
+Elapsed time: 5.549376213550568 mins 
+
+CV:  2
+
+Elapsed time: 12.591949538389843 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  1.51E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.66E+16  for rank =  600
+updated condition number =  1.77E+14  for rank =  203
+updated condition number =  1.98E+14  for rank =  340
+current reduced rank =  800
+current condition number =  -2.24E+16  for rank =  800
+updated condition number =  1.97E+14  for rank =  315
+current reduced rank =  600
+current condition number =  -2.48E+16  for rank =  600
+updated condition number =  1.91E+14  for rank =  240
+current reduced rank =  800
+current condition number =  -2.53E+16  for rank =  800
+updated condition number =  1.82E+14  for rank =  227
+Elapsed time: 8.750347061951954 mins 
+
+================================================
+for sigma =  1.353061224489796  rank =  400
+average train error =  1.9099297980810683
+average test error =  2.602760580883308
+average num good eigfunction train =  11.0
+average num good eigfunction test =  9.5
+================================================
+
+...KDMD....  sigma =  1.353061224489796  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 11.731877772013346 mins 
+
+================================================
+for sigma =  1.4020408163265305  rank =  600
+average train error =  1.9209962495630495
+average test error =  2.415911029217805
+average num good eigfunction train =  6.75
+average num good eigfunction test =  4.75
+================================================
+
+...KDMD....  sigma =  1.4020408163265305  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.37E+16  for rank =  600
+Elapsed time: 5.6565042495727536 mins 
+
+CV:  3
+
+updated condition number =  1.64E+14  for rank =  254
+Elapsed time: 13.742355644702911 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  1.47E+16  for rank =  400
+Elapsed time: 10.268725109100341 mins 
+
+================================================
+for sigma =  1.230612244897959  rank =  600
+average train error =  1.3669588395448213
+average test error =  1.9673991469878975
+average num good eigfunction train =  15.75
+average num good eigfunction test =  11.75
+================================================
+
+...KDMD....  sigma =  1.230612244897959  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 13.802877740065258 mins 
+
+CV:  4
+
+updated condition number =  1.94E+14  for rank =  339
+current reduced rank =  800
+current condition number =  -2.34E+16  for rank =  800
+updated condition number =  1.95E+14  for rank =  279
+Elapsed time: 11.552997306982677 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.32E+16  for rank =  800
+updated condition number =  1.56E+14  for rank =  293
+Elapsed time: 6.099752124150594 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  1.43E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.56E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  340
+Elapsed time: 14.064784681797027 mins 
+
+================================================
+for sigma =  1.1081632653061224  rank =  800
+average train error =  1.0618854400844355
+average test error =  1.4750675822802108
+average num good eigfunction train =  29.75
+average num good eigfunction test =  20.25
+================================================
+
+...KDMD....  sigma =  1.1326530612244898  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.90E+14  for rank =  208
+Elapsed time: 14.771747374534607 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.39E+16  for rank =  400
+current reduced rank =  800
+current condition number =  -2.57E+16  for rank =  800
+updated condition number =  1.75E+14  for rank =  266
+updated condition number =  1.76E+14  for rank =  203
+current reduced rank =  800
+current condition number =  -2.49E+16  for rank =  800
+Elapsed time: 6.0306692560513815 mins 
+
+================================================
+for sigma =  0.9612244897959183  rank =  400
+average train error =  0.7284350370467843
+average test error =  1.4492074342024401
+average num good eigfunction train =  62.75
+average num good eigfunction test =  31.5
+================================================
+
+...KDMD....  sigma =  0.9612244897959183  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 13.761473325888316 mins 
+
+CV:  2
+
+updated condition number =  1.91E+14  for rank =  240
+current reduced rank =  800
+current condition number =  -2.55E+16  for rank =  800
+current reduced rank =  800
+current condition number =  -2.26E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  227
+updated condition number =  1.97E+14  for rank =  316
+current reduced rank =  800
+current condition number =  -1.96E+16  for rank =  800
+Elapsed time: 6.629741593201955 mins 
+
+CV:  2
+
+Elapsed time: 15.195146830876668 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.38E+16  for rank =  600
+updated condition number =  1.73E+14  for rank =  397
+Elapsed time: 15.171707320213319 mins 
+
+CV:  2
+
+updated condition number =  1.67E+14  for rank =  254
+current reduced rank =  400
+current condition number =  -2.33E+16  for rank =  400
+updated condition number =  1.80E+14  for rank =  266
+current reduced rank =  600
+current condition number =  -2.14E+16  for rank =  600
+Elapsed time: 16.05221224228541 mins 
+
+================================================
+for sigma =  1.279591836734694  rank =  800
+average train error =  1.5458046582191276
+average test error =  2.452027925620599
+average num good eigfunction train =  14.75
+average num good eigfunction test =  11.5
+================================================
+
+...KDMD....  sigma =  1.3040816326530613  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.22E+16  for rank =  800
+Elapsed time: 17.537493586540222 mins 
+
+CV:  3
+
+updated condition number =  1.92E+14  for rank =  339
+updated condition number =  1.55E+14  for rank =  293
+Elapsed time: 15.5110982020696 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.74E+16  for rank =  600
+current reduced rank =  400
+current condition number =  -2.47E+16  for rank =  400
+updated condition number =  2.00E+14  for rank =  209
+updated condition number =  1.97E+14  for rank =  222
+Elapsed time: 6.298014803727468 mins 
+
+CV:  3
+
+Elapsed time: 9.661463304360707 mins 
+
+CV:  2
+
+Elapsed time: 12.518330653508505 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.39E+16  for rank =  400
+updated condition number =  1.79E+14  for rank =  266
+current reduced rank =  800
+current condition number =  -2.54E+16  for rank =  800
+Elapsed time: 7.100579444567362 mins 
+
+CV:  2
+
+Elapsed time: 12.388230760892233 mins 
+
+CV:  3
+
+updated condition number =  1.93E+14  for rank =  240
+current reduced rank =  800
+current condition number =  -2.71E+16  for rank =  800
+updated condition number =  1.83E+14  for rank =  203
+current reduced rank =  600
+current condition number =  -2.02E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -2.27E+16  for rank =  800
+Elapsed time: 6.8251214305559795 mins 
+
+CV:  4
+
+updated condition number =  1.95E+14  for rank =  340
+updated condition number =  1.70E+14  for rank =  314
+Elapsed time: 39.08257116874059 mins 
+
+================================================
+for sigma =  0.8632653061224489  rank =  800
+average train error =  0.616088018260713
+average test error =  1.1499648205716042
+average num good eigfunction train =  75.75
+average num good eigfunction test =  51.0
+================================================
+
+...KDMD....  sigma =  0.8877551020408163  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.48E+16  for rank =  400
+Elapsed time: 12.763246055444082 mins 
+
+CV:  3
+
+updated condition number =  1.97E+14  for rank =  222
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.45E+16  for rank =  600
+updated condition number =  1.75E+14  for rank =  266
+updated condition number =  1.65E+14  for rank =  254
+current reduced rank =  400
+current condition number =  8.19E+14  for rank =  400
+Elapsed time: 15.756122148036956 mins 
+
+CV:  3
+
+Elapsed time: 10.00010380744934 mins 
+
+CV:  3
+
+Elapsed time: 13.826628132661183 mins 
+
+CV:  4
+
+updated condition number =  1.93E+14  for rank =  380
+Elapsed time: 8.04108072121938 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.31E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.44E+16  for rank =  600
+updated condition number =  1.96E+14  for rank =  208
+updated condition number =  1.63E+14  for rank =  293
+Elapsed time: 5.839102943738301 mins 
+
+================================================
+for sigma =  1.1326530612244898  rank =  400
+average train error =  1.1459452886207098
+average test error =  1.557786023576094
+average num good eigfunction train =  26.25
+average num good eigfunction test =  20.0
+================================================
+
+...KDMD....  sigma =  1.1326530612244898  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 13.832638641198477 mins 
+
+================================================
+for sigma =  1.1816326530612244  rank =  600
+average train error =  1.2022331274513234
+average test error =  1.9154468168602776
+average num good eigfunction train =  21.75
+average num good eigfunction test =  14.0
+================================================
+
+...KDMD....  sigma =  1.1816326530612244  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.03E+16  for rank =  600
+current reduced rank =  400
+current condition number =  -2.58E+16  for rank =  400
+updated condition number =  1.98E+14  for rank =  339
+updated condition number =  1.66E+14  for rank =  221
+current reduced rank =  800
+current condition number =  -2.54E+16  for rank =  800
+Elapsed time: 15.367416044076284 mins 
+
+================================================
+for sigma =  1.0591836734693878  rank =  800
+average train error =  1.0252173515059215
+average test error =  1.3407904599856164
+average num good eigfunction train =  33.25
+average num good eigfunction test =  26.5
+================================================
+
+...KDMD....  sigma =  1.083673469387755  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 12.734521985054016 mins 
+
+CV:  4
+
+updated condition number =  1.90E+14  for rank =  240
+current reduced rank =  800
+current condition number =  -2.67E+16  for rank =  800
+updated condition number =  1.83E+14  for rank =  203
+current reduced rank =  400
+current condition number =  -2.33E+16  for rank =  400
+current reduced rank =  800
+current condition number =  -2.35E+16  for rank =  800
+updated condition number =  1.95E+14  for rank =  285
+current reduced rank =  600
+current condition number =  -2.43E+16  for rank =  600
+updated condition number =  1.94E+14  for rank =  315
+updated condition number =  1.79E+14  for rank =  266
+Elapsed time: 7.783752930164337 mins 
+
+CV:  4
+
+Elapsed time: 8.671859280268352 mins 
+
+CV:  4
+
+Elapsed time: 12.354575888315837 mins 
+
+CV:  4
+
+Elapsed time: 11.934750374158224 mins 
+
+CV:  4
+
+Elapsed time: 5.911110953489939 mins 
+
+CV:  2
+
+Elapsed time: 11.488794283072155 mins 
+
+================================================
+for sigma =  1.010204081632653  rank =  800
+average train error =  0.8290709625395316
+average test error =  1.6280673699425345
+average num good eigfunction train =  50.0
+average num good eigfunction test =  25.0
+================================================
+
+...KDMD....  sigma =  1.0346938775510204  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.68E+16  for rank =  600
+Elapsed time: 10.12357515891393 mins 
+
+CV:  2
+
+updated condition number =  1.92E+14  for rank =  208
+current reduced rank =  800
+current condition number =  -2.46E+16  for rank =  800
+Elapsed time: 15.665826845169068 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.20E+16  for rank =  600
+updated condition number =  1.79E+14  for rank =  254
+updated condition number =  1.93E+14  for rank =  339
+current reduced rank =  400
+current condition number =  -2.57E+16  for rank =  400
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  400
+current condition number =  -2.32E+16  for rank =  400
+updated condition number =  1.72E+14  for rank =  221
+updated condition number =  1.99E+14  for rank =  285
+updated condition number =  1.62E+14  for rank =  305
+current reduced rank =  400
+current condition number =  8.05E+14  for rank =  400
+updated condition number =  1.95E+14  for rank =  380
+Elapsed time: 10.559257245063781 mins 
+
+================================================
+for sigma =  1.353061224489796  rank =  600
+average train error =  1.905908823683239
+average test error =  3.044566372544769
+average num good eigfunction train =  6.75
+average num good eigfunction test =  6.5
+================================================
+
+...KDMD....  sigma =  1.353061224489796  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 14.341388336817424 mins 
+
+CV:  2
+
+Elapsed time: 8.149785649776458 mins 
+
+================================================
+for sigma =  0.9612244897959183  rank =  600
+average train error =  0.7441362280205044
+average test error =  1.3020801441593388
+average num good eigfunction train =  55.0
+average num good eigfunction test =  33.25
+================================================
+
+...KDMD....  sigma =  0.9612244897959183  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 8.476237734158834 mins 
+
+================================================
+for sigma =  1.3040816326530613  rank =  400
+average train error =  1.3630878236995674
+average test error =  1.8838445260026244
+average num good eigfunction train =  11.0
+average num good eigfunction test =  6.75
+================================================
+
+...KDMD....  sigma =  1.3040816326530613  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 5.850618322690328 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.70E+16  for rank =  800
+Elapsed time: 5.865402328968048 mins 
+
+CV:  2
+
+updated condition number =  1.78E+14  for rank =  203
+current reduced rank =  600
+current condition number =  -2.42E+16  for rank =  600
+updated condition number =  1.77E+14  for rank =  266
+current reduced rank =  400
+current condition number =  -2.29E+16  for rank =  400
+current reduced rank =  400
+current condition number =  -2.13E+16  for rank =  400
+updated condition number =  1.48E+14  for rank =  305
+updated condition number =  1.99E+14  for rank =  285
+Elapsed time: 11.184387580553691 mins 
+
+================================================
+for sigma =  1.4020408163265305  rank =  800
+average train error =  2.005662123773625
+average test error =  2.5130735094036467
+average num good eigfunction train =  5.25
+average num good eigfunction test =  6.25
+================================================
+
+...KDMD....  sigma =  1.426530612244898  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 11.317398675282796 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.51E+16  for rank =  800
+Elapsed time: 6.395607284704844 mins 
+
+CV:  3
+
+updated condition number =  1.96E+14  for rank =  240
+Elapsed time: 6.888497817516327 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.68E+16  for rank =  800
+updated condition number =  1.86E+14  for rank =  208
+current reduced rank =  400
+current condition number =  -2.51E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.51E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -2.13E+16  for rank =  800
+updated condition number =  1.70E+14  for rank =  197
+current reduced rank =  400
+current condition number =  -2.24E+16  for rank =  400
+updated condition number =  1.70E+14  for rank =  221
+current reduced rank =  400
+current condition number =  -2.33E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  340
+updated condition number =  1.47E+14  for rank =  305
+updated condition number =  1.92E+14  for rank =  284
+Elapsed time: 18.366810218493143 mins 
+
+================================================
+for sigma =  1.230612244897959  rank =  800
+average train error =  1.280022388694461
+average test error =  1.9356317588308014
+average num good eigfunction train =  14.5
+average num good eigfunction test =  9.75
+================================================
+
+...KDMD....  sigma =  1.2551020408163265  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 15.918613680203755 mins 
+
+CV:  3
+
+Elapsed time: 12.209336789449056 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.48E+16  for rank =  800
+updated condition number =  1.65E+14  for rank =  254
+Elapsed time: 6.782628711064657 mins 
+
+CV:  2
+
+Elapsed time: 11.827687652905782 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.34E+16  for rank =  400
+Elapsed time: 5.491303515434265 mins 
+
+CV:  4
+
+Elapsed time: 12.4947261651357 mins 
+
+CV:  2
+
+Elapsed time: 5.179635306199391 mins 
+
+================================================
+for sigma =  1.083673469387755  rank =  400
+average train error =  0.9448382039566212
+average test error =  1.4155329859930323
+average num good eigfunction train =  40.25
+average num good eigfunction test =  31.75
+================================================
+
+...KDMD....  sigma =  1.083673469387755  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.86E+14  for rank =  232
+current reduced rank =  400
+current condition number =  8.11E+14  for rank =  400
+updated condition number =  1.96E+14  for rank =  381
+current reduced rank =  400
+current condition number =  -2.20E+16  for rank =  400
+updated condition number =  1.53E+14  for rank =  305
+Elapsed time: 16.490543981393177 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.47E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.40E+16  for rank =  600
+updated condition number =  1.68E+14  for rank =  197
+updated condition number =  1.78E+14  for rank =  266
+Elapsed time: 6.162264541784922 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.29E+16  for rank =  600
+updated condition number =  1.95E+14  for rank =  285
+current reduced rank =  400
+current condition number =  -2.52E+16  for rank =  400
+updated condition number =  1.92E+14  for rank =  232
+Elapsed time: 7.352452798684438 mins 
+
+================================================
+for sigma =  1.0346938775510204  rank =  400
+average train error =  0.915631414658076
+average test error =  2.2257560136210266
+average num good eigfunction train =  49.5
+average num good eigfunction test =  24.25
+================================================
+Elapsed time: 8.347996373971304 mins 
+
+CV:  3
+
+Elapsed time: 14.015914857387543 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.55E+16  for rank =  600
+updated condition number =  1.66E+14  for rank =  221
+current reduced rank =  800
+current condition number =  -2.16E+16  for rank =  800
+Elapsed time: 9.211280683676401 mins 
+
+CV:  2
+
+updated condition number =  1.92E+14  for rank =  339
+Elapsed time: 5.275261914730072 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.47E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.57E+16  for rank =  400
+Elapsed time: 12.12134203116099 mins 
+
+CV:  3
+
+updated condition number =  1.60E+14  for rank =  254
+updated condition number =  1.84E+14  for rank =  232
+current reduced rank =  400
+current condition number =  -2.62E+16  for rank =  400
+updated condition number =  1.70E+14  for rank =  197
+Elapsed time: 12.999365325768789 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.64E+16  for rank =  800
+updated condition number =  1.99E+14  for rank =  208
+Elapsed time: 15.545583605766296 mins 
+
+CV:  4
+
+Elapsed time: 11.395192432403565 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.15E+16  for rank =  600
+Elapsed time: 5.100612759590149 mins 
+
+CV:  4
+
+updated condition number =  1.91E+14  for rank =  284
+current reduced rank =  600
+current condition number =  -2.37E+16  for rank =  600
+Elapsed time: 8.273881344000499 mins 
+
+CV:  4
+
+updated condition number =  1.78E+14  for rank =  266
+current reduced rank =  400
+current condition number =  8.07E+14  for rank =  400
+Elapsed time: 17.77012170155843 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.55E+16  for rank =  400
+updated condition number =  1.84E+14  for rank =  232
+updated condition number =  1.99E+14  for rank =  381
+current reduced rank =  400
+current condition number =  -2.61E+16  for rank =  400
+updated condition number =  1.68E+14  for rank =  197
+Elapsed time: 9.801025025049846 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.63E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -2.22E+16  for rank =  800
+updated condition number =  1.95E+14  for rank =  222
+Elapsed time: 11.912055146694183 mins 
+
+================================================
+for sigma =  1.1326530612244898  rank =  600
+average train error =  1.2071607654976555
+average test error =  2.097425519968392
+average num good eigfunction train =  31.25
+average num good eigfunction test =  16.5
+================================================
+
+...KDMD....  sigma =  1.1326530612244898  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.91E+14  for rank =  339
+Elapsed time: 6.012054852644602 mins 
+
+================================================
+for sigma =  1.2551020408163265  rank =  400
+average train error =  1.5405854716400815
+average test error =  2.3756987261911626
+average num good eigfunction train =  15.5
+average num good eigfunction test =  9.25
+================================================
+
+...KDMD....  sigma =  1.2551020408163265  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 6.177233870824178 mins 
+
+================================================
+for sigma =  1.426530612244898  rank =  400
+average train error =  1.8658019532526464
+average test error =  2.4891757094071454
+average num good eigfunction train =  7.5
+average num good eigfunction test =  8.0
+================================================
+
+...KDMD....  sigma =  1.426530612244898  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 11.265404081344604 mins 
+
+CV:  4
+
+Elapsed time: 10.609890127182007 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.43E+16  for rank =  800
+updated condition number =  1.67E+14  for rank =  254
+current reduced rank =  800
+current condition number =  -2.42E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.57E+16  for rank =  600
+updated condition number =  1.75E+14  for rank =  266
+updated condition number =  1.85E+14  for rank =  232
+current reduced rank =  600
+current condition number =  -2.32E+16  for rank =  600
+Elapsed time: 13.035394557317098 mins 
+
+================================================
+for sigma =  1.1816326530612244  rank =  800
+average train error =  1.2374331785711934
+average test error =  1.7869957928980849
+average num good eigfunction train =  25.5
+average num good eigfunction test =  16.5
+================================================
+
+...KDMD....  sigma =  1.2061224489795919  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.94E+14  for rank =  285
+current reduced rank =  800
+current condition number =  -2.67E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  208
+current reduced rank =  400
+current condition number =  -2.48E+16  for rank =  400
+current reduced rank =  600
+current condition number =  -2.72E+16  for rank =  600
+current reduced rank =  600
+current condition number =  -2.64E+16  for rank =  600
+Elapsed time: 10.235690140724182 mins 
+
+CV:  2
+
+updated condition number =  1.95E+14  for rank =  245
+Elapsed time: 15.585441573460896 mins 
+
+================================================
+for sigma =  0.8877551020408163  rank =  400
+average train error =  0.6023966595564204
+average test error =  1.1041685539138055
+average num good eigfunction train =  76.0
+average num good eigfunction test =  53.0
+================================================
+
+...KDMD....  sigma =  0.8877551020408163  reduced_rank =  600
+
+CV:  1
+
+updated condition number =  1.76E+14  for rank =  197
+updated condition number =  1.96E+14  for rank =  222
+Elapsed time: 9.273717319965362 mins 
+
+CV:  2
+
+Elapsed time: 12.006002934773763 mins 
+
+CV:  4
+
+Elapsed time: 14.737997821966808 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.08E+16  for rank =  800
+Elapsed time: 5.1682820598284405 mins 
+
+CV:  2
+
+Elapsed time: 11.088937346140543 mins 
+
+CV:  2
+
+Elapsed time: 10.375050926208496 mins 
+
+================================================
+for sigma =  1.3040816326530613  rank =  600
+average train error =  1.382308449269724
+average test error =  2.020892533034213
+average num good eigfunction train =  7.75
+average num good eigfunction test =  8.0
+================================================
+
+...KDMD....  sigma =  1.3040816326530613  reduced_rank =  800
+
+CV:  1
+
+updated condition number =  1.96E+14  for rank =  340
+current reduced rank =  600
+current condition number =  -2.34E+16  for rank =  600
+updated condition number =  1.95E+14  for rank =  284
+current reduced rank =  600
+current condition number =  -2.34E+16  for rank =  600
+updated condition number =  1.98E+14  for rank =  232
+Elapsed time: 14.283630474408467 mins 
+
+================================================
+for sigma =  0.9612244897959183  rank =  800
+average train error =  0.740570851105079
+average test error =  1.23168461444283
+average num good eigfunction train =  58.25
+average num good eigfunction test =  41.25
+================================================
+current reduced rank =  800
+current condition number =  -2.40E+16  for rank =  800
+current reduced rank =  400
+current condition number =  -2.30E+16  for rank =  400
+updated condition number =  1.98E+14  for rank =  246
+updated condition number =  1.81E+14  for rank =  266
+Elapsed time: 8.173032017548879 mins 
+
+================================================
+for sigma =  1.083673469387755  rank =  600
+average train error =  0.988982576726352
+average test error =  2.6327020991877688
+average num good eigfunction train =  40.0
+average num good eigfunction test =  24.5
+================================================
+Elapsed time: 9.571997813383739 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.09E+16  for rank =  600
+Elapsed time: 8.184350808461508 mins 
+
+CV:  3
+
+Elapsed time: 11.371669761339824 mins 
+
+CV:  3
+
+updated condition number =  1.99E+14  for rank =  381
+current reduced rank =  800
+current condition number =  -2.74E+16  for rank =  800
+updated condition number =  1.91E+14  for rank =  208
+current reduced rank =  600
+current condition number =  -2.56E+16  for rank =  600
+updated condition number =  1.62E+14  for rank =  197
+current reduced rank =  400
+current condition number =  -2.46E+16  for rank =  400
+updated condition number =  1.96E+14  for rank =  245
+current reduced rank =  600
+current condition number =  -2.44E+16  for rank =  600
+current reduced rank =  800
+current condition number =  -2.57E+16  for rank =  800
+updated condition number =  1.87E+14  for rank =  232
+Elapsed time: 13.471713864803315 mins 
+
+================================================
+for sigma =  1.353061224489796  rank =  800
+average train error =  1.8939042485946873
+average test error =  2.5839622468514487
+average num good eigfunction train =  11.5
+average num good eigfunction test =  7.5
+================================================
+
+...KDMD....  sigma =  1.3775510204081634  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.67E+14  for rank =  221
+Elapsed time: 12.142122181256612 mins 
+
+CV:  3
+
+Elapsed time: 4.988803863525391 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.75E+16  for rank =  400
+updated condition number =  1.70E+14  for rank =  205
+Elapsed time: 7.480093510945638 mins 
+
+CV:  4
+
+Elapsed time: 14.2137703816096 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.19E+16  for rank =  400
+updated condition number =  1.94E+14  for rank =  245
+Elapsed time: 4.7090680758158365 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.75E+16  for rank =  600
+Elapsed time: 5.012220136324564 mins 
+
+================================================
+for sigma =  1.2061224489795919  rank =  400
+average train error =  1.1419569706993966
+average test error =  1.7701187209832976
+average num good eigfunction train =  25.75
+average num good eigfunction test =  19.25
+================================================
+updated condition number =  1.75E+14  for rank =  197
+current reduced rank =  800
+current condition number =  -2.35E+16  for rank =  800
+updated condition number =  1.79E+14  for rank =  266
+current reduced rank =  600
+current condition number =  -2.42E+16  for rank =  600
+Elapsed time: 22.66924569606781 mins 
+
+CV:  2
+
+updated condition number =  1.85E+14  for rank =  232
+current reduced rank =  400
+current condition number =  -2.53E+16  for rank =  400
+updated condition number =  1.68E+14  for rank =  205
+Elapsed time: 8.574957032998404 mins 
+
+CV:  4
+
+Elapsed time: 12.974915564060211 mins 
+
+CV:  4
+
+Elapsed time: 7.760650118192037 mins 
+
+================================================
+for sigma =  1.2551020408163265  rank =  600
+average train error =  1.4849374600960863
+average test error =  2.0894707575276557
+average num good eigfunction train =  12.25
+average num good eigfunction test =  13.0
+================================================
+Elapsed time: 6.21190611521403 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.46E+16  for rank =  800
+updated condition number =  1.95E+14  for rank =  222
+current reduced rank =  400
+current condition number =  -2.60E+16  for rank =  400
+updated condition number =  1.73E+14  for rank =  205
+current reduced rank =  600
+current condition number =  -2.69E+16  for rank =  600
+updated condition number =  1.71E+14  for rank =  197
+Elapsed time: 11.981778041521709 mins 
+
+CV:  3
+
+Elapsed time: 3.9119847655296325 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.34E+16  for rank =  800
+updated condition number =  1.75E+14  for rank =  266
+Elapsed time: 6.699962091445923 mins 
+
+================================================
+for sigma =  1.426530612244898  rank =  600
+average train error =  1.9096127172520037
+average test error =  2.426540902835441
+average num good eigfunction train =  9.0
+average num good eigfunction test =  6.25
+================================================
+
+...KDMD....  sigma =  1.426530612244898  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.02E+16  for rank =  600
+current reduced rank =  400
+current condition number =  -2.45E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  381
+updated condition number =  1.67E+14  for rank =  205
+Elapsed time: 8.258786582946778 mins 
+
+================================================
+for sigma =  1.1326530612244898  rank =  800
+average train error =  1.1432769323889163
+average test error =  1.9771394230256933
+average num good eigfunction train =  30.0
+average num good eigfunction test =  15.25
+================================================
+Elapsed time: 4.3988796154658 mins 
+
+================================================
+for sigma =  1.3775510204081634  rank =  400
+average train error =  1.8923537988443526
+average test error =  2.0556370567328406
+average num good eigfunction train =  6.0
+average num good eigfunction test =  6.5
+================================================
+current reduced rank =  800
+current condition number =  -2.60E+16  for rank =  800
+updated condition number =  1.67E+14  for rank =  221
+current reduced rank =  800
+current condition number =  -2.70E+16  for rank =  800
+updated condition number =  1.67E+14  for rank =  197
+Elapsed time: 8.302634187539418 mins 
+
+CV:  4
+
+Elapsed time: 8.089232154687245 mins 
+
+CV:  2
+
+Elapsed time: 19.78811499675115 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.56E+16  for rank =  800
+updated condition number =  1.68E+14  for rank =  221
+current reduced rank =  800
+current condition number =  -2.73E+16  for rank =  800
+updated condition number =  1.69E+14  for rank =  197
+Elapsed time: 7.61801323890686 mins 
+
+================================================
+for sigma =  1.3040816326530613  rank =  800
+average train error =  1.342653356016323
+average test error =  2.0704926986822394
+average num good eigfunction train =  13.25
+average num good eigfunction test =  10.75
+================================================
+Elapsed time: 7.158660340309143 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.05E+16  for rank =  600
+updated condition number =  1.95E+14  for rank =  381
+current reduced rank =  800
+current condition number =  -2.71E+16  for rank =  800
+updated condition number =  1.79E+14  for rank =  197
+Elapsed time: 6.951524118582408 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.70E+16  for rank =  800
+updated condition number =  1.63E+14  for rank =  197
+Elapsed time: 5.020184377829234 mins 
+
+================================================
+for sigma =  1.426530612244898  rank =  800
+average train error =  1.9124398420291053
+average test error =  2.114242951628456
+average num good eigfunction train =  6.0
+average num good eigfunction test =  6.75
+================================================
+
+...KDMD....  sigma =  1.4510204081632654  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.71E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  192
+Elapsed time: 3.1201526443163554 mins 
+
+CV:  2
+
+Elapsed time: 18.518669482072195 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.52E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  191
+Elapsed time: 4.758806661764781 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.64E+16  for rank =  400
+updated condition number =  1.99E+14  for rank =  192
+current reduced rank =  600
+current condition number =  -2.04E+16  for rank =  600
+Elapsed time: 4.09501166343689 mins 
+
+CV:  4
+
+updated condition number =  1.97E+14  for rank =  380
+current reduced rank =  400
+current condition number =  -2.68E+16  for rank =  400
+updated condition number =  1.94E+14  for rank =  192
+Elapsed time: 3.8385687112808227 mins 
+
+================================================
+for sigma =  1.4510204081632654  rank =  400
+average train error =  1.9634360684427052
+average test error =  2.5741145595335544
+average num good eigfunction train =  5.75
+average num good eigfunction test =  6.5
+================================================
+
+...KDMD....  sigma =  1.4510204081632654  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.81E+16  for rank =  600
+updated condition number =  1.98E+14  for rank =  192
+Elapsed time: 5.302722442150116 mins 
+
+CV:  2
+
+Elapsed time: 19.868291183312735 mins 
+
+================================================
+for sigma =  0.8877551020408163  rank =  600
+average train error =  0.6120961747847573
+average test error =  1.095987512342171
+average num good eigfunction train =  71.75
+average num good eigfunction test =  42.75
+================================================
+
+...KDMD....  sigma =  0.8877551020408163  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.78E+16  for rank =  600
+updated condition number =  1.97E+14  for rank =  192
+Elapsed time: 5.577755399545034 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.76E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  192
+Elapsed time: 5.743320099512736 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.08E+16  for rank =  800
+current reduced rank =  600
+current condition number =  -2.72E+16  for rank =  600
+updated condition number =  1.99E+14  for rank =  192
+updated condition number =  1.98E+14  for rank =  381
+Elapsed time: 6.19579242070516 mins 
+
+================================================
+for sigma =  1.4510204081632654  rank =  600
+average train error =  1.9833817998872891
+average test error =  2.34309294544428
+average num good eigfunction train =  9.25
+average num good eigfunction test =  6.75
+================================================
+
+...KDMD....  sigma =  1.4510204081632654  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.77E+16  for rank =  800
+updated condition number =  1.97E+14  for rank =  192
+Elapsed time: 8.389328821500142 mins 
+
+CV:  2
+
+Elapsed time: 24.466394591331483 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.57E+16  for rank =  800
+updated condition number =  1.93E+14  for rank =  191
+Elapsed time: 6.223378932476043 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.68E+16  for rank =  800
+updated condition number =  1.94E+14  for rank =  191
+Elapsed time: 7.897644583384196 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.83E+16  for rank =  800
+updated condition number =  2.00E+14  for rank =  192
+current reduced rank =  800
+current condition number =  -1.92E+16  for rank =  800
+Elapsed time: 5.727024598916372 mins 
+
+================================================
+for sigma =  1.4510204081632654  rank =  800
+average train error =  2.0050783621312402
+average test error =  2.439643674307179
+average num good eigfunction train =  7.5
+average num good eigfunction test =  3.25
+================================================
+
+...KDMD....  sigma =  1.4755102040816326  reduced_rank =  400
+
+CV:  1
+
+updated condition number =  1.94E+14  for rank =  379
+current reduced rank =  400
+current condition number =  -2.76E+16  for rank =  400
+updated condition number =  1.89E+14  for rank =  188
+Elapsed time: 3.8432670632998147 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  -2.75E+16  for rank =  400
+updated condition number =  1.89E+14  for rank =  188
+Elapsed time: 3.668376044432322 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.65E+16  for rank =  400
+updated condition number =  1.88E+14  for rank =  188
+Elapsed time: 29.86550275484721 mins 
+
+CV:  3
+
+Elapsed time: 3.738783844312032 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.75E+16  for rank =  400
+updated condition number =  1.83E+14  for rank =  188
+Elapsed time: 3.8262578725814818 mins 
+
+================================================
+for sigma =  1.4755102040816326  rank =  400
+average train error =  2.1310193295504547
+average test error =  2.8021772546881145
+average num good eigfunction train =  7.75
+average num good eigfunction test =  8.5
+================================================
+
+...KDMD....  sigma =  1.4755102040816326  reduced_rank =  600
+
+CV:  1
+
+current reduced rank =  600
+current condition number =  -2.83E+16  for rank =  600
+updated condition number =  1.87E+14  for rank =  188
+Elapsed time: 5.421164766947428 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.76E+16  for rank =  600
+updated condition number =  1.89E+14  for rank =  188
+current reduced rank =  800
+current condition number =  -1.98E+16  for rank =  800
+Elapsed time: 6.685796213150025 mins 
+
+CV:  3
+
+updated condition number =  1.97E+14  for rank =  381
+current reduced rank =  600
+current condition number =  -2.55E+16  for rank =  600
+updated condition number =  1.85E+14  for rank =  188
+Elapsed time: 4.955449628829956 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.68E+16  for rank =  600
+updated condition number =  1.85E+14  for rank =  188
+Elapsed time: 5.747514243920644 mins 
+
+================================================
+for sigma =  1.4755102040816326  rank =  600
+average train error =  2.0905835790820286
+average test error =  3.2018013197035553
+average num good eigfunction train =  8.0
+average num good eigfunction test =  5.75
+================================================
+
+...KDMD....  sigma =  1.4755102040816326  reduced_rank =  800
+
+CV:  1
+
+Elapsed time: 27.82877905766169 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.77E+16  for rank =  800
+updated condition number =  1.90E+14  for rank =  188
+Elapsed time: 6.210074206193288 mins 
+
+CV:  2
+
+current reduced rank =  800
+current condition number =  -2.70E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  188
+Elapsed time: 8.765764145056407 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.90E+16  for rank =  800
+updated condition number =  1.89E+14  for rank =  188
+current reduced rank =  800
+current condition number =  -2.05E+16  for rank =  800
+updated condition number =  1.96E+14  for rank =  381
+Elapsed time: 5.489396135012309 mins 
+
+CV:  4
+
+current reduced rank =  800
+current condition number =  -2.61E+16  for rank =  800
+updated condition number =  1.85E+14  for rank =  188
+Elapsed time: 7.463139772415161 mins 
+
+================================================
+for sigma =  1.4755102040816326  rank =  800
+average train error =  2.093165185737984
+average test error =  2.698098744167144
+average num good eigfunction train =  8.5
+average num good eigfunction test =  7.25
+================================================
+
+...KDMD....  sigma =  1.5  reduced_rank =  400
+
+CV:  1
+
+current reduced rank =  400
+current condition number =  -2.70E+16  for rank =  400
+updated condition number =  1.88E+14  for rank =  184
+Elapsed time: 29.97353543837865 mins 
+
+================================================
+for sigma =  0.8877551020408163  rank =  800
+average train error =  0.6004334462437353
+average test error =  1.2682909284293926
+average num good eigfunction train =  75.0
+average num good eigfunction test =  39.5
+================================================
+
+...KDMD....  sigma =  0.9122448979591837  reduced_rank =  400
+
+CV:  1
+
+Elapsed time: 3.6428539037704466 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  2.56E+15  for rank =  400
+current reduced rank =  400
+current condition number =  -2.58E+16  for rank =  400
+updated condition number =  1.90E+14  for rank =  184
+updated condition number =  1.98E+14  for rank =  368
+Elapsed time: 3.639483578999837 mins 
+
+CV:  3
+
+current reduced rank =  400
+current condition number =  -2.73E+16  for rank =  400
+updated condition number =  1.87E+14  for rank =  183
+Elapsed time: 4.61153161128362 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  -2.58E+16  for rank =  400
+updated condition number =  1.96E+14  for rank =  184
+Elapsed time: 3.7369080702463786 mins 
+
+================================================
+for sigma =  1.5  rank =  400
+average train error =  2.464778716234444
+average test error =  3.639801212848391
+average num good eigfunction train =  4.25
+average num good eigfunction test =  3.25
+================================================
+
+...KDMD....  sigma =  1.5  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 13.198013476530711 mins 
+
+CV:  2
+
+current reduced rank =  400
+current condition number =  2.62E+15  for rank =  400
+updated condition number =  1.84E+14  for rank =  367
+current reduced rank =  600
+current condition number =  -2.73E+16  for rank =  600
+updated condition number =  1.86E+14  for rank =  184
+Elapsed time: 5.253698599338532 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.72E+16  for rank =  600
+updated condition number =  1.91E+14  for rank =  184
+Elapsed time: 4.9681127349535625 mins 
+
+CV:  3
+
+Elapsed time: 13.202889204025269 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -2.63E+16  for rank =  600
+updated condition number =  1.96E+14  for rank =  184
+current reduced rank =  400
+current condition number =  2.47E+15  for rank =  400
+updated condition number =  1.98E+14  for rank =  368
+Elapsed time: 6.038958104451497 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.68E+16  for rank =  600
+updated condition number =  1.97E+14  for rank =  184
+Elapsed time: 4.643488570054372 mins 
+
+================================================
+for sigma =  1.5  rank =  600
+average train error =  2.29923608806698
+average test error =  2.7797405959269943
+average num good eigfunction train =  4.0
+average num good eigfunction test =  6.0
+================================================
+
+...KDMD....  sigma =  1.5  reduced_rank =  800
+
+CV:  1
+
+current reduced rank =  800
+current condition number =  -2.90E+16  for rank =  800
+updated condition number =  1.92E+14  for rank =  184
+Elapsed time: 5.247174775600433 mins 
+
+CV:  2
+
+Elapsed time: 13.211159765720367 mins 
+
+CV:  4
+
+current reduced rank =  400
+current condition number =  2.55E+15  for rank =  400
+updated condition number =  1.85E+14  for rank =  367
+current reduced rank =  800
+current condition number =  -2.80E+16  for rank =  800
+updated condition number =  1.91E+14  for rank =  184
+Elapsed time: 8.38215758005778 mins 
+
+CV:  3
+
+current reduced rank =  800
+current condition number =  -2.75E+16  for rank =  800
+updated condition number =  1.94E+14  for rank =  184
+Elapsed time: 13.227755792935689 mins 
+
+================================================
+for sigma =  0.9122448979591837  rank =  400
+average train error =  0.6914847723285954
+average test error =  1.3901010623932903
+average num good eigfunction train =  66.0
+average num good eigfunction test =  35.5
+================================================
+
+...KDMD....  sigma =  0.9122448979591837  reduced_rank =  600
+
+CV:  1
+
+Elapsed time: 6.232831652959188 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.07E+16  for rank =  600
+updated condition number =  1.82E+14  for rank =  367
+current reduced rank =  800
+current condition number =  -2.78E+16  for rank =  800
+updated condition number =  1.92E+14  for rank =  184
+Elapsed time: 7.894890034198761 mins 
+
+================================================
+for sigma =  1.5  rank =  800
+average train error =  2.327584962157028
+average test error =  3.489663038232792
+average num good eigfunction train =  4.0
+average num good eigfunction test =  3.25
+================================================
+Elapsed time: 16.939757657051086 mins 
+
+CV:  2
+
+current reduced rank =  600
+current condition number =  -2.09E+16  for rank =  600
+updated condition number =  1.82E+14  for rank =  367
+Elapsed time: 17.57530566851298 mins 
+
+CV:  3
+
+current reduced rank =  600
+current condition number =  -1.87E+16  for rank =  600
+updated condition number =  1.95E+14  for rank =  368
+Elapsed time: 19.679516589641572 mins 
+
+CV:  4
+
+current reduced rank =  600
+current condition number =  -2.09E+16  for rank =  600
+updated condition number =  1.87E+14  for rank =  367
+Elapsed time: 18.99157214164734 mins 
+
+================================================
+for sigma =  0.9122448979591837  rank =  600
+average train error =  0.6523003383310232
+average test error =  2.3024192241288177
+average num good eigfunction train =  69.5
+average num good eigfunction test =  34.25
+================================================
+
+
+
+
+========================================================
+summary of computational results =      ave. test error    ...        sigma
+0         26.115885    ...     0.300000
+1         22.303969    ...     0.300000
+2         15.502703    ...     0.300000
+3         22.444544    ...     0.324490
+4         16.138660    ...     0.324490
+5         10.169159    ...     0.324490
+6         20.598624    ...     0.348980
+0         12.964279    ...     0.348980
+1          8.173120    ...     0.348980
+2         17.546116    ...     0.373469
+3         10.488010    ...     0.373469
+4          6.497040    ...     0.373469
+5         15.428836    ...     0.397959
+6          8.561839    ...     0.397959
+0          4.672382    ...     0.397959
+1         12.415787    ...     0.422449
+2          6.291710    ...     0.422449
+3          3.192900    ...     0.422449
+4         11.840343    ...     0.446939
+5          5.273028    ...     0.446939
+6          2.596050    ...     0.446939
+0          9.054057    ...     0.471429
+1          3.829885    ...     0.471429
+2          2.686869    ...     0.471429
+3          7.451141    ...     0.495918
+4          2.937057    ...     0.495918
+5          1.569027    ...     0.495918
+6          6.012774    ...     0.520408
+0          2.626539    ...     0.520408
+1          1.590530    ...     0.520408
+..              ...    ...          ...
+1          2.236018    ...     1.279592
+2          2.039175    ...     1.279592
+3          2.452028    ...     1.279592
+4          1.883845    ...     1.304082
+5          2.020893    ...     1.304082
+6          2.070493    ...     1.304082
+0          1.922338    ...     1.328571
+1          2.390503    ...     1.328571
+2          2.351800    ...     1.328571
+3          2.602761    ...     1.353061
+4          3.044566    ...     1.353061
+5          2.583962    ...     1.353061
+6          2.055637    ...     1.377551
+0          2.544120    ...     1.377551
+1          2.088996    ...     1.377551
+2          3.366275    ...     1.402041
+3          2.415911    ...     1.402041
+4          2.513074    ...     1.402041
+5          2.489176    ...     1.426531
+6          2.426541    ...     1.426531
+7          2.114243    ...     1.426531
+8          2.574115    ...     1.451020
+9          2.343093    ...     1.451020
+10         2.439644    ...     1.451020
+11         2.802177    ...     1.475510
+12         3.201801    ...     1.475510
+13         2.698099    ...     1.475510
+14         3.639801    ...     1.500000
+15         2.779741    ...     1.500000
+16         3.489663    ...     1.500000
+
+[150 rows x 6 columns]
