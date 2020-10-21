@@ -37,6 +37,7 @@ Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [ht
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
+* [Citation](#cite)
 
 
 ## Motivations
@@ -147,3 +148,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Shaowu Pan - email: shawnpan@umich.edu
 
 Project Link: [https://github.com/pswpswpsw/SKDMD](https://github.com/pswpswpsw/SKDMD)
+
+## Citation
+
+
+    @article{pan2020sparsity,
+      title={Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces},
+      author={Pan, Shaowu and Arnold-Medabalimi, Nicholas and Duraisamy, Karthik},
+      journal={arXiv preprint arXiv:2002.10637},
+      year={2020}
+    }
