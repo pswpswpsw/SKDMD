@@ -25,6 +25,10 @@ class DEDMD(EDMD):
             self.model_dir = self.case_dir + '/' + self.type + '-edmd-rff-' + str(self.rff_number_features) + \
                              '-gaussian_sigma-' + str(self.rff_sigma_gaussian) + '-rank-' + str(config['reduced_rank'])
 
+        elif self.dict == 'rff_gaussian_state':
+            self.model_dir = self.case_dir + '/' + self.type + '-edmd-rff-' + str(self.rff_number_features) + \
+                             '-gaussian_state_sigma-' + str(self.rff_sigma_gaussian) + '-rank-' + str(config['reduced_rank'])
+
         elif self.dict == 'nystrom':
             pass
 

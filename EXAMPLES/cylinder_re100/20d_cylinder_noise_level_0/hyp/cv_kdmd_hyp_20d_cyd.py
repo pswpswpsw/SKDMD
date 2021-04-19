@@ -2,12 +2,12 @@ import numpy as np
 import gc
 import sys
 sys.dont_write_bytecode = True
-sys.path.insert(0, '../../../../MODEL_SRC')
+sys.path.insert(0, '../../../../../')
 
 from mpi4py import MPI
 import pandas as pd
 from sklearn.model_selection import KFold
-from dkdmd import DKDMD
+from SKDMD.MODEL_SRC.dkdmd import DKDMD
 
 def main(case, noise_level, rank_list):
 

@@ -2,9 +2,9 @@ import numpy as np
 import gc
 import sys
 sys.dont_write_bytecode = True
-sys.path.append('../../MODEL_SRC')
+sys.path.insert(0, '../../../')
 
-from dkdmd import DKDMD
+from SKDMD.MODEL_SRC.dkdmd import DKDMD
 
 def main(case, noise_level, sigma_list, rank_list):
 

@@ -97,10 +97,13 @@ class ClassModelEDMD(ClassBaseDMD):
         :rtype: np.ndarray
         """
 
-        # first compute compute Koopman eigenfunctions
-        eig_func_at_t = np.matmul(Phi, self.KoopmanEigenV)
-        # then use Koopman modes to mapping back
-        result = np.matmul(eig_func_at_t, self.KoopmanModes)
+        # # first compute compute Koopman eigenfunctions
+        # eig_func_at_t = np.matmul(Phi, self.KoopmanEigenV)
+        # # then use Koopman modes to mapping back
+        # result = np.matmul(eig_func_at_t, self.KoopmanModes)
+
+        ## one liner
+        result = Phi @ self.KoopmanEigenV @ self.KoopmanModes
 
         if self.normalize:
             result = result + self.scaler.mean_

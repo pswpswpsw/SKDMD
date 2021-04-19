@@ -54,6 +54,7 @@ class DMD(object):
 
         self.scaler = StandardScaler()
         self.dt = None
+        self.svd_reg = None
 
     def prepare_scaler(self, X):
         self.scaler.fit(X)

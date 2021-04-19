@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     type = 'KDMD'
     scale_list  = [3]
-    rank_list = [150]
+    rank_list = [180]
     model_list = ['d-kdmd-s' + str(scale) + '-r' + str(rank) for scale in scale_list for rank in rank_list]
 
 

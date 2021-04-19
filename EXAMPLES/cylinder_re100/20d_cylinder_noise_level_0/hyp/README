@@ -1,0 +1,3 @@
+to run it:
+
+mpirun -np 4 python3 cv_kdmd_hyp_20d_cyd.py

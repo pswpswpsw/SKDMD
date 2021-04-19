@@ -24,7 +24,7 @@ class EDMD(DMD):
         in the following function names
 
     """
-
+    
     def __init__(self, config):
         super(EDMD, self).__init__(config)
 
@@ -75,6 +75,9 @@ class EDMD(DMD):
             # isotropic gaussian kernel exp(-||x||^2/2\sigma)
             generated_feature_array = self.gen_rff_features(X=X)
 
+        elif self.dict == 'rff_gaussian_state':
+            generated_feature_array = self.gen_rff_features_include_state(X=X)
+
         elif self.dict == 'nystrom':
             pass
 
@@ -82,6 +85,11 @@ class EDMD(DMD):
             raise NotImplementedError("we haven't implemented that!")
 
         return generated_feature_array
+
+    def gen_rff_features_include_state(self, X):
+        rff_features = self.gen_rff_features(X)
+        rff_features_with_state = np.hstack((rff_features, X))
+        return rff_features_with_state
 
     def gen_rff_features(self, X):
         # the corresponding distribution to sample z from is N(0, sigma^2 I_n)
@@ -135,6 +143,85 @@ class EDMD(DMD):
         generated_feature_array = np.array(feature_cross_list)
         return generated_feature_array
 
+
+    def compute_Koopman_analysis_with_control(self, input_data):
+        # generating EDMD features
+        self.Phi_X_i_sample = self.gen_dict_feature(self.X)
+
+        # prepare matrix for SVD
+        Phi_X_U = np.hstack([self.Phi_X_i_sample, input_data])
+
+        if self.svd_reg:
+            ## reg 2, simply SVD on Phi_X....but since it is EDMD,
+            # cost will not be very high in the size of feature numbers..
+            # so I just mapping to original system
+            phi_x_u, phi_x_s, phi_x_vh = np.linalg.svd(Phi_X_U, full_matrices=False)
+
+            # condition number
+            print('current condition number = ', np.linalg.cond(Phi_X_U)/10**12, ' x 10^12')
+
+            # manual truncation based on self.reduced_rank
+            phi_x_s[self.reduced_rank:] = 0
+            # reconstruct with SVD
+            Phi_X_i_sample_svd = phi_x_u @ np.diag(phi_x_s) @ phi_x_vh
+            # save singular value spectrum
+            _, full_sv, _ = np.linalg.svd(self.Phi_X_i_sample, full_matrices=False)
+            np.savez(self.model_dir + '/sv.npz',full_sv=full_sv)
+
+        else:
+            # no svd regularization
+            print('current condition number = ', np.linalg.cond(Phi_X_U) / 10 ** 12, ' x 10^12')
+            Phi_X_i_sample_svd = Phi_X_U
+
+        # compute G and A
+        Phi_Xdot_i_sample = self.gen_grad_dict_dot_f(self.Xdot, self.X)
+
+        print('176:')
+
+        self.num_sample = self.X.shape[0]
+        self.numKoopmanModes = self.Phi_X_i_sample.shape[1]
+
+        # don't use the textbook solution.. just least square...
+        # meanG = np.matmul(Phi_X_i_sample_svd.T, Phi_X_i_sample_svd)/self.num_sample
+        # meanA = np.matmul(Phi_X_i_sample_svd.T, Phi_Xdot_i_sample)/self.num_sample
+
+        # save Phi_Y
+        self.Phi_Xdot_i_sample = Phi_Xdot_i_sample
+
+        # The size of Koopman matrix depends on the DOF and hermite order
+
+        KB = SLA.lstsq(Phi_X_i_sample_svd, Phi_Xdot_i_sample)[0]
+
+
+        print('size of KB = ', KB.shape)
+
+        self.Koopman = {}
+        self.Koopman['Kmatrix'] = KB[:self.numKoopmanModes,:]
+        self.Koopman['Bmatrix'] = KB[self.numKoopmanModes:,:]
+        self.Koopman['eigenvalues'], self.Koopman['eigenvectors'] = np.linalg.eig(self.Koopman['Kmatrix'])
+
+        print('192:')
+
+
+        # compute residual matrix:
+        self.residual_matrix = Phi_Xdot_i_sample - np.matmul(Phi_X_i_sample_svd, KB)
+        linear_error_train = np.linalg.norm(self.residual_matrix) / self.residual_matrix.shape[0]
+
+        if not self.FLAG['cv_search_hyp']:
+            print('avg.per.samples; avg over all eigenfunctions.. single step linear Koopman residual error on training data = ', linear_error_train)
+
+        ## compute Koopman modes
+        # note that Koopman modes are basically telling you the field of each eigenvalues
+        # Koopman modes is like the DMD modes..
+        psi_X = np.matmul(self.Phi_X_i_sample, self.Koopman['eigenvectors'])
+        self.Koopman['modes'] = SLA.lstsq(psi_X, self.X)[0]
+
+        print('reconstruction train error = ',
+              np.linalg.norm(SLA.lstsq(psi_X, self.X)[1]/np.linalg.norm(self.X,axis=0)))
+
+        return
+
+
     def compute_Koopman_analysis(self):
         """compute Koopman eigenvalues, eigenvectors, modes on training data"""
 
@@ -145,10 +232,12 @@ class EDMD(DMD):
             etaDot = self.transform_to_etadot(self.Xdot)
             self.Phi_X_i_sample = self.gen_dict_feature(eta)
         else:
+            # generating EDMD features
             self.Phi_X_i_sample = self.gen_dict_feature(self.X)
 
         if self.svd_reg:
-            ## reg 2, simply SVD on Phi_X....but since it is EDMD, cost will not be very high in the size of feature numbers..
+            ## reg 2, simply SVD on Phi_X....but since it is EDMD,
+            # cost will not be very high in the size of feature numbers..
             # so I just mapping to original system
             phi_x_u, phi_x_s, phi_x_vh = np.linalg.svd(self.Phi_X_i_sample, full_matrices=False)
 
@@ -173,7 +262,7 @@ class EDMD(DMD):
         else:
             Phi_Xdot_i_sample = self.gen_grad_dict_dot_f(self.Xdot, self.X)
 
-        print('176:')
+        # print('176:')
 
         self.num_sample = self.X.shape[0]
 
@@ -189,7 +278,7 @@ class EDMD(DMD):
         self.Koopman['Kmatrix'] = SLA.lstsq(Phi_X_i_sample_svd, Phi_Xdot_i_sample)[0]
         self.Koopman['eigenvalues'], self.Koopman['eigenvectors'] = np.linalg.eig(self.Koopman['Kmatrix'])
 
-        print('192:')
+        # print('192:')
 
 
         # compute residual matrix:
@@ -239,7 +328,7 @@ class EDMD(DMD):
         return result
 
     @timing
-    def train(self, X, Xdot, svd_reg=True, dt=None):
+    def train(self, X, Xdot, input=None, control=False, svd_reg=True, dt=None):
         """
         :type X: np.ndarray
         :param X: training derivatives matrix with shape (num_sample, num_components)
@@ -264,8 +353,11 @@ class EDMD(DMD):
             # prepare scaler
             self.prepare_scaler(self.X)
 
-        # compute Koopman matrix and Koopman eigenvalue, eigenvectors
-        self.compute_Koopman_analysis()
+        if control:
+            # compute Koopman matrix and Koopman eigenvalue, eigenvectors
+            self.compute_Koopman_analysis_with_control(input)
+        else:
+            self.compute_Koopman_analysis()
 
     def save_model(self):
         # save model, koopman dictionary, as an object, into directory
@@ -296,15 +388,23 @@ class EDMD(DMD):
         self.compute_Koopman_analysis()
 
         # compute linear loss on training and testing data
-        linear_error_train, linear_error_test, num_good_both_train_valid = self.compute_linear_loss_on_testing_data(self.X_test, self.Xdot_test)
+        linear_error_train, linear_error_test, num_good_both_train_valid, \
+           rec_error_train, rec_error_test = self.compute_linear_loss_on_testing_data(self.X_test, self.Xdot_test)
 
-        return linear_error_train, linear_error_test, num_good_both_train_valid
+        return linear_error_train, linear_error_test, num_good_both_train_valid, rec_error_train, rec_error_test
 
     def compute_linear_loss_on_testing_data(self, x_test, x_dot_test):
 
         # compute eigen: train and test
         eig_phi_train = self.compute_eigfun(self.X)
         eig_phi_test = self.compute_eigfun(x_test)
+
+        # normalized reconstruction error
+        weights_train = np.linalg.lstsq(eig_phi_train, self.X)[0]
+        weights_test  = np.linalg.lstsq(eig_phi_test,  x_test)[0]
+
+        rec_error_train = np.linalg.norm(eig_phi_train @ weights_train - self.X) / np.linalg.norm(self.X)
+        rec_error_test  = np.linalg.norm(eig_phi_test @ weights_test   - x_test)/ np.linalg.norm(x_test)
 
         # compute sqrt(1/M sum phi_i^2 (x_k))
         normal_factor_train = np.sqrt(np.mean(np.abs(eig_phi_train) ** 2, axis=0))
@@ -348,5 +448,5 @@ class EDMD(DMD):
         linear_error_train = np.mean(rel_res_train)
         linear_error_test = np.mean(rel_res_test)
 
-        return linear_error_train, linear_error_test, num_good_both
+        return linear_error_train, linear_error_test, num_good_both, rec_error_train, rec_error_test
 

@@ -268,7 +268,7 @@ class ClassApoEval(object):
 
         return index_chosen, abs_sum_of_index_chosen, np.array(relative_rec_error_from_top_i_rank_1_sum_list)
 
-    def order_modes_with_accuracy_and_aposterior_eigentj(self, true_tsnap, true_tj, num_user_defined):
+    def compute_accuracy_and_aposterior_eigentj(self, true_tsnap, true_tj, num_user_defined):
 
         # print('266: ', datetime.now())
         true_eigenTj = self.model.computeEigenPhi(true_tj)
@@ -327,11 +327,6 @@ class ClassApoEval(object):
         normalized_relative_error = np.array(normalized_relative_error)
         aposteriori_eigen = np.array(aposteriori_eigen)
 
-        # finally, save them for future plot
-        np.savez(self.save_dir + 'ComputeSaveNormalizedEigenError_fig1.npz',
-                 nre=normalized_relative_error,
-                 tt=true_tsnap,
-                 le=self.model.linearEvolvingEigen)
 
         ## 2. order the error from small to large
         max_normalized_relative_error = np.max(normalized_relative_error, axis=0)
@@ -344,6 +339,19 @@ class ClassApoEval(object):
 
         ## 4. sweep for reconstruction and accuracy truncation
         norm_true_tj = np.linalg.norm(true_tj)
+
+        ## call reconstruction function
+        small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou, error_reconstruct_state_list, selected_best_k_aposteriori_eigen = \
+            self.compute_reconstruction_with_top_few_eigenmodes(num_user_defined, aposteriori_eigen, small_to_large_error_eigen_index,
+                                                           true_tj, norm_true_tj, normalized_relative_error)
+
+
+        # print('349: ', datetime.now())
+        return normalized_relative_error, max_normalized_relative_error, small_to_large_error_eigen_index, small_to_large_error_eigen_index_kou, \
+               abs_sum_of_index_chosen_kou, error_reconstruct_state_list, selected_best_k_accurate_modes_index, selected_best_k_aposteriori_eigen, aposteriori_eigen, norm_true_tj
+
+    def compute_reconstruction_with_top_few_eigenmodes(self, num_user_defined, aposteriori_eigen, small_to_large_error_eigen_index, true_tj, norm_true_tj,
+                                                       normalized_relative_error):
 
         def reconstruct_top_selected_eigenmodes(i):
 
@@ -360,6 +368,7 @@ class ClassApoEval(object):
         # set the maximal evaluation best features to be 500.. note that I can still consider features more than 500..but
         # best ones are only 500... this is due to computational complexity issues....
         max_num_feature_evaluate = min(500, normalized_relative_error.shape[1] + 1)
+        if normalized_relative_error.shape[1] + 1 >= 500: print('too much feature to evaluate, cut to 500!')
 
         r = joblib.Parallel(n_jobs=N_CPU)(joblib.delayed(reconstruct_top_selected_eigenmodes)(i) for i in range(1, max_num_feature_evaluate))
         top_i_selected_eigenTj_list, error_reconstruct_state_list = zip(*r)
@@ -374,7 +383,20 @@ class ClassApoEval(object):
         # small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou, _ = self.compute_kou_index(aposteriori_eigen, true_eigenTj)
         small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou = [], []
 
-        # print('349: ', datetime.now())
+        return small_to_large_error_eigen_index_kou, abs_sum_of_index_chosen_kou, error_reconstruct_state_list, selected_best_k_aposteriori_eigen
+
+    def order_modes_with_accuracy_and_aposterior_eigentj(self, true_tsnap, true_tj, num_user_defined):
+
+        normalized_relative_error, max_normalized_relative_error, small_to_large_error_eigen_index, small_to_large_error_eigen_index_kou, \
+        abs_sum_of_index_chosen_kou, error_reconstruct_state_list, selected_best_k_accurate_modes_index, selected_best_k_aposteriori_eigen, aposteriori_eigen, norm_true_tj = \
+            self.compute_accuracy_and_aposterior_eigentj(true_tsnap, true_tj, num_user_defined)
+
+        # finally, save them for future plot
+        np.savez(self.save_dir + 'ComputeSaveNormalizedEigenError_fig1.npz',
+                 nre=normalized_relative_error,
+                 tt=true_tsnap,
+                 le=self.model.linearEvolvingEigen)
+
 
         ## SAVE everything related to rec. vs acc. plot and kou's criterion
         np.savez(self.save_dir + 'ComputeSaveNormalizedEigenError_fig2.npz',
@@ -388,6 +410,43 @@ class ClassApoEval(object):
         np.savez(self.save_dir + 'ComputeSaveNormalizedEigenError_fig3.npz', tkm_index_list=range(num_user_defined))
 
         return selected_best_k_accurate_modes_index, selected_best_k_aposteriori_eigen
+
+    def order_modes_with_accuracy_and_aposterior_eigentj_multiple_trj(self, true_tsnap_list, true_tj_list, num_user_defined):
+
+        for i_trj in range(len(true_tsnap_list)):
+            true_tsnap = true_tsnap_list[i_trj]
+            true_tj = true_tj_list[i_trj]
+
+            normalized_relative_error, max_normalized_relative_error, small_to_large_error_eigen_index, small_to_large_error_eigen_index_kou, \
+            abs_sum_of_index_chosen_kou, error_reconstruct_state_list, selected_best_k_accurate_modes_index, selected_best_k_aposteriori_eigen, aposteriori_eigen, norm_true_tj = \
+                self.compute_accuracy_and_aposterior_eigentj(true_tsnap, true_tj, num_user_defined)
+
+            ## save
+            # finally, save them for future plot
+            sub_folder = self.save_dir + str(i_trj) + '/'
+            mkdir(sub_folder)
+            np.savez(sub_folder + 'ComputeSaveNormalizedEigenError_fig1.npz',
+                     nre=normalized_relative_error,
+                     tt=true_tsnap,
+                     le=self.model.linearEvolvingEigen)
+
+            ## SAVE everything related to rec. vs acc. plot and kou's criterion
+            np.savez(sub_folder + 'ComputeSaveNormalizedEigenError_fig2.npz',
+                     mre=max_normalized_relative_error,
+                     stli=small_to_large_error_eigen_index,
+                     stli_kou=small_to_large_error_eigen_index_kou,
+                     abs_sum_kou=abs_sum_of_index_chosen_kou,
+                     ersl=error_reconstruct_state_list)
+
+            ## SAVE just for legacy purpose
+            np.savez(sub_folder + 'ComputeSaveNormalizedEigenError_fig3.npz', tkm_index_list=range(num_user_defined))
+
+        ## read and compute the `selected_best_k_accurate_modes_index` by taking the mean from all the data
+
+        ## debug
+        sys.exit()
+
+        return selected_best_k_accurate_modes_index
 
     def sweep_sparse_reconstruction_for_modes_selection(self, true_tj, top_k_selected_eigenTj, top_k_index):
 
