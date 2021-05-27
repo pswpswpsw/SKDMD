@@ -152,9 +152,11 @@ Project Link: [https://github.com/pswpswpsw/SKDMD](https://github.com/pswpswpsw/
 ## Citation
 
 
-    @article{pan2020sparsity,
-      title={Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces},
-      author={Pan, Shaowu and Arnold-Medabalimi, Nicholas and Duraisamy, Karthik},
-      journal={arXiv preprint arXiv:2002.10637},
-      year={2020}
+    @article{pan2021sparsity,
+    title={Sparsity-promoting algorithms for the discovery of informative Koopman-invariant subspaces},
+    author={Pan, Shaowu and Arnold-Medabalimi, Nicholas and Duraisamy, Karthik},
+    journal={Journal of Fluid Mechanics},
+    volume={917},
+    year={2021},
+    publisher={Cambridge University Press}
     }
