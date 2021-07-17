@@ -26,6 +26,7 @@
 
 # SKDMD
 Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on [JFM](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/sparsitypromoting-algorithms-for-the-discovery-of-informative-koopmaninvariant-subspaces/F52F03ED181023369A661EF09B57281A)
+This paper is open access so anyone can download for free.
 
 ## Table of Contents
 
