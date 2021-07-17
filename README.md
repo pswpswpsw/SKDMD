@@ -25,7 +25,7 @@
 
 
 # SKDMD
-Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [https://arxiv.org/abs/2002.10637](https://arxiv.org/abs/2002.10637)
+Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/sparsitypromoting-algorithms-for-the-discovery-of-informative-koopmaninvariant-subspaces/F52F03ED181023369A661EF09B57281A](https://arxiv.org/abs/2002.10637)
 
 ## Table of Contents
 
