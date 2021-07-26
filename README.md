@@ -99,8 +99,8 @@ This paper is open access so anyone can download for free.
 #### Selection of hyperparameter
 
 - go to `EXAMPLE/cylinder_re100/hyp` 
-- run parallem hyperparameter selection 
-  - ```python3 cv_kdmd_hyp_20d_cyd.py```
+- run parallem hyperparameter selection with `4` processes
+  - ```mpirun -np 4 python3 cv_kdmd_hyp_20d_cyd.py```
 - then collecting the result and draw the figure by
   - ```python3 print.py```
 - the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
