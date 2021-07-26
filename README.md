@@ -128,7 +128,13 @@ This paper is open access so anyone can download for free.
 
 See the [open issues](https://github.com/pswpswpsw/SKDMD/issues) for a list of proposed features (and known issues).
 
+### Current Limitations
 
+- as it is designed for modal analysis, the error-checking framework is only working on analyzing one single trajectory
+- the standard multi-task solver `sklearn.linear_model.MultiTaskElasticNet` is okay for trajectory with around 100 to 1000 data points, while can be expensive for higher number of snapshots. However, the number of snapshots for most high-fidelity CFD datasets is no more than 1000 snapshots. It should be further improved by using ideas from variational projection:
+
+    - Askham, Travis, and J. Nathan Kutz. "Variable projection methods for an optimized dynamic mode decomposition." SIAM Journal on Applied Dynamical Systems 17.1 (2018): 380-416.
+    - Erichson, N. Benjamin, et al. "Sparse principal component analysis via variable projection." SIAM Journal on Applied Mathematics 80.2 (2020): 977-1002.
 
 <!-- CONTRIBUTING -->
 ## Contributing
