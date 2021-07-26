@@ -81,9 +81,20 @@ This paper is open access so anyone can download for free.
 
 ###  Example: KDMD on 2D cylinder flow past cylinder
 
+#### Selection of hyperparameter
+
+- go to `EXAMPLE/cylinder_re100/hyp` 
+- run parallem hyperparameter selection with `4` processes
+  - ```mpirun -np 4 python3 cv_kdmd_hyp_20d_cyd.py```
+- then collecting the result and draw the figure by
+  - ```python3 print.py```
+- the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
+
+#### Run SPKDMD 
+
 - go to `EXAMPLE/cylinder_re100` folder
 
-- run a standard KDMD 
+- run a standard KDMD default parameters
 
   - ```python3 example_20d_cyd.py ```
 
@@ -96,14 +107,6 @@ This paper is open access so anyone can download for free.
 
 - Note: that the data is top 20 POD coefficients with mean-subtracted.
 
-#### Selection of hyperparameter
-
-- go to `EXAMPLE/cylinder_re100/hyp` 
-- run parallem hyperparameter selection with `4` processes
-  - ```mpirun -np 4 python3 cv_kdmd_hyp_20d_cyd.py```
-- then collecting the result and draw the figure by
-  - ```python3 print.py```
-- the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
 
 <!--
 ### Example: scalable EDMD on 12d flexible joint system
@@ -115,6 +118,10 @@ This paper is open access so anyone can download for free.
 
 - following the similar tasks in first example. 
 -->
+
+###  Example: Simple toy 2D ODE system
+
+- similarly just go to folder `EXAMPLE/lusch`
 
 <!-- ROADMAP -->
 ## Roadmap
