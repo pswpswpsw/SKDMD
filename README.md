@@ -131,6 +131,9 @@ See the [open issues](https://github.com/pswpswpsw/SKDMD/issues) for a list of p
 ### Current Limitations
 
 - as it is designed for modal analysis, the error-checking framework is only working on analyzing one single trajectory
+   
+    - can be easily generalized to multiple validation trajectories. Just modify the code with several other validation trajectories.
+
 - the standard multi-task solver `sklearn.linear_model.MultiTaskElasticNet` is okay for trajectory with around 100 to 1000 data points, while can be expensive for higher number of snapshots. However, the number of snapshots for most high-fidelity CFD datasets is no more than 1000 snapshots. It should be further improved by using ideas from variational projection:
 
     - Askham, Travis, and J. Nathan Kutz. "Variable projection methods for an optimized dynamic mode decomposition." SIAM Journal on Applied Dynamical Systems 17.1 (2018): 380-416.
