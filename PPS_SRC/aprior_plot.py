@@ -26,8 +26,8 @@ class aprior_plot(object):
             c = colormap(index)
             plt.loglog(group['sigma'], group['ave. train error'],'-o',c=c,label='rank = '+ str(name))
             plt.loglog(group['sigma'], group['ave. test error'],'--o',c=c,label='rank = '+ str(name))
-            plt.loglog(group['sigma'], group['ave. train rec error'], '-^', c=c, label='rank = ' + str(name))
-            plt.loglog(group['sigma'], group['ave. test rec error'], '--^', c=c, label='rank = ' + str(name))
+            # plt.loglog(group['sigma'], group['ave. train rec error'], '-^', c=c, label='rank = ' + str(name))
+            # plt.loglog(group['sigma'], group['ave. test rec error'], '--^', c=c, label='rank = ' + str(name))
 
             index += 1
 
