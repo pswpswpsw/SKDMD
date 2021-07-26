@@ -25,7 +25,8 @@
 
 
 # SKDMD
-Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on arXiv: [https://arxiv.org/abs/2002.10637](https://arxiv.org/abs/2002.10637)
+Sparsity-promoting Kernel Dynamic Mode Decomposition for our paper on [JFM](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/sparsitypromoting-algorithms-for-the-discovery-of-informative-koopmaninvariant-subspaces/F52F03ED181023369A661EF09B57281A)
+This paper is open access so anyone can download for free.
 
 ## Table of Contents
 
@@ -152,9 +153,11 @@ Project Link: [https://github.com/pswpswpsw/SKDMD](https://github.com/pswpswpsw/
 ## Citation
 
 
-    @article{pan2020sparsity,
-      title={Sparsity-promoting algorithms for the discovery of informative Koopman invariant subspaces},
-      author={Pan, Shaowu and Arnold-Medabalimi, Nicholas and Duraisamy, Karthik},
-      journal={arXiv preprint arXiv:2002.10637},
-      year={2020}
+    @article{pan2021sparsity,
+    title={Sparsity-promoting algorithms for the discovery of informative Koopman-invariant subspaces},
+    author={Pan, Shaowu and Arnold-Medabalimi, Nicholas and Duraisamy, Karthik},
+    journal={Journal of Fluid Mechanics},
+    volume={917},
+    year={2021},
+    publisher={Cambridge University Press}
     }
