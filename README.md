@@ -105,7 +105,7 @@ This paper is open access so anyone can download for free.
   - ```python3 print.py```
 - the resulting figure `result-num.png` is a good refernce of choosing hyperparameter
 
-
+<!--
 ### Example: scalable EDMD on 12d flexible joint system
 
 - go to `EXAMPLE/12d_flex_mani` folder
@@ -114,7 +114,7 @@ This paper is open access so anyone can download for free.
   - ```python3 example_12d_flex_mani.py ```
 
 - following the similar tasks in first example. 
-
+-->
 
 <!-- ROADMAP -->
 ## Roadmap
