@@ -9,6 +9,8 @@ sys.dont_write_bytecode = True
 
 from pyDOE import lhs
 from SKDMD.PREP_DATA_SRC.source_code.lib.utilities import mkdir
+from scipy.integrate import odeint
+from matplotlib import pyplot as plt
 
 class ClassGenerateXXDotFromPhysics(object):
     """Generate time derivative data according to the physics :math:`\dot{x}=F(x)`.
@@ -152,3 +154,13 @@ class ClassGenerateXXDotFromPhysics(object):
                  XdotTrain=self.XdotTrain,
                  Xtrain=self.Xtrain,
                  JFTrain=self.JFTrain)
+                 
+    def _test_visualize_train_with_odeint(self, F):
+        t = np.linspace(0,2,300)
+        plt.figure()
+        for y0 in self.Xtrain:
+            sol = odeint(F, y0.ravel(), t)
+            plt.plot(sol[:,0],sol[:,1])
+        plt.xlabel('x_1')
+        plt.ylabel('x_2')
+        plt.show()
